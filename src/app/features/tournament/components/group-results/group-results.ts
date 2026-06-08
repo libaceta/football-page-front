@@ -21,7 +21,7 @@ interface MatchRow {
   imports: [GroupPanel],
   template: `
     <div class="flex flex-col gap-1.5">
-      <app-group-panel [group]="group()" />
+      <app-group-panel [group]="group()" [detailed]="true" />
 
       @if (rows().length) {
         <div class="rounded-md border border-white/10 bg-[#101018] p-1.5">
