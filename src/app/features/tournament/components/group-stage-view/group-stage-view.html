@@ -5,7 +5,7 @@
       <h2 class="mb-2 text-center text-[10px] font-bold tracking-[0.2em] text-amber-300">
         FASE DE GRUPOS
       </h2>
-      <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="grid gap-2" [class]="firstGroupsGridClass()">
         @for (g of firstGroups(); track g.id) {
           @if (g.matches?.length) {
             <app-group-results [group]="g" />

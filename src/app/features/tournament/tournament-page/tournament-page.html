@@ -93,7 +93,7 @@
         <h2 class="mb-3 text-center text-sm font-bold tracking-[0.2em] text-amber-300">
           RESULTADOS POR GRUPO
         </h2>
-        <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="grid gap-2" [class]="groupGridClass()">
           @for (g of groupsWithMatches(); track g.id) {
             <app-group-results [group]="g" />
           }

@@ -27,6 +27,7 @@ import { ThirdPlace } from '../components/third-place/third-place';
 import { StageTimeline } from '../components/stage-timeline/stage-timeline';
 import { GroupStageView } from '../components/group-stage-view/group-stage-view';
 import { GroupResults } from '../components/group-results/group-results';
+import { groupGridClass } from '../group-grid.util';
 
 // Orden de octavos -> semifinal usado para ordenar las columnas del cuadro.
 const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
@@ -87,6 +88,11 @@ export class TournamentPage {
   /** Grupos que tienen partidos cargados, para la sección de resultados. */
   protected readonly groupsWithMatches = computed<Group[]>(() =>
     (this.data()?.groups ?? []).filter((g) => (g.matches?.length ?? 0) > 0),
+  );
+
+  /** Columnas de la grilla de resultados según la cantidad de grupos. */
+  protected readonly groupGridClass = computed(() =>
+    groupGridClass(this.groupsWithMatches().length),
   );
 
   /** Grupos de la columna derecha: B, D, F, H, J, L. */

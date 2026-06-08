@@ -5,6 +5,7 @@ import {
   Match,
   Team,
 } from '../../../../core/models/tournament.model';
+import { groupGridClass } from '../../group-grid.util';
 import { GroupPanel } from '../group-panel/group-panel';
 import { GroupResults } from '../group-results/group-results';
 import { MatchCard } from '../match-card/match-card';
@@ -28,6 +29,9 @@ export class GroupStageView {
   readonly champion = input<Team | undefined>();
 
   protected readonly firstGroups = computed(() => this.edition().groups ?? []);
+  protected readonly firstGroupsGridClass = computed(() =>
+    groupGridClass(this.firstGroups().length),
+  );
   protected readonly finalRound = computed(() => this.edition().finalRound);
 
   protected readonly semis = computed<Match[]>(() =>
