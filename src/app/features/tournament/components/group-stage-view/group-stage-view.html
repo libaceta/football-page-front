@@ -27,18 +27,13 @@
       <h2 class="mb-2 text-center text-[10px] font-bold tracking-[0.2em] text-amber-300">
         {{ fr.name }}
       </h2>
-      <div
-        class="grid gap-2"
-        [class]="
-          fr.groups.length === 1
-            ? 'mx-auto max-w-xs grid-cols-1'
-            : fr.groups.length === 2
-              ? 'mx-auto max-w-md grid-cols-2'
-              : 'grid-cols-2 sm:grid-cols-4'
-        "
-      >
+      <div class="grid gap-2" [class]="finalRoundGridClass()">
         @for (g of fr.groups; track g.id) {
-          <app-group-panel [group]="g" />
+          @if (g.matches?.length) {
+            <app-group-results [group]="g" />
+          } @else {
+            <app-group-panel [group]="g" />
+          }
         }
       </div>
     </section>

@@ -29,16 +29,23 @@ const DAY = 86400000;
 const HOUR = 3600000;
 
 let count = 0;
-(d.groups ?? []).forEach((g, gi) => {
-  if (!g.matches) return;
-  g.matches.forEach((m, mi) => {
-    const matchday = Math.floor(mi / 2); // 2 partidos por jornada
-    const day = matchday * 4; // jornadas cada 4 días
-    const hour = 13 + (mi % 2) * 3 + (gi % 3); // 13..19 UTC
-    const ts = base + day * DAY + hour * HOUR;
-    m.kickoff = new Date(ts).toISOString();
-    count++;
+function assign(groups, dayOffset) {
+  (groups ?? []).forEach((g, gi) => {
+    if (!g.matches) return;
+    g.matches.forEach((m, mi) => {
+      const matchday = Math.floor(mi / 2); // 2 partidos por jornada
+      const day = dayOffset + matchday * 4; // jornadas cada 4 días
+      const hour = 13 + (mi % 2) * 3 + (gi % 3); // 13..19 UTC
+      const ts = base + day * DAY + hour * HOUR;
+      m.kickoff = new Date(ts).toISOString();
+      count++;
+    });
   });
-});
+}
+
+// Fase de grupos inicial y, después, la liguilla posterior (2da fase / ronda
+// final) con ~16 días de offset.
+assign(d.groups, 0);
+assign(d.finalRound?.groups, 16);
 writeFileSync(file, JSON.stringify(d, null, 2) + '\n');
 console.log(`${file}: kickoffs asignados=${count}`);

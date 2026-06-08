@@ -47,7 +47,8 @@ function solve(points) {
 
 let changed = 0;
 let failed = 0;
-for (const g of d.groups ?? []) {
+const allGroups = [...(d.groups ?? []), ...(d.finalRound?.groups ?? [])];
+for (const g of allGroups) {
   if (g.matches) continue;
   const teams = g.standings.map((s) => s.team);
   const points = g.standings.map((s) => s.points);

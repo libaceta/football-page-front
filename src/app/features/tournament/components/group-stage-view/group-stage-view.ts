@@ -33,6 +33,9 @@ export class GroupStageView {
     groupGridClass(this.firstGroups().length),
   );
   protected readonly finalRound = computed(() => this.edition().finalRound);
+  protected readonly finalRoundGridClass = computed(() =>
+    groupGridClass(this.finalRound()?.groups.length ?? 0),
+  );
 
   protected readonly semis = computed<Match[]>(() =>
     (this.edition().knockout?.rounds ?? [])
