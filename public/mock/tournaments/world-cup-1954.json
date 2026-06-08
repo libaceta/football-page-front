@@ -44,6 +44,92 @@
           },
           "points": 0
         }
+      ],
+      "matches": [
+        {
+          "id": "g11",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-16T13:00:00.000Z"
+        },
+        {
+          "id": "g12",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 5
+          },
+          "away": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-16T16:00:00.000Z"
+        },
+        {
+          "id": "g13",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 2
+          },
+          "kickoff": "1954-06-20T13:00:00.000Z"
+        },
+        {
+          "id": "g14",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
+            },
+            "score": 1
+          },
+          "kickoff": "1954-06-20T16:00:00.000Z"
+        }
       ]
     },
     {
@@ -85,6 +171,92 @@
             "flagCode": "KR"
           },
           "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "g21",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
+            },
+            "score": 9
+          },
+          "away": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-16T14:00:00.000Z"
+        },
+        {
+          "id": "g22",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
+            },
+            "score": 4
+          },
+          "away": {
+            "team": {
+              "id": "tr",
+              "name": "Turquía",
+              "flagCode": "TR"
+            },
+            "score": 1
+          },
+          "kickoff": "1954-06-16T17:00:00.000Z"
+        },
+        {
+          "id": "g23",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
+            },
+            "score": 8
+          },
+          "away": {
+            "team": {
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
+            },
+            "score": 3
+          },
+          "kickoff": "1954-06-20T14:00:00.000Z"
+        },
+        {
+          "id": "g24",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "tr",
+              "name": "Turquía",
+              "flagCode": "TR"
+            },
+            "score": 7
+          },
+          "away": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-20T17:00:00.000Z"
         }
       ]
     },
@@ -128,6 +300,92 @@
           },
           "points": 0
         }
+      ],
+      "matches": [
+        {
+          "id": "g31",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "uy",
+              "name": "Uruguay",
+              "flagCode": "UY"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "cs",
+              "name": "Checoslovaquia",
+              "flagCode": "CZ"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-16T15:00:00.000Z"
+        },
+        {
+          "id": "g32",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "at",
+              "name": "Austria",
+              "flagCode": "AT"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-16T18:00:00.000Z"
+        },
+        {
+          "id": "g33",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "uy",
+              "name": "Uruguay",
+              "flagCode": "UY"
+            },
+            "score": 7
+          },
+          "away": {
+            "team": {
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-20T15:00:00.000Z"
+        },
+        {
+          "id": "g34",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "at",
+              "name": "Austria",
+              "flagCode": "AT"
+            },
+            "score": 5
+          },
+          "away": {
+            "team": {
+              "id": "cs",
+              "name": "Checoslovaquia",
+              "flagCode": "CZ"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-20T18:00:00.000Z"
+        }
       ]
     },
     {
@@ -169,6 +427,92 @@
             "flagCode": "BE"
           },
           "points": 1
+        }
+      ],
+      "matches": [
+        {
+          "id": "g41",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
+            },
+            "score": 4
+          },
+          "away": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 4
+          },
+          "kickoff": "1954-06-16T13:00:00.000Z"
+        },
+        {
+          "id": "g42",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 1
+          },
+          "kickoff": "1954-06-16T16:00:00.000Z"
+        },
+        {
+          "id": "g43",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
+            },
+            "score": 0
+          },
+          "kickoff": "1954-06-20T13:00:00.000Z"
+        },
+        {
+          "id": "g44",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 4
+          },
+          "away": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 1
+          },
+          "kickoff": "1954-06-20T16:00:00.000Z"
         }
       ]
     }
