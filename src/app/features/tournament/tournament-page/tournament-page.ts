@@ -4,7 +4,7 @@ import {
   computed,
   inject,
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
@@ -12,10 +12,12 @@ import { map } from 'rxjs';
 import { TournamentService } from '../../../core/services/tournament.service';
 import {
   Edition,
+  EditionRef,
   Group,
   KnockoutRound,
   Match,
   Team,
+  Tournament,
   TournamentType,
 } from '../../../core/models/tournament.model';
 import { GroupPanel } from '../components/group-panel/group-panel';
@@ -30,7 +32,14 @@ const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
 @Component({
   selector: 'app-tournament-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [GroupPanel, BracketTree, ChampionTrophy, ThirdPlace, StageTimeline],
+  imports: [
+    RouterLink,
+    GroupPanel,
+    BracketTree,
+    ChampionTrophy,
+    ThirdPlace,
+    StageTimeline,
+  ],
   templateUrl: './tournament-page.html',
 })
 export class TournamentPage {
@@ -55,6 +64,16 @@ export class TournamentPage {
   protected readonly isLoading = computed(() => this.edition.isLoading());
   protected readonly error = computed(() => this.edition.error());
   protected readonly data = computed(() => this.edition.value());
+
+  /** Lista de ediciones del torneo, para el selector de año. */
+  private readonly tournament = rxResource<Tournament, TournamentType>({
+    params: () => this.params().type,
+    stream: ({ params }) => this.service.getTournament(params),
+  });
+
+  protected readonly editions = computed<readonly EditionRef[]>(
+    () => this.tournament.value()?.editions ?? [],
+  );
 
   /** Grupos de la columna izquierda: A, C, E, G, I, K. */
   protected readonly groupsLeft = computed<Group[]>(() =>

@@ -1,0 +1,236 @@
+{
+  "id": "world-cup-2002",
+  "year": 2002,
+  "format": "cup",
+  "championTeamId": "br",
+  "groups": [
+    {
+      "id": "A",
+      "name": "GRUPO A",
+      "standings": [
+        { "position": 1, "team": { "id": "dk", "name": "Dinamarca", "flagCode": "DK" }, "points": 7 },
+        { "position": 2, "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "points": 5 },
+        { "position": 3, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 2 },
+        { "position": 4, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "GRUPO B",
+      "standings": [
+        { "position": 1, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 9 },
+        { "position": 2, "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "points": 4 },
+        { "position": 3, "team": { "id": "za", "name": "Sudáfrica", "flagCode": "ZA" }, "points": 4 },
+        { "position": 4, "team": { "id": "si", "name": "Eslovenia", "flagCode": "SI" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "GRUPO C",
+      "standings": [
+        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 9 },
+        { "position": 2, "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "points": 4 },
+        { "position": 3, "team": { "id": "cr", "name": "Costa Rica", "flagCode": "CR" }, "points": 4 },
+        { "position": 4, "team": { "id": "cn", "name": "China", "flagCode": "CN" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "GRUPO D",
+      "standings": [
+        { "position": 1, "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "points": 7 },
+        { "position": 2, "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "points": 4 },
+        { "position": 3, "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "points": 3 },
+        { "position": 4, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 3 }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "GRUPO E",
+      "standings": [
+        { "position": 1, "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "points": 7 },
+        { "position": 2, "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "points": 5 },
+        { "position": 3, "team": { "id": "cm", "name": "Camerún", "flagCode": "CM" }, "points": 4 },
+        { "position": 4, "team": { "id": "sa", "name": "Arabia Saudita", "flagCode": "SA" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "GRUPO F",
+      "standings": [
+        { "position": 1, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 5 },
+        { "position": 2, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 5 },
+        { "position": 3, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 4 },
+        { "position": 4, "team": { "id": "ng", "name": "Nigeria", "flagCode": "NG" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "G",
+      "name": "GRUPO G",
+      "standings": [
+        { "position": 1, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 7 },
+        { "position": 2, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 4 },
+        { "position": 3, "team": { "id": "hr", "name": "Croacia", "flagCode": "HR" }, "points": 3 },
+        { "position": 4, "team": { "id": "ec", "name": "Ecuador", "flagCode": "EC" }, "points": 3 }
+      ]
+    },
+    {
+      "id": "H",
+      "name": "GRUPO H",
+      "standings": [
+        { "position": 1, "team": { "id": "jp", "name": "Japón", "flagCode": "JP" }, "points": 7 },
+        { "position": 2, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 5 },
+        { "position": 3, "team": { "id": "ru", "name": "Rusia", "flagCode": "RU" }, "points": 3 },
+        { "position": 4, "team": { "id": "tn", "name": "Túnez", "flagCode": "TN" }, "points": 1 }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "id": "r16-l",
+        "name": "round-of-16",
+        "side": "left",
+        "matches": [
+          {
+            "id": "r16-l1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 },
+            "away": { "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "score": 0 }
+          },
+          {
+            "id": "r16-l2",
+            "played": true,
+            "home": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 2 },
+            "away": { "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "score": 0 }
+          },
+          {
+            "id": "r16-l3",
+            "played": true,
+            "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 1, "penalties": 3 },
+            "away": { "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "score": 1, "penalties": 2 }
+          },
+          {
+            "id": "r16-l4",
+            "played": true,
+            "home": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 2 },
+            "away": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "r16-r",
+        "name": "round-of-16",
+        "side": "right",
+        "matches": [
+          {
+            "id": "r16-r1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 },
+            "away": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 0 }
+          },
+          {
+            "id": "r16-r2",
+            "played": true,
+            "home": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 3 },
+            "away": { "team": { "id": "dk", "name": "Dinamarca", "flagCode": "DK" }, "score": 0 }
+          },
+          {
+            "id": "r16-r3",
+            "played": true,
+            "home": { "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "score": 2 },
+            "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 1 }
+          },
+          {
+            "id": "r16-r4",
+            "played": true,
+            "home": { "team": { "id": "jp", "name": "Japón", "flagCode": "JP" }, "score": 0 },
+            "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "qf-l",
+        "name": "quarter",
+        "side": "left",
+        "matches": [
+          {
+            "id": "qf-l1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 },
+            "away": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 0 }
+          },
+          {
+            "id": "qf-l2",
+            "played": true,
+            "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 0, "penalties": 3 },
+            "away": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 0, "penalties": 5 }
+          }
+        ]
+      },
+      {
+        "id": "qf-r",
+        "name": "quarter",
+        "side": "right",
+        "matches": [
+          {
+            "id": "qf-r1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 },
+            "away": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 1 }
+          },
+          {
+            "id": "qf-r2",
+            "played": true,
+            "home": { "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "score": 0 },
+            "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 },
+            "away": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 0 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 1 },
+            "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 0 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 0 },
+            "away": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 2 },
+    "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 3 }
+  }
+}

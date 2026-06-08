@@ -91,6 +91,8 @@ export interface Edition {
 export interface EditionRef {
   readonly id: string;
   readonly year: number;
+  /** Nombre del campeón, para mostrar en el selector de ediciones. */
+  readonly championName?: string;
 }
 
 /** Metadatos de un torneo y sus ediciones disponibles. */

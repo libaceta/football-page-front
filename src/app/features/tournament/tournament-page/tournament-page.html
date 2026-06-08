@@ -5,6 +5,29 @@
       Mundial {{ params().year }}
     </h1>
     <p class="text-xs tracking-[0.3em] text-amber-300/80">CAMINO AL CAMPEÓN</p>
+
+    <!-- Selector de edición -->
+    @if (editions().length) {
+      <nav
+        class="mt-3 flex flex-wrap items-center justify-center gap-1.5"
+        aria-label="Ediciones"
+      >
+        @for (ed of editions(); track ed.id) {
+          <a
+            [routerLink]="['/tournaments', params().type, ed.year]"
+            [title]="ed.championName ? 'Campeón: ' + ed.championName : ''"
+            class="rounded-md border px-2.5 py-1 text-xs font-semibold tabular-nums transition-colors"
+            [class]="
+              ed.year === params().year
+                ? 'border-amber-400/60 bg-amber-400/15 text-amber-200'
+                : 'border-white/10 bg-[#15151d] text-zinc-400 hover:border-white/25 hover:text-zinc-200'
+            "
+          >
+            {{ ed.year }}
+          </a>
+        }
+      </nav>
+    }
   </header>
 
   @if (isLoading()) {
