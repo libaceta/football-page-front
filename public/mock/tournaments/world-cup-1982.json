@@ -1062,7 +1062,7 @@
         ],
         "matches": [
           {
-            "id": "gA1",
+            "id": "fA1",
             "played": true,
             "home": {
               "team": {
@@ -1070,28 +1070,28 @@
                 "name": "Polonia",
                 "flagCode": "PL"
               },
-              "score": 1
+              "score": 3
             },
             "away": {
+              "team": {
+                "id": "be",
+                "name": "Bélgica",
+                "flagCode": "BE"
+              },
+              "score": 0
+            },
+            "kickoff": "1982-06-29T13:00:00.000Z"
+          },
+          {
+            "id": "fA2",
+            "played": true,
+            "home": {
               "team": {
                 "id": "su",
                 "name": "URSS",
                 "flagCode": "RU"
               },
               "score": 1
-            },
-            "kickoff": "1982-06-29T13:00:00.000Z"
-          },
-          {
-            "id": "gA2",
-            "played": true,
-            "home": {
-              "team": {
-                "id": "pl",
-                "name": "Polonia",
-                "flagCode": "PL"
-              },
-              "score": 2
             },
             "away": {
               "team": {
@@ -1104,21 +1104,21 @@
             "kickoff": "1982-06-29T16:00:00.000Z"
           },
           {
-            "id": "gA3",
+            "id": "fA3",
             "played": true,
             "home": {
+              "team": {
+                "id": "pl",
+                "name": "Polonia",
+                "flagCode": "PL"
+              },
+              "score": 0
+            },
+            "away": {
               "team": {
                 "id": "su",
                 "name": "URSS",
                 "flagCode": "RU"
-              },
-              "score": 2
-            },
-            "away": {
-              "team": {
-                "id": "be",
-                "name": "Bélgica",
-                "flagCode": "BE"
               },
               "score": 0
             },
@@ -1160,7 +1160,7 @@
         ],
         "matches": [
           {
-            "id": "gB1",
+            "id": "fB1",
             "played": true,
             "home": {
               "team": {
@@ -1168,7 +1168,7 @@
                 "name": "Alemania Fed.",
                 "flagCode": "DE"
               },
-              "score": 2
+              "score": 0
             },
             "away": {
               "team": {
@@ -1181,15 +1181,15 @@
             "kickoff": "1982-06-29T14:00:00.000Z"
           },
           {
-            "id": "gB2",
+            "id": "fB2",
             "played": true,
             "home": {
               "team": {
-                "id": "de",
-                "name": "Alemania Fed.",
-                "flagCode": "DE"
+                "id": "eng",
+                "name": "Inglaterra",
+                "flagCode": "GB"
               },
-              "score": 1
+              "score": 0
             },
             "away": {
               "team": {
@@ -1197,18 +1197,18 @@
                 "name": "España",
                 "flagCode": "ES"
               },
-              "score": 1
+              "score": 0
             },
             "kickoff": "1982-06-29T17:00:00.000Z"
           },
           {
-            "id": "gB3",
+            "id": "fB3",
             "played": true,
             "home": {
               "team": {
-                "id": "eng",
-                "name": "Inglaterra",
-                "flagCode": "GB"
+                "id": "de",
+                "name": "Alemania Fed.",
+                "flagCode": "DE"
               },
               "score": 2
             },
@@ -1218,7 +1218,7 @@
                 "name": "España",
                 "flagCode": "ES"
               },
-              "score": 0
+              "score": 1
             },
             "kickoff": "1982-07-03T14:00:00.000Z"
           }
@@ -1258,7 +1258,7 @@
         ],
         "matches": [
           {
-            "id": "gC1",
+            "id": "fC1",
             "played": true,
             "home": {
               "team": {
@@ -1270,16 +1270,37 @@
             },
             "away": {
               "team": {
-                "id": "br",
-                "name": "Brasil",
-                "flagCode": "BR"
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
               },
-              "score": 0
+              "score": 1
             },
             "kickoff": "1982-06-29T15:00:00.000Z"
           },
           {
-            "id": "gC2",
+            "id": "fC2",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 3
+            },
+            "kickoff": "1982-06-29T18:00:00.000Z"
+          },
+          {
+            "id": "fC3",
             "played": true,
             "home": {
               "team": {
@@ -1287,36 +1308,15 @@
                 "name": "Italia",
                 "flagCode": "IT"
               },
-              "score": 2
+              "score": 3
             },
             "away": {
-              "team": {
-                "id": "ar",
-                "name": "Argentina",
-                "flagCode": "AR"
-              },
-              "score": 0
-            },
-            "kickoff": "1982-06-29T18:00:00.000Z"
-          },
-          {
-            "id": "gC3",
-            "played": true,
-            "home": {
               "team": {
                 "id": "br",
                 "name": "Brasil",
                 "flagCode": "BR"
               },
               "score": 2
-            },
-            "away": {
-              "team": {
-                "id": "ar",
-                "name": "Argentina",
-                "flagCode": "AR"
-              },
-              "score": 0
             },
             "kickoff": "1982-07-03T15:00:00.000Z"
           }
@@ -1356,17 +1356,9 @@
         ],
         "matches": [
           {
-            "id": "gD1",
+            "id": "fD1",
             "played": true,
             "home": {
-              "team": {
-                "id": "fr",
-                "name": "Francia",
-                "flagCode": "FR"
-              },
-              "score": 2
-            },
-            "away": {
               "team": {
                 "id": "at",
                 "name": "Austria",
@@ -1374,16 +1366,24 @@
               },
               "score": 0
             },
-            "kickoff": "1982-06-29T13:00:00.000Z"
-          },
-          {
-            "id": "gD2",
-            "played": true,
-            "home": {
+            "away": {
               "team": {
                 "id": "fr",
                 "name": "Francia",
                 "flagCode": "FR"
+              },
+              "score": 1
+            },
+            "kickoff": "1982-06-29T13:00:00.000Z"
+          },
+          {
+            "id": "fD2",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "at",
+                "name": "Austria",
+                "flagCode": "AT"
               },
               "score": 2
             },
@@ -1393,20 +1393,20 @@
                 "name": "Irlanda del Norte",
                 "flagCode": "GB"
               },
-              "score": 0
+              "score": 2
             },
             "kickoff": "1982-06-29T16:00:00.000Z"
           },
           {
-            "id": "gD3",
+            "id": "fD3",
             "played": true,
             "home": {
               "team": {
-                "id": "at",
-                "name": "Austria",
-                "flagCode": "AT"
+                "id": "fr",
+                "name": "Francia",
+                "flagCode": "FR"
               },
-              "score": 1
+              "score": 4
             },
             "away": {
               "team": {

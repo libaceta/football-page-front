@@ -536,36 +536,15 @@
         ],
         "matches": [
           {
-            "id": "gfinal-pool1",
+            "id": "ffinal-pool1",
             "played": true,
             "home": {
-              "team": {
-                "id": "uy",
-                "name": "Uruguay",
-                "flagCode": "UY"
-              },
-              "score": 2
-            },
-            "away": {
               "team": {
                 "id": "br",
                 "name": "Brasil",
                 "flagCode": "BR"
               },
-              "score": 0
-            },
-            "kickoff": "1950-07-10T13:00:00.000Z"
-          },
-          {
-            "id": "gfinal-pool2",
-            "played": true,
-            "home": {
-              "team": {
-                "id": "uy",
-                "name": "Uruguay",
-                "flagCode": "UY"
-              },
-              "score": 2
+              "score": 7
             },
             "away": {
               "team": {
@@ -573,12 +552,12 @@
                 "name": "Suecia",
                 "flagCode": "SE"
               },
-              "score": 0
+              "score": 1
             },
-            "kickoff": "1950-07-10T16:00:00.000Z"
+            "kickoff": "1950-07-10T13:00:00.000Z"
           },
           {
-            "id": "gfinal-pool3",
+            "id": "ffinal-pool2",
             "played": true,
             "home": {
               "team": {
@@ -586,7 +565,28 @@
                 "name": "Uruguay",
                 "flagCode": "UY"
               },
-              "score": 1
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "es",
+                "name": "España",
+                "flagCode": "ES"
+              },
+              "score": 2
+            },
+            "kickoff": "1950-07-10T16:00:00.000Z"
+          },
+          {
+            "id": "ffinal-pool3",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 6
             },
             "away": {
               "team": {
@@ -599,15 +599,15 @@
             "kickoff": "1950-07-14T13:00:00.000Z"
           },
           {
-            "id": "gfinal-pool4",
+            "id": "ffinal-pool4",
             "played": true,
             "home": {
               "team": {
-                "id": "br",
-                "name": "Brasil",
-                "flagCode": "BR"
+                "id": "uy",
+                "name": "Uruguay",
+                "flagCode": "UY"
               },
-              "score": 2
+              "score": 3
             },
             "away": {
               "team": {
@@ -615,33 +615,12 @@
                 "name": "Suecia",
                 "flagCode": "SE"
               },
-              "score": 0
+              "score": 2
             },
             "kickoff": "1950-07-14T16:00:00.000Z"
           },
           {
-            "id": "gfinal-pool5",
-            "played": true,
-            "home": {
-              "team": {
-                "id": "br",
-                "name": "Brasil",
-                "flagCode": "BR"
-              },
-              "score": 2
-            },
-            "away": {
-              "team": {
-                "id": "es",
-                "name": "España",
-                "flagCode": "ES"
-              },
-              "score": 0
-            },
-            "kickoff": "1950-07-18T13:00:00.000Z"
-          },
-          {
-            "id": "gfinal-pool6",
+            "id": "ffinal-pool5",
             "played": true,
             "home": {
               "team": {
@@ -649,7 +628,7 @@
                 "name": "Suecia",
                 "flagCode": "SE"
               },
-              "score": 2
+              "score": 3
             },
             "away": {
               "team": {
@@ -657,7 +636,28 @@
                 "name": "España",
                 "flagCode": "ES"
               },
-              "score": 0
+              "score": 1
+            },
+            "kickoff": "1950-07-18T13:00:00.000Z"
+          },
+          {
+            "id": "ffinal-pool6",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "uy",
+                "name": "Uruguay",
+                "flagCode": "UY"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 1
             },
             "kickoff": "1950-07-18T16:00:00.000Z"
           }

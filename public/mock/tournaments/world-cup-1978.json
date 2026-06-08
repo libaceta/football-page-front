@@ -717,7 +717,7 @@
               "name": "Alemania Fed.",
               "flagCode": "DE"
             },
-            "points": 3
+            "points": 2
           },
           {
             "position": 4,
@@ -726,20 +726,20 @@
               "name": "Austria",
               "flagCode": "AT"
             },
-            "points": 1
+            "points": 2
           }
         ],
         "matches": [
           {
-            "id": "gA1",
+            "id": "fA1",
             "played": true,
             "home": {
               "team": {
-                "id": "nl",
-                "name": "Países Bajos",
-                "flagCode": "NL"
+                "id": "de",
+                "name": "Alemania Fed.",
+                "flagCode": "DE"
               },
-              "score": 2
+              "score": 0
             },
             "away": {
               "team": {
@@ -752,7 +752,7 @@
             "kickoff": "1978-06-17T13:00:00.000Z"
           },
           {
-            "id": "gA2",
+            "id": "fA2",
             "played": true,
             "home": {
               "team": {
@@ -760,20 +760,41 @@
                 "name": "Países Bajos",
                 "flagCode": "NL"
               },
-              "score": 2
+              "score": 5
             },
             "away": {
               "team": {
-                "id": "de",
-                "name": "Alemania Fed.",
-                "flagCode": "DE"
+                "id": "at",
+                "name": "Austria",
+                "flagCode": "AT"
               },
-              "score": 0
+              "score": 1
             },
             "kickoff": "1978-06-17T16:00:00.000Z"
           },
           {
-            "id": "gA3",
+            "id": "fA3",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "at",
+                "name": "Austria",
+                "flagCode": "AT"
+              },
+              "score": 0
+            },
+            "kickoff": "1978-06-21T13:00:00.000Z"
+          },
+          {
+            "id": "fA4",
             "played": true,
             "home": {
               "team": {
@@ -781,28 +802,7 @@
                 "name": "Países Bajos",
                 "flagCode": "NL"
               },
-              "score": 1
-            },
-            "away": {
-              "team": {
-                "id": "at",
-                "name": "Austria",
-                "flagCode": "AT"
-              },
-              "score": 1
-            },
-            "kickoff": "1978-06-21T13:00:00.000Z"
-          },
-          {
-            "id": "gA4",
-            "played": true,
-            "home": {
-              "team": {
-                "id": "it",
-                "name": "Italia",
-                "flagCode": "IT"
-              },
-              "score": 1
+              "score": 2
             },
             "away": {
               "team": {
@@ -810,49 +810,49 @@
                 "name": "Alemania Fed.",
                 "flagCode": "DE"
               },
-              "score": 1
+              "score": 2
             },
             "kickoff": "1978-06-21T16:00:00.000Z"
           },
           {
-            "id": "gA5",
+            "id": "fA5",
             "played": true,
             "home": {
               "team": {
-                "id": "it",
-                "name": "Italia",
-                "flagCode": "IT"
+                "id": "nl",
+                "name": "Países Bajos",
+                "flagCode": "NL"
               },
               "score": 2
             },
             "away": {
               "team": {
-                "id": "at",
-                "name": "Austria",
-                "flagCode": "AT"
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
               },
-              "score": 0
+              "score": 1
             },
             "kickoff": "1978-06-25T13:00:00.000Z"
           },
           {
-            "id": "gA6",
+            "id": "fA6",
             "played": true,
             "home": {
+              "team": {
+                "id": "at",
+                "name": "Austria",
+                "flagCode": "AT"
+              },
+              "score": 3
+            },
+            "away": {
               "team": {
                 "id": "de",
                 "name": "Alemania Fed.",
                 "flagCode": "DE"
               },
               "score": 2
-            },
-            "away": {
-              "team": {
-                "id": "at",
-                "name": "Austria",
-                "flagCode": "AT"
-              },
-              "score": 0
             },
             "kickoff": "1978-06-25T16:00:00.000Z"
           }
@@ -901,28 +901,28 @@
         ],
         "matches": [
           {
-            "id": "gB1",
+            "id": "fB1",
             "played": true,
             "home": {
-              "team": {
-                "id": "ar",
-                "name": "Argentina",
-                "flagCode": "AR"
-              },
-              "score": 1
-            },
-            "away": {
               "team": {
                 "id": "br",
                 "name": "Brasil",
                 "flagCode": "BR"
               },
-              "score": 1
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "pe",
+                "name": "Perú",
+                "flagCode": "PE"
+              },
+              "score": 0
             },
             "kickoff": "1978-06-17T14:00:00.000Z"
           },
           {
-            "id": "gB2",
+            "id": "fB2",
             "played": true,
             "home": {
               "team": {
@@ -943,15 +943,15 @@
             "kickoff": "1978-06-17T17:00:00.000Z"
           },
           {
-            "id": "gB3",
+            "id": "fB3",
             "played": true,
             "home": {
               "team": {
-                "id": "ar",
-                "name": "Argentina",
-                "flagCode": "AR"
+                "id": "pl",
+                "name": "Polonia",
+                "flagCode": "PL"
               },
-              "score": 2
+              "score": 1
             },
             "away": {
               "team": {
@@ -964,28 +964,28 @@
             "kickoff": "1978-06-21T14:00:00.000Z"
           },
           {
-            "id": "gB4",
+            "id": "fB4",
             "played": true,
             "home": {
+              "team": {
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
+              },
+              "score": 0
+            },
+            "away": {
               "team": {
                 "id": "br",
                 "name": "Brasil",
                 "flagCode": "BR"
-              },
-              "score": 2
-            },
-            "away": {
-              "team": {
-                "id": "pl",
-                "name": "Polonia",
-                "flagCode": "PL"
               },
               "score": 0
             },
             "kickoff": "1978-06-21T17:00:00.000Z"
           },
           {
-            "id": "gB5",
+            "id": "fB5",
             "played": true,
             "home": {
               "team": {
@@ -993,28 +993,28 @@
                 "name": "Brasil",
                 "flagCode": "BR"
               },
-              "score": 2
+              "score": 3
             },
             "away": {
-              "team": {
-                "id": "pe",
-                "name": "Perú",
-                "flagCode": "PE"
-              },
-              "score": 0
-            },
-            "kickoff": "1978-06-25T14:00:00.000Z"
-          },
-          {
-            "id": "gB6",
-            "played": true,
-            "home": {
               "team": {
                 "id": "pl",
                 "name": "Polonia",
                 "flagCode": "PL"
               },
-              "score": 2
+              "score": 1
+            },
+            "kickoff": "1978-06-25T14:00:00.000Z"
+          },
+          {
+            "id": "fB6",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
+              },
+              "score": 6
             },
             "away": {
               "team": {

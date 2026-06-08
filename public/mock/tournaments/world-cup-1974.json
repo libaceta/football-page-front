@@ -717,7 +717,7 @@
               "name": "Alemania Dem.",
               "flagCode": "DE"
             },
-            "points": 2
+            "points": 1
           },
           {
             "position": 4,
@@ -726,12 +726,12 @@
               "name": "Argentina",
               "flagCode": "AR"
             },
-            "points": 0
+            "points": 1
           }
         ],
         "matches": [
           {
-            "id": "gA1",
+            "id": "fA1",
             "played": true,
             "home": {
               "team": {
@@ -739,28 +739,28 @@
                 "name": "Países Bajos",
                 "flagCode": "NL"
               },
-              "score": 2
+              "score": 4
             },
             "away": {
               "team": {
-                "id": "br",
-                "name": "Brasil",
-                "flagCode": "BR"
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
               },
               "score": 0
             },
             "kickoff": "1974-06-29T13:00:00.000Z"
           },
           {
-            "id": "gA2",
+            "id": "fA2",
             "played": true,
             "home": {
               "team": {
-                "id": "nl",
-                "name": "Países Bajos",
-                "flagCode": "NL"
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
               },
-              "score": 2
+              "score": 1
             },
             "away": {
               "team": {
@@ -773,7 +773,7 @@
             "kickoff": "1974-06-29T16:00:00.000Z"
           },
           {
-            "id": "gA3",
+            "id": "fA3",
             "played": true,
             "home": {
               "team": {
@@ -785,37 +785,16 @@
             },
             "away": {
               "team": {
-                "id": "ar",
-                "name": "Argentina",
-                "flagCode": "AR"
+                "id": "dd",
+                "name": "Alemania Dem.",
+                "flagCode": "DE"
               },
               "score": 0
             },
             "kickoff": "1974-07-03T13:00:00.000Z"
           },
           {
-            "id": "gA4",
-            "played": true,
-            "home": {
-              "team": {
-                "id": "br",
-                "name": "Brasil",
-                "flagCode": "BR"
-              },
-              "score": 2
-            },
-            "away": {
-              "team": {
-                "id": "dd",
-                "name": "Alemania Dem.",
-                "flagCode": "DE"
-              },
-              "score": 0
-            },
-            "kickoff": "1974-07-03T16:00:00.000Z"
-          },
-          {
-            "id": "gA5",
+            "id": "fA4",
             "played": true,
             "home": {
               "team": {
@@ -830,13 +809,34 @@
                 "id": "ar",
                 "name": "Argentina",
                 "flagCode": "AR"
+              },
+              "score": 1
+            },
+            "kickoff": "1974-07-03T16:00:00.000Z"
+          },
+          {
+            "id": "fA5",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "nl",
+                "name": "Países Bajos",
+                "flagCode": "NL"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
               },
               "score": 0
             },
             "kickoff": "1974-07-07T13:00:00.000Z"
           },
           {
-            "id": "gA6",
+            "id": "fA6",
             "played": true,
             "home": {
               "team": {
@@ -844,7 +844,7 @@
                 "name": "Alemania Dem.",
                 "flagCode": "DE"
               },
-              "score": 2
+              "score": 1
             },
             "away": {
               "team": {
@@ -852,7 +852,7 @@
                 "name": "Argentina",
                 "flagCode": "AR"
               },
-              "score": 0
+              "score": 1
             },
             "kickoff": "1974-07-07T16:00:00.000Z"
           }
@@ -901,7 +901,7 @@
         ],
         "matches": [
           {
-            "id": "gB1",
+            "id": "fB1",
             "played": true,
             "home": {
               "team": {
@@ -913,24 +913,24 @@
             },
             "away": {
               "team": {
-                "id": "pl",
-                "name": "Polonia",
-                "flagCode": "PL"
+                "id": "yu",
+                "name": "Yugoslavia",
+                "flagCode": "RS"
               },
               "score": 0
             },
             "kickoff": "1974-06-29T14:00:00.000Z"
           },
           {
-            "id": "gB2",
+            "id": "fB2",
             "played": true,
             "home": {
               "team": {
-                "id": "de",
-                "name": "Alemania Fed.",
-                "flagCode": "DE"
+                "id": "pl",
+                "name": "Polonia",
+                "flagCode": "PL"
               },
-              "score": 2
+              "score": 1
             },
             "away": {
               "team": {
@@ -943,7 +943,7 @@
             "kickoff": "1974-06-29T17:00:00.000Z"
           },
           {
-            "id": "gB3",
+            "id": "fB3",
             "played": true,
             "home": {
               "team": {
@@ -951,28 +951,7 @@
                 "name": "Alemania Fed.",
                 "flagCode": "DE"
               },
-              "score": 2
-            },
-            "away": {
-              "team": {
-                "id": "yu",
-                "name": "Yugoslavia",
-                "flagCode": "RS"
-              },
-              "score": 0
-            },
-            "kickoff": "1974-07-03T14:00:00.000Z"
-          },
-          {
-            "id": "gB4",
-            "played": true,
-            "home": {
-              "team": {
-                "id": "pl",
-                "name": "Polonia",
-                "flagCode": "PL"
-              },
-              "score": 2
+              "score": 4
             },
             "away": {
               "team": {
@@ -980,12 +959,12 @@
                 "name": "Suecia",
                 "flagCode": "SE"
               },
-              "score": 0
+              "score": 2
             },
-            "kickoff": "1974-07-03T17:00:00.000Z"
+            "kickoff": "1974-07-03T14:00:00.000Z"
           },
           {
-            "id": "gB5",
+            "id": "fB4",
             "played": true,
             "home": {
               "team": {
@@ -1000,13 +979,34 @@
                 "id": "yu",
                 "name": "Yugoslavia",
                 "flagCode": "RS"
+              },
+              "score": 1
+            },
+            "kickoff": "1974-07-03T17:00:00.000Z"
+          },
+          {
+            "id": "fB5",
+            "played": true,
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania Fed.",
+                "flagCode": "DE"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "pl",
+                "name": "Polonia",
+                "flagCode": "PL"
               },
               "score": 0
             },
             "kickoff": "1974-07-07T14:00:00.000Z"
           },
           {
-            "id": "gB6",
+            "id": "fB6",
             "played": true,
             "home": {
               "team": {
@@ -1022,7 +1022,7 @@
                 "name": "Yugoslavia",
                 "flagCode": "RS"
               },
-              "score": 0
+              "score": 1
             },
             "kickoff": "1974-07-07T17:00:00.000Z"
           }
