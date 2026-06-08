@@ -20,8 +20,15 @@ import { flagClass } from '../../../../core/utils/flag.util';
             <span class="text-xl" [class]="flag(f.home.team.flagCode)"></span>
             <span class="text-[10px] text-zinc-300">{{ f.home.team.name }}</span>
           </div>
-          <div class="text-lg font-bold tabular-nums text-amber-200">
-            {{ f.home.score }} - {{ f.away.score }}
+          <div class="flex flex-col items-center">
+            <div class="text-lg font-bold tabular-nums text-amber-200">
+              {{ f.home.score }} - {{ f.away.score }}
+            </div>
+            @if (f.home.penalties != null && f.away.penalties != null) {
+              <div class="text-[9px] text-zinc-500">
+                ({{ f.home.penalties }}-{{ f.away.penalties }} pen.)
+              </div>
+            }
           </div>
           <div class="flex flex-col items-center gap-0.5">
             <span class="text-xl" [class]="flag(f.away.team.flagCode)"></span>

@@ -29,6 +29,9 @@ interface SlotView {
         >
           <span class="shrink-0 text-sm" [class]="flag(s.slot.team.flagCode)"></span>
           <span class="flex-1 truncate">{{ s.slot.team.name }}</span>
+          @if (s.slot.penalties != null) {
+            <span class="text-[9px] text-zinc-500">({{ s.slot.penalties }})</span>
+          }
           <span class="tabular-nums text-zinc-100">{{ s.slot.score ?? '-' }}</span>
         </div>
       }
@@ -47,6 +50,11 @@ export class MatchCard {
     }
     if (m.home.score > m.away.score) return 'home';
     if (m.away.score > m.home.score) return 'away';
+    // Empate en tiempo reglamentario: desempata por penales si los hay.
+    if (m.home.penalties != null && m.away.penalties != null) {
+      if (m.home.penalties > m.away.penalties) return 'home';
+      if (m.away.penalties > m.home.penalties) return 'away';
+    }
     return 'none';
   });
 

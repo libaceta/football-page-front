@@ -36,6 +36,8 @@ export interface Team {
 export interface MatchSlot {
   readonly team: Team;
   readonly score?: number;
+  /** Penales convertidos, si el partido se definió desde el punto. */
+  readonly penalties?: number;
 }
 
 export interface Match {
