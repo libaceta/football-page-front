@@ -1,8 +1,9 @@
 // Verifica que los partidos de cada grupo reproduzcan los puntos de la tabla.
-// Uso: node scripts/verify-groups.mjs public/mock/tournaments/world-cup-2018.json
+// Uso: node scripts/verify-groups.mjs <archivo.json> [puntosPorVictoria=3]
 import { readFileSync } from 'node:fs';
 
 const file = process.argv[2];
+const ppw = Number(process.argv[3] ?? 3);
 const d = JSON.parse(readFileSync(file, 'utf8'));
 let bad = 0;
 let withMatches = 0;
@@ -17,8 +18,8 @@ for (const g of d.groups ?? []) {
   }
   for (const m of g.matches) {
     const h = m.home, a = m.away;
-    if (h.score > a.score) pts[h.team.id] += 3;
-    else if (a.score > h.score) pts[a.team.id] += 3;
+    if (h.score > a.score) pts[h.team.id] += ppw;
+    else if (a.score > h.score) pts[a.team.id] += ppw;
     else { pts[h.team.id] += 1; pts[a.team.id] += 1; }
   }
   for (const id in exp) {

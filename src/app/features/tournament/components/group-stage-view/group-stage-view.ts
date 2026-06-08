@@ -6,6 +6,7 @@ import {
   Team,
 } from '../../../../core/models/tournament.model';
 import { GroupPanel } from '../group-panel/group-panel';
+import { GroupResults } from '../group-results/group-results';
 import { MatchCard } from '../match-card/match-card';
 import { ChampionTrophy } from '../champion-trophy/champion-trophy';
 import { ThirdPlace } from '../third-place/third-place';
@@ -19,7 +20,7 @@ import { ThirdPlace } from '../third-place/third-place';
 @Component({
   selector: 'app-group-stage-view',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [GroupPanel, MatchCard, ChampionTrophy, ThirdPlace],
+  imports: [GroupPanel, GroupResults, MatchCard, ChampionTrophy, ThirdPlace],
   templateUrl: './group-stage-view.html',
 })
 export class GroupStageView {

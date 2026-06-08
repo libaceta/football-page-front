@@ -8,60 +8,984 @@
       "id": "A",
       "name": "GRUPO A",
       "standings": [
-        { "position": 1, "team": { "id": "ro", "name": "Rumania", "flagCode": "RO" }, "points": 6 },
-        { "position": 2, "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "points": 4 },
-        { "position": 3, "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "points": 4 },
-        { "position": 4, "team": { "id": "co", "name": "Colombia", "flagCode": "CO" }, "points": 3 }
+        {
+          "position": 1,
+          "team": {
+            "id": "ro",
+            "name": "Rumania",
+            "flagCode": "RO"
+          },
+          "points": 6
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "ch",
+            "name": "Suiza",
+            "flagCode": "CH"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "us",
+            "name": "EE.UU.",
+            "flagCode": "US"
+          },
+          "points": 4
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "co",
+            "name": "Colombia",
+            "flagCode": "CO"
+          },
+          "points": 3
+        }
+      ],
+      "matches": [
+        {
+          "id": "gA1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ro",
+              "name": "Rumania",
+              "flagCode": "RO"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gA2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ro",
+              "name": "Rumania",
+              "flagCode": "RO"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gA3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ro",
+              "name": "Rumania",
+              "flagCode": "RO"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
+            },
+            "score": 2
+          }
+        },
+        {
+          "id": "gA4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "gA5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gA6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
+            },
+            "score": 0
+          }
+        }
       ]
     },
     {
       "id": "B",
       "name": "GRUPO B",
       "standings": [
-        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 7 },
-        { "position": 2, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 5 },
-        { "position": 3, "team": { "id": "ru", "name": "Rusia", "flagCode": "RU" }, "points": 3 },
-        { "position": 4, "team": { "id": "cm", "name": "Camerún", "flagCode": "CM" }, "points": 1 }
+        {
+          "position": 1,
+          "team": {
+            "id": "br",
+            "name": "Brasil",
+            "flagCode": "BR"
+          },
+          "points": 7
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "se",
+            "name": "Suecia",
+            "flagCode": "SE"
+          },
+          "points": 5
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "ru",
+            "name": "Rusia",
+            "flagCode": "RU"
+          },
+          "points": 3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "cm",
+            "name": "Camerún",
+            "flagCode": "CM"
+          },
+          "points": 1
+        }
+      ],
+      "matches": [
+        {
+          "id": "gB1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "gB2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ru",
+              "name": "Rusia",
+              "flagCode": "RU"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gB3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gB4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ru",
+              "name": "Rusia",
+              "flagCode": "RU"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gB5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "gB6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ru",
+              "name": "Rusia",
+              "flagCode": "RU"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 0
+          }
+        }
       ]
     },
     {
       "id": "C",
       "name": "GRUPO C",
       "standings": [
-        { "position": 1, "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "points": 7 },
-        { "position": 2, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 5 },
-        { "position": 3, "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "points": 2 },
-        { "position": 4, "team": { "id": "bo", "name": "Bolivia", "flagCode": "BO" }, "points": 1 }
+        {
+          "position": 1,
+          "team": {
+            "id": "de",
+            "name": "Alemania",
+            "flagCode": "DE"
+          },
+          "points": 7
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "es",
+            "name": "España",
+            "flagCode": "ES"
+          },
+          "points": 5
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "kr",
+            "name": "Corea del Sur",
+            "flagCode": "KR"
+          },
+          "points": 2
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "bo",
+            "name": "Bolivia",
+            "flagCode": "BO"
+          },
+          "points": 1
+        }
+      ],
+      "matches": [
+        {
+          "id": "gC1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania",
+              "flagCode": "DE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "gC2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania",
+              "flagCode": "DE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gC3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania",
+              "flagCode": "DE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "bo",
+              "name": "Bolivia",
+              "flagCode": "BO"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gC4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "gC5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "bo",
+              "name": "Bolivia",
+              "flagCode": "BO"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gC6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "bo",
+              "name": "Bolivia",
+              "flagCode": "BO"
+            },
+            "score": 1
+          }
+        }
       ]
     },
     {
       "id": "D",
       "name": "GRUPO D",
       "standings": [
-        { "position": 1, "team": { "id": "ng", "name": "Nigeria", "flagCode": "NG" }, "points": 6 },
-        { "position": 2, "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "points": 6 },
-        { "position": 3, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 6 },
-        { "position": 4, "team": { "id": "gr", "name": "Grecia", "flagCode": "GR" }, "points": 0 }
+        {
+          "position": 1,
+          "team": {
+            "id": "ng",
+            "name": "Nigeria",
+            "flagCode": "NG"
+          },
+          "points": 6
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "bg",
+            "name": "Bulgaria",
+            "flagCode": "BG"
+          },
+          "points": 6
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "ar",
+            "name": "Argentina",
+            "flagCode": "AR"
+          },
+          "points": 6
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "gr",
+            "name": "Grecia",
+            "flagCode": "GR"
+          },
+          "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "gD1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ng",
+              "name": "Nigeria",
+              "flagCode": "NG"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "bg",
+              "name": "Bulgaria",
+              "flagCode": "BG"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gD2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ng",
+              "name": "Nigeria",
+              "flagCode": "NG"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 2
+          }
+        },
+        {
+          "id": "gD3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ng",
+              "name": "Nigeria",
+              "flagCode": "NG"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "gr",
+              "name": "Grecia",
+              "flagCode": "GR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gD4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "bg",
+              "name": "Bulgaria",
+              "flagCode": "BG"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gD5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "bg",
+              "name": "Bulgaria",
+              "flagCode": "BG"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "gr",
+              "name": "Grecia",
+              "flagCode": "GR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gD6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "gr",
+              "name": "Grecia",
+              "flagCode": "GR"
+            },
+            "score": 0
+          }
+        }
       ]
     },
     {
       "id": "E",
       "name": "GRUPO E",
       "standings": [
-        { "position": 1, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 4 },
-        { "position": 2, "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "points": 4 },
-        { "position": 3, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 4 },
-        { "position": 4, "team": { "id": "no", "name": "Noruega", "flagCode": "NO" }, "points": 4 }
+        {
+          "position": 1,
+          "team": {
+            "id": "mx",
+            "name": "México",
+            "flagCode": "MX"
+          },
+          "points": 4
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "ie",
+            "name": "Irlanda",
+            "flagCode": "IE"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "it",
+            "name": "Italia",
+            "flagCode": "IT"
+          },
+          "points": 4
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "no",
+            "name": "Noruega",
+            "flagCode": "NO"
+          },
+          "points": 4
+        }
+      ],
+      "matches": [
+        {
+          "id": "gE1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ie",
+              "name": "Irlanda",
+              "flagCode": "IE"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gE2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 2
+          }
+        },
+        {
+          "id": "gE3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "no",
+              "name": "Noruega",
+              "flagCode": "NO"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "gE4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ie",
+              "name": "Irlanda",
+              "flagCode": "IE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "gE5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ie",
+              "name": "Irlanda",
+              "flagCode": "IE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "no",
+              "name": "Noruega",
+              "flagCode": "NO"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gE6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "no",
+              "name": "Noruega",
+              "flagCode": "NO"
+            },
+            "score": 2
+          }
+        }
       ]
     },
     {
       "id": "F",
       "name": "GRUPO F",
       "standings": [
-        { "position": 1, "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "points": 6 },
-        { "position": 2, "team": { "id": "sa", "name": "Arabia Saudita", "flagCode": "SA" }, "points": 6 },
-        { "position": 3, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 6 },
-        { "position": 4, "team": { "id": "ma", "name": "Marruecos", "flagCode": "MA" }, "points": 0 }
+        {
+          "position": 1,
+          "team": {
+            "id": "nl",
+            "name": "Países Bajos",
+            "flagCode": "NL"
+          },
+          "points": 6
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "sa",
+            "name": "Arabia Saudita",
+            "flagCode": "SA"
+          },
+          "points": 6
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "be",
+            "name": "Bélgica",
+            "flagCode": "BE"
+          },
+          "points": 6
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "ma",
+            "name": "Marruecos",
+            "flagCode": "MA"
+          },
+          "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "gF1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "sa",
+              "name": "Arabia Saudita",
+              "flagCode": "SA"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gF2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 2
+          }
+        },
+        {
+          "id": "gF3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ma",
+              "name": "Marruecos",
+              "flagCode": "MA"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gF4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "sa",
+              "name": "Arabia Saudita",
+              "flagCode": "SA"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gF5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "sa",
+              "name": "Arabia Saudita",
+              "flagCode": "SA"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ma",
+              "name": "Marruecos",
+              "flagCode": "MA"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "gF6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ma",
+              "name": "Marruecos",
+              "flagCode": "MA"
+            },
+            "score": 0
+          }
+        }
       ]
     }
   ],
@@ -75,26 +999,82 @@
           {
             "id": "r16-l1",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 1 },
-            "away": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "us",
+                "name": "EE.UU.",
+                "flagCode": "US"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-l2",
             "played": true,
-            "home": { "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "score": 2 },
-            "away": { "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "nl",
+                "name": "Países Bajos",
+                "flagCode": "NL"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "ie",
+                "name": "Irlanda",
+                "flagCode": "IE"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-l3",
             "played": true,
-            "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 3 },
-            "away": { "team": { "id": "sa", "name": "Arabia Saudita", "flagCode": "SA" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "sa",
+                "name": "Arabia Saudita",
+                "flagCode": "SA"
+              },
+              "score": 1
+            }
           },
           {
             "id": "r16-l4",
             "played": true,
-            "home": { "team": { "id": "ro", "name": "Rumania", "flagCode": "RO" }, "score": 3 },
-            "away": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "ro",
+                "name": "Rumania",
+                "flagCode": "RO"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
+              },
+              "score": 2
+            }
           }
         ]
       },
@@ -106,26 +1086,84 @@
           {
             "id": "r16-r1",
             "played": true,
-            "home": { "team": { "id": "ng", "name": "Nigeria", "flagCode": "NG" }, "score": 1 },
-            "away": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "ng",
+                "name": "Nigeria",
+                "flagCode": "NG"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 2
+            }
           },
           {
             "id": "r16-r2",
             "played": true,
-            "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 3 },
-            "away": { "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "es",
+                "name": "España",
+                "flagCode": "ES"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "ch",
+                "name": "Suiza",
+                "flagCode": "CH"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-r3",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 3 },
-            "away": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "be",
+                "name": "Bélgica",
+                "flagCode": "BE"
+              },
+              "score": 2
+            }
           },
           {
             "id": "r16-r4",
             "played": true,
-            "home": { "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "score": 1, "penalties": 1 },
-            "away": { "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "score": 1, "penalties": 3 }
+            "home": {
+              "team": {
+                "id": "mx",
+                "name": "México",
+                "flagCode": "MX"
+              },
+              "score": 1,
+              "penalties": 1
+            },
+            "away": {
+              "team": {
+                "id": "bg",
+                "name": "Bulgaria",
+                "flagCode": "BG"
+              },
+              "score": 1,
+              "penalties": 3
+            }
           }
         ]
       },
@@ -137,14 +1175,44 @@
           {
             "id": "qf-l1",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 3 },
-            "away": { "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "nl",
+                "name": "Países Bajos",
+                "flagCode": "NL"
+              },
+              "score": 2
+            }
           },
           {
             "id": "qf-l2",
             "played": true,
-            "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 2, "penalties": 5 },
-            "away": { "team": { "id": "ro", "name": "Rumania", "flagCode": "RO" }, "score": 2, "penalties": 4 }
+            "home": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 2,
+              "penalties": 5
+            },
+            "away": {
+              "team": {
+                "id": "ro",
+                "name": "Rumania",
+                "flagCode": "RO"
+              },
+              "score": 2,
+              "penalties": 4
+            }
           }
         ]
       },
@@ -156,14 +1224,42 @@
           {
             "id": "qf-r1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 },
-            "away": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "es",
+                "name": "España",
+                "flagCode": "ES"
+              },
+              "score": 1
+            }
           },
           {
             "id": "qf-r2",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 },
-            "away": { "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "bg",
+                "name": "Bulgaria",
+                "flagCode": "BG"
+              },
+              "score": 2
+            }
           }
         ]
       },
@@ -175,8 +1271,22 @@
           {
             "id": "sf-l1",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 1 },
-            "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 0
+            }
           }
         ]
       },
@@ -188,8 +1298,22 @@
           {
             "id": "sf-r1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 },
-            "away": { "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "bg",
+                "name": "Bulgaria",
+                "flagCode": "BG"
+              },
+              "score": 1
+            }
           }
         ]
       },
@@ -200,8 +1324,24 @@
           {
             "id": "final-1",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 0, "penalties": 3 },
-            "away": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 0, "penalties": 2 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 0,
+              "penalties": 3
+            },
+            "away": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 0,
+              "penalties": 2
+            }
           }
         ]
       }
@@ -210,7 +1350,21 @@
   "thirdPlace": {
     "id": "third-place",
     "played": true,
-    "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 4 },
-    "away": { "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "score": 0 }
+    "home": {
+      "team": {
+        "id": "se",
+        "name": "Suecia",
+        "flagCode": "SE"
+      },
+      "score": 4
+    },
+    "away": {
+      "team": {
+        "id": "bg",
+        "name": "Bulgaria",
+        "flagCode": "BG"
+      },
+      "score": 0
+    }
   }
 }

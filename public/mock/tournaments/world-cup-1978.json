@@ -8,40 +8,656 @@
       "id": "1",
       "name": "GRUPO 1",
       "standings": [
-        { "position": 1, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 6 },
-        { "position": 2, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 4 },
-        { "position": 3, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 2 },
-        { "position": 4, "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "points": 0 }
+        {
+          "position": 1,
+          "team": {
+            "id": "it",
+            "name": "Italia",
+            "flagCode": "IT"
+          },
+          "points": 6
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "ar",
+            "name": "Argentina",
+            "flagCode": "AR"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "fr",
+            "name": "Francia",
+            "flagCode": "FR"
+          },
+          "points": 2
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "hu",
+            "name": "Hungría",
+            "flagCode": "HU"
+          },
+          "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "g11",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g12",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g13",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g14",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g15",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g16",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
+            },
+            "score": 0
+          }
+        }
       ]
     },
     {
       "id": "2",
       "name": "GRUPO 2",
       "standings": [
-        { "position": 1, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 5 },
-        { "position": 2, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 4 },
-        { "position": 3, "team": { "id": "tn", "name": "Túnez", "flagCode": "TN" }, "points": 3 },
-        { "position": 4, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 0 }
+        {
+          "position": 1,
+          "team": {
+            "id": "pl",
+            "name": "Polonia",
+            "flagCode": "PL"
+          },
+          "points": 5
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "de",
+            "name": "Alemania Fed.",
+            "flagCode": "DE"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "tn",
+            "name": "Túnez",
+            "flagCode": "TN"
+          },
+          "points": 3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "mx",
+            "name": "México",
+            "flagCode": "MX"
+          },
+          "points": 0
+        }
+      ],
+      "matches": [
+        {
+          "id": "g21",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pl",
+              "name": "Polonia",
+              "flagCode": "PL"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g22",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pl",
+              "name": "Polonia",
+              "flagCode": "PL"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "tn",
+              "name": "Túnez",
+              "flagCode": "TN"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "g23",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pl",
+              "name": "Polonia",
+              "flagCode": "PL"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g24",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "tn",
+              "name": "Túnez",
+              "flagCode": "TN"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g25",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g26",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "tn",
+              "name": "Túnez",
+              "flagCode": "TN"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 0
+          }
+        }
       ]
     },
     {
       "id": "3",
       "name": "GRUPO 3",
       "standings": [
-        { "position": 1, "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "points": 4 },
-        { "position": 2, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 4 },
-        { "position": 3, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 3 },
-        { "position": 4, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 1 }
+        {
+          "position": 1,
+          "team": {
+            "id": "at",
+            "name": "Austria",
+            "flagCode": "AT"
+          },
+          "points": 4
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "br",
+            "name": "Brasil",
+            "flagCode": "BR"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "es",
+            "name": "España",
+            "flagCode": "ES"
+          },
+          "points": 3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "se",
+            "name": "Suecia",
+            "flagCode": "SE"
+          },
+          "points": 1
+        }
+      ],
+      "matches": [
+        {
+          "id": "g31",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "at",
+              "name": "Austria",
+              "flagCode": "AT"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g32",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "at",
+              "name": "Austria",
+              "flagCode": "AT"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 2
+          }
+        },
+        {
+          "id": "g33",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "at",
+              "name": "Austria",
+              "flagCode": "AT"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g34",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g35",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g36",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 1
+          }
+        }
       ]
     },
     {
       "id": "4",
       "name": "GRUPO 4",
       "standings": [
-        { "position": 1, "team": { "id": "pe", "name": "Perú", "flagCode": "PE" }, "points": 5 },
-        { "position": 2, "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "points": 3 },
-        { "position": 3, "team": { "id": "sct", "name": "Escocia", "flagCode": "GB" }, "points": 3 },
-        { "position": 4, "team": { "id": "ir", "name": "Irán", "flagCode": "IR" }, "points": 1 }
+        {
+          "position": 1,
+          "team": {
+            "id": "pe",
+            "name": "Perú",
+            "flagCode": "PE"
+          },
+          "points": 5
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "nl",
+            "name": "Países Bajos",
+            "flagCode": "NL"
+          },
+          "points": 3
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "sct",
+            "name": "Escocia",
+            "flagCode": "GB"
+          },
+          "points": 3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "ir",
+            "name": "Irán",
+            "flagCode": "IR"
+          },
+          "points": 1
+        }
+      ],
+      "matches": [
+        {
+          "id": "g41",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pe",
+              "name": "Perú",
+              "flagCode": "PE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g42",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pe",
+              "name": "Perú",
+              "flagCode": "PE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g43",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pe",
+              "name": "Perú",
+              "flagCode": "PE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "ir",
+              "name": "Irán",
+              "flagCode": "IR"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "g44",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
+            },
+            "score": 1
+          }
+        },
+        {
+          "id": "g45",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ir",
+              "name": "Irán",
+              "flagCode": "IR"
+            },
+            "score": 0
+          }
+        },
+        {
+          "id": "g46",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ir",
+              "name": "Irán",
+              "flagCode": "IR"
+            },
+            "score": 0
+          }
+        }
       ]
     }
   ],
@@ -52,20 +668,84 @@
         "id": "A",
         "name": "GRUPO A",
         "standings": [
-          { "position": 1, "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "points": 5 },
-          { "position": 2, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 3 },
-          { "position": 3, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 3 },
-          { "position": 4, "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "points": 1 }
+          {
+            "position": 1,
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "points": 5
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "points": 3
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
+            },
+            "points": 3
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "at",
+              "name": "Austria",
+              "flagCode": "AT"
+            },
+            "points": 1
+          }
         ]
       },
       {
         "id": "B",
         "name": "GRUPO B",
         "standings": [
-          { "position": 1, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 5 },
-          { "position": 2, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 5 },
-          { "position": 3, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 2 },
-          { "position": 4, "team": { "id": "pe", "name": "Perú", "flagCode": "PE" }, "points": 0 }
+          {
+            "position": 1,
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "points": 5
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "points": 5
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "pl",
+              "name": "Polonia",
+              "flagCode": "PL"
+            },
+            "points": 2
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "pe",
+              "name": "Perú",
+              "flagCode": "PE"
+            },
+            "points": 0
+          }
         ]
       }
     ]
@@ -79,8 +759,22 @@
           {
             "id": "final-1",
             "played": true,
-            "home": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 3 },
-            "away": { "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "nl",
+                "name": "Países Bajos",
+                "flagCode": "NL"
+              },
+              "score": 1
+            }
           }
         ]
       }
@@ -89,7 +783,21 @@
   "thirdPlace": {
     "id": "third-place",
     "played": true,
-    "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 },
-    "away": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 }
+    "home": {
+      "team": {
+        "id": "br",
+        "name": "Brasil",
+        "flagCode": "BR"
+      },
+      "score": 2
+    },
+    "away": {
+      "team": {
+        "id": "it",
+        "name": "Italia",
+        "flagCode": "IT"
+      },
+      "score": 1
+    }
   }
 }
