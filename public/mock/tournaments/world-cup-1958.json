@@ -55,28 +55,28 @@
               "name": "Alemania Fed.",
               "flagCode": "DE"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
-              "id": "ni",
-              "name": "Irlanda del Norte",
-              "flagCode": "GB"
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1958-06-08T13:00:00.000Z"
+          "kickoff": "1958-06-08T16:00:00Z"
         },
         {
           "id": "g12",
           "played": true,
           "home": {
             "team": {
-              "id": "de",
-              "name": "Alemania Fed.",
-              "flagCode": "DE"
+              "id": "ni",
+              "name": "Irlanda del Norte",
+              "flagCode": "GB"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -86,7 +86,7 @@
             },
             "score": 0
           },
-          "kickoff": "1958-06-08T16:00:00.000Z"
+          "kickoff": "1958-06-08T19:00:00Z"
         },
         {
           "id": "g13",
@@ -97,28 +97,7 @@
               "name": "Alemania Fed.",
               "flagCode": "DE"
             },
-            "score": 0
-          },
-          "away": {
-            "team": {
-              "id": "ar",
-              "name": "Argentina",
-              "flagCode": "AR"
-            },
             "score": 2
-          },
-          "kickoff": "1958-06-12T13:00:00.000Z"
-        },
-        {
-          "id": "g14",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "ni",
-              "name": "Irlanda del Norte",
-              "flagCode": "GB"
-            },
-            "score": 1
           },
           "away": {
             "team": {
@@ -126,14 +105,43 @@
               "name": "Checoslovaquia",
               "flagCode": "CZ"
             },
+            "score": 2
+          },
+          "kickoff": "1958-06-11T16:00:00Z"
+        },
+        {
+          "id": "g14",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "ni",
+              "name": "Irlanda del Norte",
+              "flagCode": "GB"
+            },
             "score": 1
           },
-          "kickoff": "1958-06-12T16:00:00.000Z"
+          "kickoff": "1958-06-11T19:00:00Z"
         },
         {
           "id": "g15",
           "played": true,
           "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
+            },
+            "score": 2
+          },
+          "away": {
             "team": {
               "id": "ni",
               "name": "Irlanda del Norte",
@@ -141,15 +149,7 @@
             },
             "score": 2
           },
-          "away": {
-            "team": {
-              "id": "ar",
-              "name": "Argentina",
-              "flagCode": "AR"
-            },
-            "score": 0
-          },
-          "kickoff": "1958-06-16T13:00:00.000Z"
+          "kickoff": "1958-06-15T16:00:00Z"
         },
         {
           "id": "g16",
@@ -160,7 +160,7 @@
               "name": "Checoslovaquia",
               "flagCode": "CZ"
             },
-            "score": 2
+            "score": 6
           },
           "away": {
             "team": {
@@ -168,9 +168,9 @@
               "name": "Argentina",
               "flagCode": "AR"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1958-06-16T16:00:00.000Z"
+          "kickoff": "1958-06-15T19:00:00Z"
         }
       ]
     },
@@ -225,44 +225,86 @@
               "name": "Francia",
               "flagCode": "FR"
             },
-            "score": 2
+            "score": 7
           },
           "away": {
             "team": {
-              "id": "yu",
-              "name": "Yugoslavia",
-              "flagCode": "RS"
+              "id": "py",
+              "name": "Paraguay",
+              "flagCode": "PY"
             },
-            "score": 0
+            "score": 3
           },
-          "kickoff": "1958-06-08T14:00:00.000Z"
+          "kickoff": "1958-06-08T16:00:00Z"
         },
         {
           "id": "g22",
           "played": true,
           "home": {
             "team": {
-              "id": "fr",
-              "name": "Francia",
-              "flagCode": "FR"
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
             },
-            "score": 0
+            "score": 1
           },
           "away": {
             "team": {
-              "id": "py",
-              "name": "Paraguay",
-              "flagCode": "PY"
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
             },
-            "score": 2
+            "score": 1
           },
-          "kickoff": "1958-06-08T17:00:00.000Z"
+          "kickoff": "1958-06-08T19:00:00Z"
         },
         {
           "id": "g23",
           "played": true,
           "home": {
             "team": {
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 2
+          },
+          "kickoff": "1958-06-11T16:00:00Z"
+        },
+        {
+          "id": "g24",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "py",
+              "name": "Paraguay",
+              "flagCode": "PY"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
+            },
+            "score": 2
+          },
+          "kickoff": "1958-06-11T19:00:00Z"
+        },
+        {
+          "id": "g25",
+          "played": true,
+          "home": {
+            "team": {
               "id": "fr",
               "name": "Francia",
               "flagCode": "FR"
@@ -275,72 +317,30 @@
               "name": "Escocia",
               "flagCode": "GB"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1958-06-12T14:00:00.000Z"
-        },
-        {
-          "id": "g24",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "yu",
-              "name": "Yugoslavia",
-              "flagCode": "RS"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "py",
-              "name": "Paraguay",
-              "flagCode": "PY"
-            },
-            "score": 0
-          },
-          "kickoff": "1958-06-12T17:00:00.000Z"
-        },
-        {
-          "id": "g25",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "yu",
-              "name": "Yugoslavia",
-              "flagCode": "RS"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "sct",
-              "name": "Escocia",
-              "flagCode": "GB"
-            },
-            "score": 0
-          },
-          "kickoff": "1958-06-16T14:00:00.000Z"
+          "kickoff": "1958-06-15T16:00:00Z"
         },
         {
           "id": "g26",
           "played": true,
           "home": {
             "team": {
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
               "id": "py",
               "name": "Paraguay",
               "flagCode": "PY"
             },
-            "score": 1
+            "score": 3
           },
-          "away": {
-            "team": {
-              "id": "sct",
-              "name": "Escocia",
-              "flagCode": "GB"
-            },
-            "score": 1
-          },
-          "kickoff": "1958-06-16T17:00:00.000Z"
+          "kickoff": "1958-06-15T19:00:00Z"
         }
       ]
     },
@@ -395,47 +395,47 @@
               "name": "Suecia",
               "flagCode": "SE"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
-              "id": "wal",
-              "name": "Gales",
-              "flagCode": "GB"
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
             },
             "score": 0
           },
-          "kickoff": "1958-06-08T15:00:00.000Z"
+          "kickoff": "1958-06-08T16:00:00Z"
         },
         {
           "id": "g32",
           "played": true,
           "home": {
             "team": {
-              "id": "se",
-              "name": "Suecia",
-              "flagCode": "SE"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
               "id": "hu",
               "name": "Hungría",
               "flagCode": "HU"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1958-06-08T18:00:00.000Z"
+          "away": {
+            "team": {
+              "id": "wal",
+              "name": "Gales",
+              "flagCode": "GB"
+            },
+            "score": 1
+          },
+          "kickoff": "1958-06-08T19:00:00Z"
         },
         {
           "id": "g33",
           "played": true,
           "home": {
             "team": {
-              "id": "se",
-              "name": "Suecia",
-              "flagCode": "SE"
+              "id": "wal",
+              "name": "Gales",
+              "flagCode": "GB"
             },
             "score": 1
           },
@@ -447,18 +447,18 @@
             },
             "score": 1
           },
-          "kickoff": "1958-06-12T15:00:00.000Z"
+          "kickoff": "1958-06-11T16:00:00Z"
         },
         {
           "id": "g34",
           "played": true,
           "home": {
             "team": {
-              "id": "wal",
-              "name": "Gales",
-              "flagCode": "GB"
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
             },
-            "score": 1
+            "score": 2
           },
           "away": {
             "team": {
@@ -468,28 +468,28 @@
             },
             "score": 1
           },
-          "kickoff": "1958-06-12T18:00:00.000Z"
+          "kickoff": "1958-06-11T19:00:00Z"
         },
         {
           "id": "g35",
           "played": true,
           "home": {
             "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
               "id": "wal",
               "name": "Gales",
               "flagCode": "GB"
             },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "mx",
-              "name": "México",
-              "flagCode": "MX"
-            },
             "score": 0
           },
-          "kickoff": "1958-06-16T15:00:00.000Z"
+          "kickoff": "1958-06-15T16:00:00Z"
         },
         {
           "id": "g36",
@@ -500,7 +500,7 @@
               "name": "Hungría",
               "flagCode": "HU"
             },
-            "score": 2
+            "score": 4
           },
           "away": {
             "team": {
@@ -510,7 +510,7 @@
             },
             "score": 0
           },
-          "kickoff": "1958-06-16T18:00:00.000Z"
+          "kickoff": "1958-06-15T19:00:00Z"
         }
       ]
     },
@@ -561,9 +561,9 @@
           "played": true,
           "home": {
             "team": {
-              "id": "br",
-              "name": "Brasil",
-              "flagCode": "BR"
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
             },
             "score": 2
           },
@@ -573,9 +573,9 @@
               "name": "URSS",
               "flagCode": "RU"
             },
-            "score": 0
+            "score": 2
           },
-          "kickoff": "1958-06-08T13:00:00.000Z"
+          "kickoff": "1958-06-08T16:00:00Z"
         },
         {
           "id": "g42",
@@ -586,17 +586,17 @@
               "name": "Brasil",
               "flagCode": "BR"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
-              "id": "eng",
-              "name": "Inglaterra",
-              "flagCode": "GB"
+              "id": "at",
+              "name": "Austria",
+              "flagCode": "AT"
             },
             "score": 0
           },
-          "kickoff": "1958-06-08T16:00:00.000Z"
+          "kickoff": "1958-06-08T19:00:00Z"
         },
         {
           "id": "g43",
@@ -607,28 +607,7 @@
               "name": "Brasil",
               "flagCode": "BR"
             },
-            "score": 1
-          },
-          "away": {
-            "team": {
-              "id": "at",
-              "name": "Austria",
-              "flagCode": "AT"
-            },
-            "score": 1
-          },
-          "kickoff": "1958-06-12T13:00:00.000Z"
-        },
-        {
-          "id": "g44",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "su",
-              "name": "URSS",
-              "flagCode": "RU"
-            },
-            "score": 1
+            "score": 0
           },
           "away": {
             "team": {
@@ -636,12 +615,12 @@
               "name": "Inglaterra",
               "flagCode": "GB"
             },
-            "score": 1
+            "score": 0
           },
-          "kickoff": "1958-06-12T16:00:00.000Z"
+          "kickoff": "1958-06-11T16:00:00Z"
         },
         {
-          "id": "g45",
+          "id": "g44",
           "played": true,
           "home": {
             "team": {
@@ -659,7 +638,28 @@
             },
             "score": 0
           },
-          "kickoff": "1958-06-16T13:00:00.000Z"
+          "kickoff": "1958-06-11T19:00:00Z"
+        },
+        {
+          "id": "g45",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "su",
+              "name": "URSS",
+              "flagCode": "RU"
+            },
+            "score": 0
+          },
+          "kickoff": "1958-06-15T16:00:00Z"
         },
         {
           "id": "g46",
@@ -678,9 +678,9 @@
               "name": "Austria",
               "flagCode": "AT"
             },
-            "score": 0
+            "score": 2
           },
-          "kickoff": "1958-06-16T16:00:00.000Z"
+          "kickoff": "1958-06-15T19:00:00Z"
         }
       ]
     }

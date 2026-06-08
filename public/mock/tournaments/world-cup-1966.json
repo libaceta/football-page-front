@@ -55,7 +55,7 @@
               "name": "Inglaterra",
               "flagCode": "GB"
             },
-            "score": 2
+            "score": 0
           },
           "away": {
             "team": {
@@ -65,18 +65,18 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-11T13:00:00.000Z"
+          "kickoff": "1966-07-11T16:00:00Z"
         },
         {
           "id": "g12",
           "played": true,
           "home": {
             "team": {
-              "id": "eng",
-              "name": "Inglaterra",
-              "flagCode": "GB"
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -84,20 +84,20 @@
               "name": "México",
               "flagCode": "MX"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1966-07-11T16:00:00.000Z"
+          "kickoff": "1966-07-13T16:00:00Z"
         },
         {
           "id": "g13",
           "played": true,
           "home": {
             "team": {
-              "id": "eng",
-              "name": "Inglaterra",
-              "flagCode": "GB"
+              "id": "uy",
+              "name": "Uruguay",
+              "flagCode": "UY"
             },
-            "score": 1
+            "score": 2
           },
           "away": {
             "team": {
@@ -107,16 +107,16 @@
             },
             "score": 1
           },
-          "kickoff": "1966-07-15T13:00:00.000Z"
+          "kickoff": "1966-07-15T16:00:00Z"
         },
         {
           "id": "g14",
           "played": true,
           "home": {
             "team": {
-              "id": "uy",
-              "name": "Uruguay",
-              "flagCode": "UY"
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
             },
             "score": 2
           },
@@ -128,7 +128,7 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-15T16:00:00.000Z"
+          "kickoff": "1966-07-16T16:00:00Z"
         },
         {
           "id": "g15",
@@ -139,26 +139,26 @@
               "name": "Uruguay",
               "flagCode": "UY"
             },
-            "score": 2
+            "score": 0
           },
           "away": {
             "team": {
-              "id": "fr",
-              "name": "Francia",
-              "flagCode": "FR"
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
             },
             "score": 0
           },
-          "kickoff": "1966-07-19T13:00:00.000Z"
+          "kickoff": "1966-07-19T16:00:00Z"
         },
         {
           "id": "g16",
           "played": true,
           "home": {
             "team": {
-              "id": "mx",
-              "name": "México",
-              "flagCode": "MX"
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
             },
             "score": 2
           },
@@ -170,7 +170,7 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-19T16:00:00.000Z"
+          "kickoff": "1966-07-20T16:00:00Z"
         }
       ]
     },
@@ -225,49 +225,7 @@
               "name": "Alemania Fed.",
               "flagCode": "DE"
             },
-            "score": 1
-          },
-          "away": {
-            "team": {
-              "id": "ar",
-              "name": "Argentina",
-              "flagCode": "AR"
-            },
-            "score": 1
-          },
-          "kickoff": "1966-07-11T14:00:00.000Z"
-        },
-        {
-          "id": "g22",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "de",
-              "name": "Alemania Fed.",
-              "flagCode": "DE"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "es",
-              "name": "España",
-              "flagCode": "ES"
-            },
-            "score": 0
-          },
-          "kickoff": "1966-07-11T17:00:00.000Z"
-        },
-        {
-          "id": "g23",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "de",
-              "name": "Alemania Fed.",
-              "flagCode": "DE"
-            },
-            "score": 2
+            "score": 5
           },
           "away": {
             "team": {
@@ -277,7 +235,49 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-15T14:00:00.000Z"
+          "kickoff": "1966-07-12T16:00:00Z"
+        },
+        {
+          "id": "g22",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 1
+          },
+          "kickoff": "1966-07-13T16:00:00Z"
+        },
+        {
+          "id": "g23",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
+            },
+            "score": 1
+          },
+          "kickoff": "1966-07-15T16:00:00Z"
         },
         {
           "id": "g24",
@@ -288,17 +288,17 @@
               "name": "Argentina",
               "flagCode": "AR"
             },
-            "score": 2
+            "score": 0
           },
           "away": {
             "team": {
-              "id": "es",
-              "name": "España",
-              "flagCode": "ES"
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
             },
             "score": 0
           },
-          "kickoff": "1966-07-15T17:00:00.000Z"
+          "kickoff": "1966-07-16T16:00:00Z"
         },
         {
           "id": "g25",
@@ -319,28 +319,28 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-19T14:00:00.000Z"
+          "kickoff": "1966-07-19T16:00:00Z"
         },
         {
           "id": "g26",
           "played": true,
           "home": {
             "team": {
-              "id": "es",
-              "name": "España",
-              "flagCode": "ES"
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
             },
             "score": 2
           },
           "away": {
             "team": {
-              "id": "ch",
-              "name": "Suiza",
-              "flagCode": "CH"
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1966-07-19T17:00:00.000Z"
+          "kickoff": "1966-07-20T16:00:00Z"
         }
       ]
     },
@@ -391,21 +391,21 @@
           "played": true,
           "home": {
             "team": {
-              "id": "pt",
-              "name": "Portugal",
-              "flagCode": "PT"
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
             },
             "score": 2
           },
           "away": {
             "team": {
-              "id": "hu",
-              "name": "Hungría",
-              "flagCode": "HU"
+              "id": "bg",
+              "name": "Bulgaria",
+              "flagCode": "BG"
             },
             "score": 0
           },
-          "kickoff": "1966-07-11T15:00:00.000Z"
+          "kickoff": "1966-07-12T16:00:00Z"
         },
         {
           "id": "g32",
@@ -416,7 +416,28 @@
               "name": "Portugal",
               "flagCode": "PT"
             },
-            "score": 2
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
+            },
+            "score": 1
+          },
+          "kickoff": "1966-07-13T16:00:00Z"
+        },
+        {
+          "id": "g33",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
+            },
+            "score": 3
           },
           "away": {
             "team": {
@@ -424,12 +445,12 @@
               "name": "Brasil",
               "flagCode": "BR"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1966-07-11T18:00:00.000Z"
+          "kickoff": "1966-07-15T16:00:00Z"
         },
         {
-          "id": "g33",
+          "id": "g34",
           "played": true,
           "home": {
             "team": {
@@ -437,7 +458,7 @@
               "name": "Portugal",
               "flagCode": "PT"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
@@ -447,60 +468,39 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-15T15:00:00.000Z"
-        },
-        {
-          "id": "g34",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "hu",
-              "name": "Hungría",
-              "flagCode": "HU"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "br",
-              "name": "Brasil",
-              "flagCode": "BR"
-            },
-            "score": 0
-          },
-          "kickoff": "1966-07-15T18:00:00.000Z"
+          "kickoff": "1966-07-16T16:00:00Z"
         },
         {
           "id": "g35",
           "played": true,
           "home": {
             "team": {
-              "id": "hu",
-              "name": "Hungría",
-              "flagCode": "HU"
+              "id": "pt",
+              "name": "Portugal",
+              "flagCode": "PT"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
-              "id": "bg",
-              "name": "Bulgaria",
-              "flagCode": "BG"
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1966-07-19T15:00:00.000Z"
+          "kickoff": "1966-07-19T16:00:00Z"
         },
         {
           "id": "g36",
           "played": true,
           "home": {
             "team": {
-              "id": "br",
-              "name": "Brasil",
-              "flagCode": "BR"
+              "id": "hu",
+              "name": "Hungría",
+              "flagCode": "HU"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
@@ -508,9 +508,9 @@
               "name": "Bulgaria",
               "flagCode": "BG"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1966-07-19T18:00:00.000Z"
+          "kickoff": "1966-07-20T16:00:00Z"
         }
       ]
     },
@@ -565,7 +565,7 @@
               "name": "URSS",
               "flagCode": "RU"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
@@ -575,37 +575,16 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-11T13:00:00.000Z"
+          "kickoff": "1966-07-12T16:00:00Z"
         },
         {
           "id": "g42",
           "played": true,
           "home": {
             "team": {
-              "id": "su",
-              "name": "URSS",
-              "flagCode": "RU"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
               "id": "it",
               "name": "Italia",
               "flagCode": "IT"
-            },
-            "score": 0
-          },
-          "kickoff": "1966-07-11T16:00:00.000Z"
-        },
-        {
-          "id": "g43",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "su",
-              "name": "URSS",
-              "flagCode": "RU"
             },
             "score": 2
           },
@@ -617,18 +596,39 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-15T13:00:00.000Z"
+          "kickoff": "1966-07-13T16:00:00Z"
+        },
+        {
+          "id": "g43",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "cl",
+              "name": "Chile",
+              "flagCode": "CL"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "kp",
+              "name": "Corea del Norte",
+              "flagCode": "KP"
+            },
+            "score": 1
+          },
+          "kickoff": "1966-07-15T16:00:00Z"
         },
         {
           "id": "g44",
           "played": true,
           "home": {
             "team": {
-              "id": "kp",
-              "name": "Corea del Norte",
-              "flagCode": "KP"
+              "id": "su",
+              "name": "URSS",
+              "flagCode": "RU"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -638,7 +638,7 @@
             },
             "score": 0
           },
-          "kickoff": "1966-07-15T16:00:00.000Z"
+          "kickoff": "1966-07-16T16:00:00Z"
         },
         {
           "id": "g45",
@@ -653,22 +653,22 @@
           },
           "away": {
             "team": {
-              "id": "cl",
-              "name": "Chile",
-              "flagCode": "CL"
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
             },
-            "score": 1
+            "score": 0
           },
-          "kickoff": "1966-07-19T13:00:00.000Z"
+          "kickoff": "1966-07-19T16:00:00Z"
         },
         {
           "id": "g46",
           "played": true,
           "home": {
             "team": {
-              "id": "it",
-              "name": "Italia",
-              "flagCode": "IT"
+              "id": "su",
+              "name": "URSS",
+              "flagCode": "RU"
             },
             "score": 2
           },
@@ -678,9 +678,9 @@
               "name": "Chile",
               "flagCode": "CL"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1966-07-19T16:00:00.000Z"
+          "kickoff": "1966-07-20T16:00:00Z"
         }
       ]
     }
