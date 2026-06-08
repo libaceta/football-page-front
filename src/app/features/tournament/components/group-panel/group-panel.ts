@@ -31,14 +31,17 @@ interface StatRow {
           <tr class="text-zinc-500">
             <th class="w-4 px-1 py-0.5 text-left font-medium">#</th>
             <th class="w-28 px-1 py-0.5 text-left font-medium"></th>
-            <th class="px-1 py-0.5 text-right font-medium">PTS</th>
             @if (detailed()) {
-              <th class="px-0.5 py-0.5 text-right font-medium">J</th>
-              <th class="px-0.5 py-0.5 text-right font-medium">Gol</th>
-              <th class="px-0.5 py-0.5 text-right font-medium">+/-</th>
-              <th class="px-0.5 py-0.5 text-right font-medium">G</th>
-              <th class="px-0.5 py-0.5 text-right font-medium">E</th>
-              <th class="px-0.5 py-0.5 text-right font-medium">P</th>
+              <th></th>
+            }
+            <th class="w-7 px-1 py-0.5 text-right font-medium">PTS</th>
+            @if (detailed()) {
+              <th class="w-5 px-0.5 py-0.5 text-right font-medium">J</th>
+              <th class="w-8 px-0.5 py-0.5 text-right font-medium">Gol</th>
+              <th class="w-6 px-0.5 py-0.5 text-right font-medium">+/-</th>
+              <th class="w-4 px-0.5 py-0.5 text-right font-medium">G</th>
+              <th class="w-4 px-0.5 py-0.5 text-right font-medium">E</th>
+              <th class="w-4 px-0.5 py-0.5 text-right font-medium">P</th>
             }
           </tr>
         </thead>
@@ -49,10 +52,13 @@ interface StatRow {
               [class]="row.standing.position <= 2 ? 'text-zinc-100' : 'text-zinc-400'"
             >
               <td class="px-1 py-0.5 text-zinc-500">{{ row.standing.position }}</td>
-              <td class="w-28 truncate px-1 py-0.5">
+              <td class="w-28 max-w-28 truncate px-1 py-0.5">
                 <span class="mr-1 inline-block align-middle text-[11px]" [class]="flag(row.standing.team.flagCode)"></span>
                 <span class="align-middle">{{ row.standing.team.name }}</span>
               </td>
+              @if (detailed()) {
+                <td class="w-full"></td>
+              }
               <td class="px-1 py-0.5 text-right font-semibold tabular-nums">
                 {{ row.standing.points }}
               </td>
