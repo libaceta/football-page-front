@@ -55,28 +55,7 @@
               "name": "Italia",
               "flagCode": "IT"
             },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "cs",
-              "name": "Checoslovaquia",
-              "flagCode": "CZ"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-08T13:00:00.000Z"
-        },
-        {
-          "id": "gA2",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "it",
-              "name": "Italia",
-              "flagCode": "IT"
-            },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -86,7 +65,28 @@
             },
             "score": 0
           },
-          "kickoff": "1990-06-08T16:00:00.000Z"
+          "kickoff": "1990-06-09T16:00:00Z"
+        },
+        {
+          "id": "gA2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "cs",
+              "name": "Checoslovaquia",
+              "flagCode": "CZ"
+            },
+            "score": 5
+          },
+          "kickoff": "1990-06-10T16:00:00Z"
         },
         {
           "id": "gA3",
@@ -97,7 +97,7 @@
               "name": "Italia",
               "flagCode": "IT"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -107,20 +107,12 @@
             },
             "score": 0
           },
-          "kickoff": "1990-06-12T13:00:00.000Z"
+          "kickoff": "1990-06-14T16:00:00Z"
         },
         {
           "id": "gA4",
           "played": true,
           "home": {
-            "team": {
-              "id": "cs",
-              "name": "Checoslovaquia",
-              "flagCode": "CZ"
-            },
-            "score": 2
-          },
-          "away": {
             "team": {
               "id": "at",
               "name": "Austria",
@@ -128,28 +120,36 @@
             },
             "score": 0
           },
-          "kickoff": "1990-06-12T16:00:00.000Z"
+          "away": {
+            "team": {
+              "id": "cs",
+              "name": "Checoslovaquia",
+              "flagCode": "CZ"
+            },
+            "score": 1
+          },
+          "kickoff": "1990-06-15T16:00:00Z"
         },
         {
           "id": "gA5",
           "played": true,
           "home": {
             "team": {
-              "id": "cs",
-              "name": "Checoslovaquia",
-              "flagCode": "CZ"
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
             },
             "score": 2
           },
           "away": {
             "team": {
-              "id": "us",
-              "name": "EE.UU.",
-              "flagCode": "US"
+              "id": "cs",
+              "name": "Checoslovaquia",
+              "flagCode": "CZ"
             },
             "score": 0
           },
-          "kickoff": "1990-06-16T13:00:00.000Z"
+          "kickoff": "1990-06-19T16:00:00Z"
         },
         {
           "id": "gA6",
@@ -168,9 +168,9 @@
               "name": "EE.UU.",
               "flagCode": "US"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-16T16:00:00.000Z"
+          "kickoff": "1990-06-19T19:00:00Z"
         }
       ]
     },
@@ -221,48 +221,111 @@
           "played": true,
           "home": {
             "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
               "id": "cm",
               "name": "Camerún",
               "flagCode": "CM"
             },
-            "score": 2
+            "score": 1
           },
-          "away": {
-            "team": {
-              "id": "ro",
-              "name": "Rumania",
-              "flagCode": "RO"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-08T14:00:00.000Z"
+          "kickoff": "1990-06-08T16:00:00Z"
         },
         {
           "id": "gB2",
           "played": true,
           "home": {
             "team": {
-              "id": "cm",
-              "name": "Camerún",
-              "flagCode": "CM"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "ar",
-              "name": "Argentina",
-              "flagCode": "AR"
+              "id": "su",
+              "name": "URSS",
+              "flagCode": "RU"
             },
             "score": 0
           },
-          "kickoff": "1990-06-08T17:00:00.000Z"
+          "away": {
+            "team": {
+              "id": "ro",
+              "name": "Rumania",
+              "flagCode": "RO"
+            },
+            "score": 2
+          },
+          "kickoff": "1990-06-09T16:00:00Z"
         },
         {
           "id": "gB3",
           "played": true,
           "home": {
             "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "su",
+              "name": "URSS",
+              "flagCode": "RU"
+            },
+            "score": 0
+          },
+          "kickoff": "1990-06-13T16:00:00Z"
+        },
+        {
+          "id": "gB4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ro",
+              "name": "Rumania",
+              "flagCode": "RO"
+            },
+            "score": 1
+          },
+          "kickoff": "1990-06-14T16:00:00Z"
+        },
+        {
+          "id": "gB5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "ro",
+              "name": "Rumania",
+              "flagCode": "RO"
+            },
+            "score": 1
+          },
+          "kickoff": "1990-06-18T16:00:00Z"
+        },
+        {
+          "id": "gB6",
+          "played": true,
+          "home": {
+            "team": {
               "id": "cm",
               "name": "Camerún",
               "flagCode": "CM"
@@ -275,72 +338,9 @@
               "name": "URSS",
               "flagCode": "RU"
             },
-            "score": 2
+            "score": 4
           },
-          "kickoff": "1990-06-12T14:00:00.000Z"
-        },
-        {
-          "id": "gB4",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "ro",
-              "name": "Rumania",
-              "flagCode": "RO"
-            },
-            "score": 1
-          },
-          "away": {
-            "team": {
-              "id": "ar",
-              "name": "Argentina",
-              "flagCode": "AR"
-            },
-            "score": 1
-          },
-          "kickoff": "1990-06-12T17:00:00.000Z"
-        },
-        {
-          "id": "gB5",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "ro",
-              "name": "Rumania",
-              "flagCode": "RO"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "su",
-              "name": "URSS",
-              "flagCode": "RU"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-16T14:00:00.000Z"
-        },
-        {
-          "id": "gB6",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "ar",
-              "name": "Argentina",
-              "flagCode": "AR"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "su",
-              "name": "URSS",
-              "flagCode": "RU"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-16T17:00:00.000Z"
+          "kickoff": "1990-06-18T19:00:00Z"
         }
       ]
     },
@@ -399,24 +399,24 @@
           },
           "away": {
             "team": {
-              "id": "cr",
-              "name": "Costa Rica",
-              "flagCode": "CR"
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-08T15:00:00.000Z"
+          "kickoff": "1990-06-10T16:00:00Z"
         },
         {
           "id": "gC2",
           "played": true,
           "home": {
             "team": {
-              "id": "br",
-              "name": "Brasil",
-              "flagCode": "BR"
+              "id": "cr",
+              "name": "Costa Rica",
+              "flagCode": "CR"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -426,7 +426,7 @@
             },
             "score": 0
           },
-          "kickoff": "1990-06-08T18:00:00.000Z"
+          "kickoff": "1990-06-11T16:00:00Z"
         },
         {
           "id": "gC3",
@@ -437,44 +437,65 @@
               "name": "Brasil",
               "flagCode": "BR"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
-              "id": "se",
-              "name": "Suecia",
-              "flagCode": "SE"
+              "id": "cr",
+              "name": "Costa Rica",
+              "flagCode": "CR"
             },
             "score": 0
           },
-          "kickoff": "1990-06-12T15:00:00.000Z"
+          "kickoff": "1990-06-16T16:00:00Z"
         },
         {
           "id": "gC4",
           "played": true,
           "home": {
             "team": {
-              "id": "cr",
-              "name": "Costa Rica",
-              "flagCode": "CR"
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
             },
             "score": 2
           },
           "away": {
             "team": {
-              "id": "sct",
-              "name": "Escocia",
-              "flagCode": "GB"
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-12T18:00:00.000Z"
+          "kickoff": "1990-06-16T19:00:00Z"
         },
         {
           "id": "gC5",
           "played": true,
           "home": {
             "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "sct",
+              "name": "Escocia",
+              "flagCode": "GB"
+            },
+            "score": 0
+          },
+          "kickoff": "1990-06-20T16:00:00Z"
+        },
+        {
+          "id": "gC6",
+          "played": true,
+          "home": {
+            "team": {
               "id": "cr",
               "name": "Costa Rica",
               "flagCode": "CR"
@@ -487,30 +508,9 @@
               "name": "Suecia",
               "flagCode": "SE"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-16T15:00:00.000Z"
-        },
-        {
-          "id": "gC6",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "sct",
-              "name": "Escocia",
-              "flagCode": "GB"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "se",
-              "name": "Suecia",
-              "flagCode": "SE"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-16T18:00:00.000Z"
+          "kickoff": "1990-06-20T19:00:00Z"
         }
       ]
     },
@@ -561,21 +561,21 @@
           "played": true,
           "home": {
             "team": {
-              "id": "de",
-              "name": "Alemania Fed.",
-              "flagCode": "DE"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "yu",
-              "name": "Yugoslavia",
-              "flagCode": "RS"
+              "id": "ae",
+              "name": "Emiratos",
+              "flagCode": "AE"
             },
             "score": 0
           },
-          "kickoff": "1990-06-08T13:00:00.000Z"
+          "away": {
+            "team": {
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
+            },
+            "score": 2
+          },
+          "kickoff": "1990-06-09T16:00:00Z"
         },
         {
           "id": "gD2",
@@ -586,6 +586,27 @@
               "name": "Alemania Fed.",
               "flagCode": "DE"
             },
+            "score": 4
+          },
+          "away": {
+            "team": {
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
+            },
+            "score": 1
+          },
+          "kickoff": "1990-06-10T16:00:00Z"
+        },
+        {
+          "id": "gD3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
+            },
             "score": 1
           },
           "away": {
@@ -594,12 +615,12 @@
               "name": "Colombia",
               "flagCode": "CO"
             },
-            "score": 1
+            "score": 0
           },
-          "kickoff": "1990-06-08T16:00:00.000Z"
+          "kickoff": "1990-06-14T16:00:00Z"
         },
         {
-          "id": "gD3",
+          "id": "gD4",
           "played": true,
           "home": {
             "team": {
@@ -607,7 +628,7 @@
               "name": "Alemania Fed.",
               "flagCode": "DE"
             },
-            "score": 2
+            "score": 5
           },
           "away": {
             "team": {
@@ -615,62 +636,41 @@
               "name": "Emiratos",
               "flagCode": "AE"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-12T13:00:00.000Z"
-        },
-        {
-          "id": "gD4",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "yu",
-              "name": "Yugoslavia",
-              "flagCode": "RS"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "co",
-              "name": "Colombia",
-              "flagCode": "CO"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-12T16:00:00.000Z"
+          "kickoff": "1990-06-15T16:00:00Z"
         },
         {
           "id": "gD5",
           "played": true,
           "home": {
             "team": {
-              "id": "yu",
-              "name": "Yugoslavia",
-              "flagCode": "RS"
+              "id": "de",
+              "name": "Alemania Fed.",
+              "flagCode": "DE"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
-              "id": "ae",
-              "name": "Emiratos",
-              "flagCode": "AE"
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-16T13:00:00.000Z"
+          "kickoff": "1990-06-19T16:00:00Z"
         },
         {
           "id": "gD6",
           "played": true,
           "home": {
             "team": {
-              "id": "co",
-              "name": "Colombia",
-              "flagCode": "CO"
+              "id": "yu",
+              "name": "Yugoslavia",
+              "flagCode": "RS"
             },
-            "score": 2
+            "score": 4
           },
           "away": {
             "team": {
@@ -678,9 +678,9 @@
               "name": "Emiratos",
               "flagCode": "AE"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-16T16:00:00.000Z"
+          "kickoff": "1990-06-19T19:00:00Z"
         }
       ]
     },
@@ -731,21 +731,21 @@
           "played": true,
           "home": {
             "team": {
-              "id": "es",
-              "name": "España",
-              "flagCode": "ES"
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
             },
             "score": 2
           },
           "away": {
             "team": {
-              "id": "be",
-              "name": "Bélgica",
-              "flagCode": "BE"
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
             },
             "score": 0
           },
-          "kickoff": "1990-06-08T14:00:00.000Z"
+          "kickoff": "1990-06-12T16:00:00Z"
         },
         {
           "id": "gE2",
@@ -756,7 +756,28 @@
               "name": "España",
               "flagCode": "ES"
             },
-            "score": 1
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "uy",
+              "name": "Uruguay",
+              "flagCode": "UY"
+            },
+            "score": 0
+          },
+          "kickoff": "1990-06-13T16:00:00Z"
+        },
+        {
+          "id": "gE3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 3
           },
           "away": {
             "team": {
@@ -766,10 +787,31 @@
             },
             "score": 1
           },
-          "kickoff": "1990-06-08T17:00:00.000Z"
+          "kickoff": "1990-06-17T16:00:00Z"
         },
         {
-          "id": "gE3",
+          "id": "gE4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 1
+          },
+          "kickoff": "1990-06-17T19:00:00Z"
+        },
+        {
+          "id": "gE5",
           "played": true,
           "home": {
             "team": {
@@ -781,55 +823,13 @@
           },
           "away": {
             "team": {
-              "id": "kr",
-              "name": "Corea del Sur",
-              "flagCode": "KR"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-12T14:00:00.000Z"
-        },
-        {
-          "id": "gE4",
-          "played": true,
-          "home": {
-            "team": {
               "id": "be",
               "name": "Bélgica",
               "flagCode": "BE"
             },
-            "score": 2
+            "score": 1
           },
-          "away": {
-            "team": {
-              "id": "uy",
-              "name": "Uruguay",
-              "flagCode": "UY"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-12T17:00:00.000Z"
-        },
-        {
-          "id": "gE5",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "be",
-              "name": "Bélgica",
-              "flagCode": "BE"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "kr",
-              "name": "Corea del Sur",
-              "flagCode": "KR"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-16T14:00:00.000Z"
+          "kickoff": "1990-06-21T16:00:00Z"
         },
         {
           "id": "gE6",
@@ -840,7 +840,7 @@
               "name": "Uruguay",
               "flagCode": "UY"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -850,7 +850,7 @@
             },
             "score": 0
           },
-          "kickoff": "1990-06-16T17:00:00.000Z"
+          "kickoff": "1990-06-21T19:00:00Z"
         }
       ]
     },
@@ -905,7 +905,7 @@
               "name": "Inglaterra",
               "flagCode": "GB"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -913,30 +913,30 @@
               "name": "Irlanda",
               "flagCode": "IE"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-08T15:00:00.000Z"
+          "kickoff": "1990-06-11T16:00:00Z"
         },
         {
           "id": "gF2",
           "played": true,
           "home": {
             "team": {
-              "id": "eng",
-              "name": "Inglaterra",
-              "flagCode": "GB"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
               "id": "nl",
               "name": "Países Bajos",
               "flagCode": "NL"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1990-06-08T18:00:00.000Z"
+          "away": {
+            "team": {
+              "id": "eg",
+              "name": "Egipto",
+              "flagCode": "EG"
+            },
+            "score": 1
+          },
+          "kickoff": "1990-06-12T16:00:00Z"
         },
         {
           "id": "gF3",
@@ -951,13 +951,13 @@
           },
           "away": {
             "team": {
-              "id": "eg",
-              "name": "Egipto",
-              "flagCode": "EG"
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
             },
-            "score": 2
+            "score": 0
           },
-          "kickoff": "1990-06-12T15:00:00.000Z"
+          "kickoff": "1990-06-16T16:00:00Z"
         },
         {
           "id": "gF4",
@@ -968,20 +968,41 @@
               "name": "Irlanda",
               "flagCode": "IE"
             },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "eg",
+              "name": "Egipto",
+              "flagCode": "EG"
+            },
+            "score": 0
+          },
+          "kickoff": "1990-06-17T16:00:00Z"
+        },
+        {
+          "id": "gF5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
+            },
             "score": 1
           },
           "away": {
             "team": {
-              "id": "nl",
-              "name": "Países Bajos",
-              "flagCode": "NL"
+              "id": "eg",
+              "name": "Egipto",
+              "flagCode": "EG"
             },
-            "score": 1
+            "score": 0
           },
-          "kickoff": "1990-06-12T18:00:00.000Z"
+          "kickoff": "1990-06-21T16:00:00Z"
         },
         {
-          "id": "gF5",
+          "id": "gF6",
           "played": true,
           "home": {
             "team": {
@@ -989,38 +1010,17 @@
               "name": "Irlanda",
               "flagCode": "IE"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
-            "team": {
-              "id": "eg",
-              "name": "Egipto",
-              "flagCode": "EG"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-16T15:00:00.000Z"
-        },
-        {
-          "id": "gF6",
-          "played": true,
-          "home": {
             "team": {
               "id": "nl",
               "name": "Países Bajos",
               "flagCode": "NL"
             },
-            "score": 2
+            "score": 1
           },
-          "away": {
-            "team": {
-              "id": "eg",
-              "name": "Egipto",
-              "flagCode": "EG"
-            },
-            "score": 0
-          },
-          "kickoff": "1990-06-16T18:00:00.000Z"
+          "kickoff": "1990-06-21T19:00:00Z"
         }
       ]
     }

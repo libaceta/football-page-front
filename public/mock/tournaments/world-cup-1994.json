@@ -51,11 +51,11 @@
           "played": true,
           "home": {
             "team": {
-              "id": "ro",
-              "name": "Rumania",
-              "flagCode": "RO"
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
@@ -63,9 +63,9 @@
               "name": "Suiza",
               "flagCode": "CH"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-17T13:00:00.000Z"
+          "kickoff": "1994-06-18T16:00:00Z"
         },
         {
           "id": "gA2",
@@ -76,20 +76,62 @@
               "name": "Rumania",
               "flagCode": "RO"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
+            "team": {
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
+            },
+            "score": 1
+          },
+          "kickoff": "1994-06-18T19:00:00Z"
+        },
+        {
+          "id": "gA3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
+            },
+            "score": 4
+          },
+          "away": {
+            "team": {
+              "id": "ro",
+              "name": "Rumania",
+              "flagCode": "RO"
+            },
+            "score": 1
+          },
+          "kickoff": "1994-06-22T16:00:00Z"
+        },
+        {
+          "id": "gA4",
+          "played": true,
+          "home": {
             "team": {
               "id": "us",
               "name": "EE.UU.",
               "flagCode": "US"
             },
-            "score": 0
+            "score": 2
           },
-          "kickoff": "1994-06-17T16:00:00.000Z"
+          "away": {
+            "team": {
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
+            },
+            "score": 1
+          },
+          "kickoff": "1994-06-22T19:00:00Z"
         },
         {
-          "id": "gA3",
+          "id": "gA5",
           "played": true,
           "home": {
             "team": {
@@ -97,27 +139,6 @@
               "name": "Rumania",
               "flagCode": "RO"
             },
-            "score": 0
-          },
-          "away": {
-            "team": {
-              "id": "co",
-              "name": "Colombia",
-              "flagCode": "CO"
-            },
-            "score": 2
-          },
-          "kickoff": "1994-06-21T13:00:00.000Z"
-        },
-        {
-          "id": "gA4",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "ch",
-              "name": "Suiza",
-              "flagCode": "CH"
-            },
             "score": 1
           },
           "away": {
@@ -126,51 +147,30 @@
               "name": "EE.UU.",
               "flagCode": "US"
             },
-            "score": 1
-          },
-          "kickoff": "1994-06-21T16:00:00.000Z"
-        },
-        {
-          "id": "gA5",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "ch",
-              "name": "Suiza",
-              "flagCode": "CH"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "co",
-              "name": "Colombia",
-              "flagCode": "CO"
-            },
             "score": 0
           },
-          "kickoff": "1994-06-25T13:00:00.000Z"
+          "kickoff": "1994-06-26T16:00:00Z"
         },
         {
           "id": "gA6",
           "played": true,
           "home": {
             "team": {
-              "id": "us",
-              "name": "EE.UU.",
-              "flagCode": "US"
+              "id": "co",
+              "name": "Colombia",
+              "flagCode": "CO"
             },
             "score": 2
           },
           "away": {
             "team": {
-              "id": "co",
-              "name": "Colombia",
-              "flagCode": "CO"
+              "id": "ch",
+              "name": "Suiza",
+              "flagCode": "CH"
             },
             "score": 0
           },
-          "kickoff": "1994-06-25T16:00:00.000Z"
+          "kickoff": "1994-06-26T19:00:00Z"
         }
       ]
     },
@@ -221,11 +221,11 @@
           "played": true,
           "home": {
             "team": {
-              "id": "br",
-              "name": "Brasil",
-              "flagCode": "BR"
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
             },
-            "score": 1
+            "score": 2
           },
           "away": {
             "team": {
@@ -233,9 +233,9 @@
               "name": "Suecia",
               "flagCode": "SE"
             },
-            "score": 1
+            "score": 2
           },
-          "kickoff": "1994-06-17T14:00:00.000Z"
+          "kickoff": "1994-06-19T16:00:00Z"
         },
         {
           "id": "gB2",
@@ -256,7 +256,7 @@
             },
             "score": 0
           },
-          "kickoff": "1994-06-17T17:00:00.000Z"
+          "kickoff": "1994-06-20T16:00:00Z"
         },
         {
           "id": "gB3",
@@ -267,7 +267,7 @@
               "name": "Brasil",
               "flagCode": "BR"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
@@ -277,7 +277,7 @@
             },
             "score": 0
           },
-          "kickoff": "1994-06-21T14:00:00.000Z"
+          "kickoff": "1994-06-24T16:00:00Z"
         },
         {
           "id": "gB4",
@@ -288,7 +288,7 @@
               "name": "Suecia",
               "flagCode": "SE"
             },
-            "score": 2
+            "score": 3
           },
           "away": {
             "team": {
@@ -296,14 +296,43 @@
               "name": "Rusia",
               "flagCode": "RU"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-21T17:00:00.000Z"
+          "kickoff": "1994-06-24T19:00:00Z"
         },
         {
           "id": "gB5",
           "played": true,
           "home": {
+            "team": {
+              "id": "ru",
+              "name": "Rusia",
+              "flagCode": "RU"
+            },
+            "score": 6
+          },
+          "away": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 1
+          },
+          "kickoff": "1994-06-28T16:00:00Z"
+        },
+        {
+          "id": "gB6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 1
+          },
+          "away": {
             "team": {
               "id": "se",
               "name": "Suecia",
@@ -311,36 +340,7 @@
             },
             "score": 1
           },
-          "away": {
-            "team": {
-              "id": "cm",
-              "name": "Camerún",
-              "flagCode": "CM"
-            },
-            "score": 1
-          },
-          "kickoff": "1994-06-25T14:00:00.000Z"
-        },
-        {
-          "id": "gB6",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "ru",
-              "name": "Rusia",
-              "flagCode": "RU"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "cm",
-              "name": "Camerún",
-              "flagCode": "CM"
-            },
-            "score": 0
-          },
-          "kickoff": "1994-06-25T17:00:00.000Z"
+          "kickoff": "1994-06-28T19:00:00Z"
         }
       ]
     },
@@ -399,22 +399,22 @@
           },
           "away": {
             "team": {
-              "id": "es",
-              "name": "España",
-              "flagCode": "ES"
+              "id": "bo",
+              "name": "Bolivia",
+              "flagCode": "BO"
             },
-            "score": 1
+            "score": 0
           },
-          "kickoff": "1994-06-17T15:00:00.000Z"
+          "kickoff": "1994-06-17T16:00:00Z"
         },
         {
           "id": "gC2",
           "played": true,
           "home": {
             "team": {
-              "id": "de",
-              "name": "Alemania",
-              "flagCode": "DE"
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
             },
             "score": 2
           },
@@ -424,9 +424,9 @@
               "name": "Corea del Sur",
               "flagCode": "KR"
             },
-            "score": 0
+            "score": 2
           },
-          "kickoff": "1994-06-17T18:00:00.000Z"
+          "kickoff": "1994-06-17T19:00:00Z"
         },
         {
           "id": "gC3",
@@ -437,49 +437,28 @@
               "name": "Alemania",
               "flagCode": "DE"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
-              "id": "bo",
-              "name": "Bolivia",
-              "flagCode": "BO"
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-21T15:00:00.000Z"
+          "kickoff": "1994-06-21T16:00:00Z"
         },
         {
           "id": "gC4",
           "played": true,
           "home": {
             "team": {
-              "id": "es",
-              "name": "España",
-              "flagCode": "ES"
-            },
-            "score": 1
-          },
-          "away": {
-            "team": {
               "id": "kr",
               "name": "Corea del Sur",
               "flagCode": "KR"
             },
-            "score": 1
-          },
-          "kickoff": "1994-06-21T18:00:00.000Z"
-        },
-        {
-          "id": "gC5",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "es",
-              "name": "España",
-              "flagCode": "ES"
-            },
-            "score": 2
+            "score": 0
           },
           "away": {
             "team": {
@@ -489,18 +468,39 @@
             },
             "score": 0
           },
-          "kickoff": "1994-06-25T15:00:00.000Z"
+          "kickoff": "1994-06-23T16:00:00Z"
+        },
+        {
+          "id": "gC5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania",
+              "flagCode": "DE"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 2
+          },
+          "kickoff": "1994-06-27T16:00:00Z"
         },
         {
           "id": "gC6",
           "played": true,
           "home": {
             "team": {
-              "id": "kr",
-              "name": "Corea del Sur",
-              "flagCode": "KR"
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
             },
-            "score": 1
+            "score": 3
           },
           "away": {
             "team": {
@@ -510,7 +510,7 @@
             },
             "score": 1
           },
-          "kickoff": "1994-06-25T18:00:00.000Z"
+          "kickoff": "1994-06-27T19:00:00Z"
         }
       ]
     },
@@ -561,21 +561,21 @@
           "played": true,
           "home": {
             "team": {
-              "id": "ng",
-              "name": "Nigeria",
-              "flagCode": "NG"
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
             },
-            "score": 2
+            "score": 4
           },
           "away": {
             "team": {
-              "id": "bg",
-              "name": "Bulgaria",
-              "flagCode": "BG"
+              "id": "gr",
+              "name": "Grecia",
+              "flagCode": "GR"
             },
             "score": 0
           },
-          "kickoff": "1994-06-17T13:00:00.000Z"
+          "kickoff": "1994-06-21T16:00:00Z"
         },
         {
           "id": "gD2",
@@ -586,9 +586,22 @@
               "name": "Nigeria",
               "flagCode": "NG"
             },
-            "score": 0
+            "score": 3
           },
           "away": {
+            "team": {
+              "id": "bg",
+              "name": "Bulgaria",
+              "flagCode": "BG"
+            },
+            "score": 0
+          },
+          "kickoff": "1994-06-21T19:00:00Z"
+        },
+        {
+          "id": "gD3",
+          "played": true,
+          "home": {
             "team": {
               "id": "ar",
               "name": "Argentina",
@@ -596,28 +609,15 @@
             },
             "score": 2
           },
-          "kickoff": "1994-06-17T16:00:00.000Z"
-        },
-        {
-          "id": "gD3",
-          "played": true,
-          "home": {
+          "away": {
             "team": {
               "id": "ng",
               "name": "Nigeria",
               "flagCode": "NG"
             },
-            "score": 2
+            "score": 1
           },
-          "away": {
-            "team": {
-              "id": "gr",
-              "name": "Grecia",
-              "flagCode": "GR"
-            },
-            "score": 0
-          },
-          "kickoff": "1994-06-21T13:00:00.000Z"
+          "kickoff": "1994-06-25T16:00:00Z"
         },
         {
           "id": "gD4",
@@ -628,28 +628,7 @@
               "name": "Bulgaria",
               "flagCode": "BG"
             },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "ar",
-              "name": "Argentina",
-              "flagCode": "AR"
-            },
-            "score": 0
-          },
-          "kickoff": "1994-06-21T16:00:00.000Z"
-        },
-        {
-          "id": "gD5",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "bg",
-              "name": "Bulgaria",
-              "flagCode": "BG"
-            },
-            "score": 2
+            "score": 4
           },
           "away": {
             "team": {
@@ -659,7 +638,28 @@
             },
             "score": 0
           },
-          "kickoff": "1994-06-25T13:00:00.000Z"
+          "kickoff": "1994-06-26T16:00:00Z"
+        },
+        {
+          "id": "gD5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "gr",
+              "name": "Grecia",
+              "flagCode": "GR"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "ng",
+              "name": "Nigeria",
+              "flagCode": "NG"
+            },
+            "score": 2
+          },
+          "kickoff": "1994-06-30T16:00:00Z"
         },
         {
           "id": "gD6",
@@ -670,17 +670,17 @@
               "name": "Argentina",
               "flagCode": "AR"
             },
-            "score": 2
+            "score": 0
           },
           "away": {
             "team": {
-              "id": "gr",
-              "name": "Grecia",
-              "flagCode": "GR"
+              "id": "bg",
+              "name": "Bulgaria",
+              "flagCode": "BG"
             },
-            "score": 0
+            "score": 2
           },
-          "kickoff": "1994-06-25T16:00:00.000Z"
+          "kickoff": "1994-06-30T19:00:00Z"
         }
       ]
     },
@@ -731,11 +731,11 @@
           "played": true,
           "home": {
             "team": {
-              "id": "mx",
-              "name": "México",
-              "flagCode": "MX"
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
             },
-            "score": 2
+            "score": 0
           },
           "away": {
             "team": {
@@ -743,39 +743,39 @@
               "name": "Irlanda",
               "flagCode": "IE"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-17T14:00:00.000Z"
+          "kickoff": "1994-06-18T16:00:00Z"
         },
         {
           "id": "gE2",
           "played": true,
           "home": {
             "team": {
+              "id": "no",
+              "name": "Noruega",
+              "flagCode": "NO"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
               "id": "mx",
               "name": "México",
               "flagCode": "MX"
             },
             "score": 0
           },
-          "away": {
-            "team": {
-              "id": "it",
-              "name": "Italia",
-              "flagCode": "IT"
-            },
-            "score": 2
-          },
-          "kickoff": "1994-06-17T17:00:00.000Z"
+          "kickoff": "1994-06-19T16:00:00Z"
         },
         {
           "id": "gE3",
           "played": true,
           "home": {
             "team": {
-              "id": "mx",
-              "name": "México",
-              "flagCode": "MX"
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
             },
             "score": 1
           },
@@ -785,60 +785,60 @@
               "name": "Noruega",
               "flagCode": "NO"
             },
-            "score": 1
+            "score": 0
           },
-          "kickoff": "1994-06-21T14:00:00.000Z"
+          "kickoff": "1994-06-23T16:00:00Z"
         },
         {
           "id": "gE4",
           "played": true,
           "home": {
             "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
               "id": "ie",
               "name": "Irlanda",
               "flagCode": "IE"
             },
             "score": 1
           },
-          "away": {
-            "team": {
-              "id": "it",
-              "name": "Italia",
-              "flagCode": "IT"
-            },
-            "score": 1
-          },
-          "kickoff": "1994-06-21T17:00:00.000Z"
+          "kickoff": "1994-06-24T16:00:00Z"
         },
         {
           "id": "gE5",
           "played": true,
           "home": {
             "team": {
-              "id": "ie",
-              "name": "Irlanda",
-              "flagCode": "IE"
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
             },
-            "score": 2
+            "score": 1
           },
           "away": {
             "team": {
-              "id": "no",
-              "name": "Noruega",
-              "flagCode": "NO"
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-25T14:00:00.000Z"
+          "kickoff": "1994-06-28T16:00:00Z"
         },
         {
           "id": "gE6",
           "played": true,
           "home": {
             "team": {
-              "id": "it",
-              "name": "Italia",
-              "flagCode": "IT"
+              "id": "ie",
+              "name": "Irlanda",
+              "flagCode": "IE"
             },
             "score": 0
           },
@@ -848,9 +848,9 @@
               "name": "Noruega",
               "flagCode": "NO"
             },
-            "score": 2
+            "score": 0
           },
-          "kickoff": "1994-06-25T17:00:00.000Z"
+          "kickoff": "1994-06-28T19:00:00Z"
         }
       ]
     },
@@ -901,6 +901,27 @@
           "played": true,
           "home": {
             "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "ma",
+              "name": "Marruecos",
+              "flagCode": "MA"
+            },
+            "score": 0
+          },
+          "kickoff": "1994-06-19T16:00:00Z"
+        },
+        {
+          "id": "gF2",
+          "played": true,
+          "home": {
+            "team": {
               "id": "nl",
               "name": "Países Bajos",
               "flagCode": "NL"
@@ -913,51 +934,30 @@
               "name": "Arabia Saudita",
               "flagCode": "SA"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-17T15:00:00.000Z"
-        },
-        {
-          "id": "gF2",
-          "played": true,
-          "home": {
-            "team": {
-              "id": "nl",
-              "name": "Países Bajos",
-              "flagCode": "NL"
-            },
-            "score": 0
-          },
-          "away": {
-            "team": {
-              "id": "be",
-              "name": "Bélgica",
-              "flagCode": "BE"
-            },
-            "score": 2
-          },
-          "kickoff": "1994-06-17T18:00:00.000Z"
+          "kickoff": "1994-06-20T16:00:00Z"
         },
         {
           "id": "gF3",
           "played": true,
           "home": {
             "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
               "id": "nl",
               "name": "Países Bajos",
               "flagCode": "NL"
             },
-            "score": 2
-          },
-          "away": {
-            "team": {
-              "id": "ma",
-              "name": "Marruecos",
-              "flagCode": "MA"
-            },
             "score": 0
           },
-          "kickoff": "1994-06-21T15:00:00.000Z"
+          "kickoff": "1994-06-25T16:00:00Z"
         },
         {
           "id": "gF4",
@@ -972,34 +972,34 @@
           },
           "away": {
             "team": {
-              "id": "be",
-              "name": "Bélgica",
-              "flagCode": "BE"
+              "id": "ma",
+              "name": "Marruecos",
+              "flagCode": "MA"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-21T18:00:00.000Z"
+          "kickoff": "1994-06-25T19:00:00Z"
         },
         {
           "id": "gF5",
           "played": true,
           "home": {
             "team": {
-              "id": "sa",
-              "name": "Arabia Saudita",
-              "flagCode": "SA"
-            },
-            "score": 2
-          },
-          "away": {
-            "team": {
               "id": "ma",
               "name": "Marruecos",
               "flagCode": "MA"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-25T15:00:00.000Z"
+          "away": {
+            "team": {
+              "id": "nl",
+              "name": "Países Bajos",
+              "flagCode": "NL"
+            },
+            "score": 2
+          },
+          "kickoff": "1994-06-29T16:00:00Z"
         },
         {
           "id": "gF6",
@@ -1010,17 +1010,17 @@
               "name": "Bélgica",
               "flagCode": "BE"
             },
-            "score": 2
+            "score": 0
           },
           "away": {
             "team": {
-              "id": "ma",
-              "name": "Marruecos",
-              "flagCode": "MA"
+              "id": "sa",
+              "name": "Arabia Saudita",
+              "flagCode": "SA"
             },
-            "score": 0
+            "score": 1
           },
-          "kickoff": "1994-06-25T18:00:00.000Z"
+          "kickoff": "1994-06-29T19:00:00Z"
         }
       ]
     }
