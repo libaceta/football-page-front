@@ -1,17 +1,21 @@
 <div class="mx-auto max-w-5xl space-y-6">
-  <!-- Fase de grupos inicial -->
-  @if (firstGroups().length) {
+  <!-- Campeón / final / tercer puesto -->
+  <section class="flex flex-col items-center gap-4">
+    <app-champion-trophy [final]="finalMatch()" [champion]="champion()" />
+    @if (thirdPlace(); as tp) {
+      <app-third-place [match]="tp" />
+    }
+  </section>
+
+  <!-- Semifinales (1982) -->
+  @if (semis().length) {
     <section>
-      <h2 class="mb-2 text-center text-[10px] font-bold tracking-[0.2em] text-amber-300">
-        FASE DE GRUPOS
+      <h2 class="mb-2 text-center text-[10px] font-bold tracking-[0.2em] text-zinc-400">
+        SEMIFINALES
       </h2>
-      <div class="grid gap-2" [class]="firstGroupsGridClass()">
-        @for (g of firstGroups(); track g.id) {
-          @if (g.matches?.length) {
-            <app-group-results [group]="g" />
-          } @else {
-            <app-group-panel [group]="g" />
-          }
+      <div class="mx-auto flex max-w-md flex-wrap justify-center gap-3">
+        @for (m of semis(); track m.id) {
+          <app-match-card [match]="m" />
         }
       </div>
     </section>
@@ -40,25 +44,21 @@
     </section>
   }
 
-  <!-- Semifinales (1982) -->
-  @if (semis().length) {
+  <!-- Fase de grupos inicial -->
+  @if (firstGroups().length) {
     <section>
-      <h2 class="mb-2 text-center text-[10px] font-bold tracking-[0.2em] text-zinc-400">
-        SEMIFINALES
+      <h2 class="mb-2 text-center text-[10px] font-bold tracking-[0.2em] text-amber-300">
+        FASE DE GRUPOS
       </h2>
-      <div class="mx-auto flex max-w-md flex-wrap justify-center gap-3">
-        @for (m of semis(); track m.id) {
-          <app-match-card [match]="m" />
+      <div class="grid gap-2" [class]="firstGroupsGridClass()">
+        @for (g of firstGroups(); track g.id) {
+          @if (g.matches?.length) {
+            <app-group-results [group]="g" />
+          } @else {
+            <app-group-panel [group]="g" />
+          }
         }
       </div>
     </section>
   }
-
-  <!-- Campeón / final / tercer puesto -->
-  <section class="flex flex-col items-center gap-4">
-    <app-champion-trophy [final]="finalMatch()" [champion]="champion()" />
-    @if (thirdPlace(); as tp) {
-      <app-third-place [match]="tp" />
-    }
-  </section>
 </div>
