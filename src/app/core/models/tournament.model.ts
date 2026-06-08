@@ -59,6 +59,8 @@ export interface Group {
   /** Nombre visible, ej. "GRUPO A". */
   readonly name: string;
   readonly standings: readonly GroupStanding[];
+  /** Partidos de la fase de grupos (round-robin). Opcional. */
+  readonly matches?: readonly Match[];
 }
 
 /**
