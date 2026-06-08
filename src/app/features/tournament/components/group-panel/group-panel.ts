@@ -26,7 +26,7 @@ interface StatRow {
       >
         {{ group().name }}
       </div>
-      <table class="w-full text-[10px]">
+      <table class="text-[10px]">
         <thead>
           <tr class="text-zinc-500">
             <th class="w-4 px-1 py-0.5 text-left font-medium">#</th>
