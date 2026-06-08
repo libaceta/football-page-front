@@ -8,144 +8,1360 @@
       "id": "A",
       "name": "GRUPO A",
       "standings": [
-        { "position": 1, "team": { "id": "dk", "name": "Dinamarca", "flagCode": "DK" }, "points": 7 },
-        { "position": 2, "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "points": 5 },
-        { "position": 3, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 2 },
-        { "position": 4, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 1 }
+        {
+          "position": 1,
+          "team": {
+            "id": "dk",
+            "name": "Dinamarca",
+            "flagCode": "DK"
+          },
+          "points": 7
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "sn",
+            "name": "Senegal",
+            "flagCode": "SN"
+          },
+          "points": 5
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "uy",
+            "name": "Uruguay",
+            "flagCode": "UY"
+          },
+          "points": 2
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "fr",
+            "name": "Francia",
+            "flagCode": "FR"
+          },
+          "points": 1
+        }
       ],
       "matches": [
-        { "id": "gA1", "played": true, "home": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 0 }, "away": { "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "score": 1 } },
-        { "id": "gA2", "played": true, "home": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 1 }, "away": { "team": { "id": "dk", "name": "Dinamarca", "flagCode": "DK" }, "score": 2 } },
-        { "id": "gA3", "played": true, "home": { "team": { "id": "dk", "name": "Dinamarca", "flagCode": "DK" }, "score": 1 }, "away": { "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "score": 1 } },
-        { "id": "gA4", "played": true, "home": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 0 }, "away": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 0 } },
-        { "id": "gA5", "played": true, "home": { "team": { "id": "dk", "name": "Dinamarca", "flagCode": "DK" }, "score": 2 }, "away": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 0 } },
-        { "id": "gA6", "played": true, "home": { "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "score": 3 }, "away": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 3 } }
+        {
+          "id": "gA1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "sn",
+              "name": "Senegal",
+              "flagCode": "SN"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-05-31T13:00:00.000Z"
+        },
+        {
+          "id": "gA2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "uy",
+              "name": "Uruguay",
+              "flagCode": "UY"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "dk",
+              "name": "Dinamarca",
+              "flagCode": "DK"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-05-31T16:00:00.000Z"
+        },
+        {
+          "id": "gA3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "dk",
+              "name": "Dinamarca",
+              "flagCode": "DK"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "sn",
+              "name": "Senegal",
+              "flagCode": "SN"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T13:00:00.000Z"
+        },
+        {
+          "id": "gA4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "uy",
+              "name": "Uruguay",
+              "flagCode": "UY"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-04T16:00:00.000Z"
+        },
+        {
+          "id": "gA5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "dk",
+              "name": "Dinamarca",
+              "flagCode": "DK"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "fr",
+              "name": "Francia",
+              "flagCode": "FR"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-08T13:00:00.000Z"
+        },
+        {
+          "id": "gA6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "sn",
+              "name": "Senegal",
+              "flagCode": "SN"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "uy",
+              "name": "Uruguay",
+              "flagCode": "UY"
+            },
+            "score": 3
+          },
+          "kickoff": "2002-06-08T16:00:00.000Z"
+        }
       ]
     },
     {
       "id": "B",
       "name": "GRUPO B",
       "standings": [
-        { "position": 1, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 9 },
-        { "position": 2, "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "points": 4 },
-        { "position": 3, "team": { "id": "za", "name": "Sudáfrica", "flagCode": "ZA" }, "points": 4 },
-        { "position": 4, "team": { "id": "si", "name": "Eslovenia", "flagCode": "SI" }, "points": 0 }
+        {
+          "position": 1,
+          "team": {
+            "id": "es",
+            "name": "España",
+            "flagCode": "ES"
+          },
+          "points": 9
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "py",
+            "name": "Paraguay",
+            "flagCode": "PY"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "za",
+            "name": "Sudáfrica",
+            "flagCode": "ZA"
+          },
+          "points": 4
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "si",
+            "name": "Eslovenia",
+            "flagCode": "SI"
+          },
+          "points": 0
+        }
       ],
       "matches": [
-        { "id": "gB1", "played": true, "home": { "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "score": 2 }, "away": { "team": { "id": "za", "name": "Sudáfrica", "flagCode": "ZA" }, "score": 2 } },
-        { "id": "gB2", "played": true, "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 3 }, "away": { "team": { "id": "si", "name": "Eslovenia", "flagCode": "SI" }, "score": 1 } },
-        { "id": "gB3", "played": true, "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 3 }, "away": { "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "score": 1 } },
-        { "id": "gB4", "played": true, "home": { "team": { "id": "za", "name": "Sudáfrica", "flagCode": "ZA" }, "score": 1 }, "away": { "team": { "id": "si", "name": "Eslovenia", "flagCode": "SI" }, "score": 0 } },
-        { "id": "gB5", "played": true, "home": { "team": { "id": "za", "name": "Sudáfrica", "flagCode": "ZA" }, "score": 2 }, "away": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 3 } },
-        { "id": "gB6", "played": true, "home": { "team": { "id": "si", "name": "Eslovenia", "flagCode": "SI" }, "score": 1 }, "away": { "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "score": 3 } }
+        {
+          "id": "gB1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "py",
+              "name": "Paraguay",
+              "flagCode": "PY"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "za",
+              "name": "Sudáfrica",
+              "flagCode": "ZA"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-05-31T14:00:00.000Z"
+        },
+        {
+          "id": "gB2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "si",
+              "name": "Eslovenia",
+              "flagCode": "SI"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-05-31T17:00:00.000Z"
+        },
+        {
+          "id": "gB3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "py",
+              "name": "Paraguay",
+              "flagCode": "PY"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T14:00:00.000Z"
+        },
+        {
+          "id": "gB4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "za",
+              "name": "Sudáfrica",
+              "flagCode": "ZA"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "si",
+              "name": "Eslovenia",
+              "flagCode": "SI"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-04T17:00:00.000Z"
+        },
+        {
+          "id": "gB5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "za",
+              "name": "Sudáfrica",
+              "flagCode": "ZA"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "es",
+              "name": "España",
+              "flagCode": "ES"
+            },
+            "score": 3
+          },
+          "kickoff": "2002-06-08T14:00:00.000Z"
+        },
+        {
+          "id": "gB6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "si",
+              "name": "Eslovenia",
+              "flagCode": "SI"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "py",
+              "name": "Paraguay",
+              "flagCode": "PY"
+            },
+            "score": 3
+          },
+          "kickoff": "2002-06-08T17:00:00.000Z"
+        }
       ]
     },
     {
       "id": "C",
       "name": "GRUPO C",
       "standings": [
-        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 9 },
-        { "position": 2, "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "points": 4 },
-        { "position": 3, "team": { "id": "cr", "name": "Costa Rica", "flagCode": "CR" }, "points": 4 },
-        { "position": 4, "team": { "id": "cn", "name": "China", "flagCode": "CN" }, "points": 0 }
+        {
+          "position": 1,
+          "team": {
+            "id": "br",
+            "name": "Brasil",
+            "flagCode": "BR"
+          },
+          "points": 9
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "tr",
+            "name": "Turquía",
+            "flagCode": "TR"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "cr",
+            "name": "Costa Rica",
+            "flagCode": "CR"
+          },
+          "points": 4
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "cn",
+            "name": "China",
+            "flagCode": "CN"
+          },
+          "points": 0
+        }
       ],
       "matches": [
-        { "id": "gC1", "played": true, "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 }, "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 1 } },
-        { "id": "gC2", "played": true, "home": { "team": { "id": "cn", "name": "China", "flagCode": "CN" }, "score": 0 }, "away": { "team": { "id": "cr", "name": "Costa Rica", "flagCode": "CR" }, "score": 2 } },
-        { "id": "gC3", "played": true, "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 4 }, "away": { "team": { "id": "cn", "name": "China", "flagCode": "CN" }, "score": 0 } },
-        { "id": "gC4", "played": true, "home": { "team": { "id": "cr", "name": "Costa Rica", "flagCode": "CR" }, "score": 1 }, "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 1 } },
-        { "id": "gC5", "played": true, "home": { "team": { "id": "cr", "name": "Costa Rica", "flagCode": "CR" }, "score": 2 }, "away": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 5 } },
-        { "id": "gC6", "played": true, "home": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 3 }, "away": { "team": { "id": "cn", "name": "China", "flagCode": "CN" }, "score": 0 } }
+        {
+          "id": "gC1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "tr",
+              "name": "Turquía",
+              "flagCode": "TR"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-05-31T15:00:00.000Z"
+        },
+        {
+          "id": "gC2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "cn",
+              "name": "China",
+              "flagCode": "CN"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "cr",
+              "name": "Costa Rica",
+              "flagCode": "CR"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-05-31T18:00:00.000Z"
+        },
+        {
+          "id": "gC3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 4
+          },
+          "away": {
+            "team": {
+              "id": "cn",
+              "name": "China",
+              "flagCode": "CN"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-04T15:00:00.000Z"
+        },
+        {
+          "id": "gC4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "cr",
+              "name": "Costa Rica",
+              "flagCode": "CR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "tr",
+              "name": "Turquía",
+              "flagCode": "TR"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T18:00:00.000Z"
+        },
+        {
+          "id": "gC5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "cr",
+              "name": "Costa Rica",
+              "flagCode": "CR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "br",
+              "name": "Brasil",
+              "flagCode": "BR"
+            },
+            "score": 5
+          },
+          "kickoff": "2002-06-08T15:00:00.000Z"
+        },
+        {
+          "id": "gC6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "tr",
+              "name": "Turquía",
+              "flagCode": "TR"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "cn",
+              "name": "China",
+              "flagCode": "CN"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-08T18:00:00.000Z"
+        }
       ]
     },
     {
       "id": "D",
       "name": "GRUPO D",
       "standings": [
-        { "position": 1, "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "points": 7 },
-        { "position": 2, "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "points": 4 },
-        { "position": 3, "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "points": 3 },
-        { "position": 4, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 3 }
+        {
+          "position": 1,
+          "team": {
+            "id": "kr",
+            "name": "Corea del Sur",
+            "flagCode": "KR"
+          },
+          "points": 7
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "us",
+            "name": "EE.UU.",
+            "flagCode": "US"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "pt",
+            "name": "Portugal",
+            "flagCode": "PT"
+          },
+          "points": 3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "pl",
+            "name": "Polonia",
+            "flagCode": "PL"
+          },
+          "points": 3
+        }
       ],
       "matches": [
-        { "id": "gD1", "played": true, "home": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 2 }, "away": { "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "score": 0 } },
-        { "id": "gD2", "played": true, "home": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 3 }, "away": { "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "score": 2 } },
-        { "id": "gD3", "played": true, "home": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 1 }, "away": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 1 } },
-        { "id": "gD4", "played": true, "home": { "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "score": 4 }, "away": { "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "score": 0 } },
-        { "id": "gD5", "played": true, "home": { "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "score": 0 }, "away": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 1 } },
-        { "id": "gD6", "played": true, "home": { "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "score": 3 }, "away": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 1 } }
+        {
+          "id": "gD1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "pl",
+              "name": "Polonia",
+              "flagCode": "PL"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-05-31T13:00:00.000Z"
+        },
+        {
+          "id": "gD2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "pt",
+              "name": "Portugal",
+              "flagCode": "PT"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-05-31T16:00:00.000Z"
+        },
+        {
+          "id": "gD3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T13:00:00.000Z"
+        },
+        {
+          "id": "gD4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pt",
+              "name": "Portugal",
+              "flagCode": "PT"
+            },
+            "score": 4
+          },
+          "away": {
+            "team": {
+              "id": "pl",
+              "name": "Polonia",
+              "flagCode": "PL"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-04T16:00:00.000Z"
+        },
+        {
+          "id": "gD5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pt",
+              "name": "Portugal",
+              "flagCode": "PT"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "kr",
+              "name": "Corea del Sur",
+              "flagCode": "KR"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-08T13:00:00.000Z"
+        },
+        {
+          "id": "gD6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "pl",
+              "name": "Polonia",
+              "flagCode": "PL"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "us",
+              "name": "EE.UU.",
+              "flagCode": "US"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-08T16:00:00.000Z"
+        }
       ]
     },
     {
       "id": "E",
       "name": "GRUPO E",
       "standings": [
-        { "position": 1, "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "points": 7 },
-        { "position": 2, "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "points": 5 },
-        { "position": 3, "team": { "id": "cm", "name": "Camerún", "flagCode": "CM" }, "points": 4 },
-        { "position": 4, "team": { "id": "sa", "name": "Arabia Saudita", "flagCode": "SA" }, "points": 0 }
+        {
+          "position": 1,
+          "team": {
+            "id": "de",
+            "name": "Alemania",
+            "flagCode": "DE"
+          },
+          "points": 7
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "ie",
+            "name": "Irlanda",
+            "flagCode": "IE"
+          },
+          "points": 5
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "cm",
+            "name": "Camerún",
+            "flagCode": "CM"
+          },
+          "points": 4
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "sa",
+            "name": "Arabia Saudita",
+            "flagCode": "SA"
+          },
+          "points": 0
+        }
       ],
       "matches": [
-        { "id": "gE1", "played": true, "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 8 }, "away": { "team": { "id": "sa", "name": "Arabia Saudita", "flagCode": "SA" }, "score": 0 } },
-        { "id": "gE2", "played": true, "home": { "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "score": 1 }, "away": { "team": { "id": "cm", "name": "Camerún", "flagCode": "CM" }, "score": 1 } },
-        { "id": "gE3", "played": true, "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 }, "away": { "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "score": 1 } },
-        { "id": "gE4", "played": true, "home": { "team": { "id": "cm", "name": "Camerún", "flagCode": "CM" }, "score": 1 }, "away": { "team": { "id": "sa", "name": "Arabia Saudita", "flagCode": "SA" }, "score": 0 } },
-        { "id": "gE5", "played": true, "home": { "team": { "id": "cm", "name": "Camerún", "flagCode": "CM" }, "score": 0 }, "away": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 2 } },
-        { "id": "gE6", "played": true, "home": { "team": { "id": "sa", "name": "Arabia Saudita", "flagCode": "SA" }, "score": 0 }, "away": { "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "score": 3 } }
+        {
+          "id": "gE1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania",
+              "flagCode": "DE"
+            },
+            "score": 8
+          },
+          "away": {
+            "team": {
+              "id": "sa",
+              "name": "Arabia Saudita",
+              "flagCode": "SA"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-05-31T14:00:00.000Z"
+        },
+        {
+          "id": "gE2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ie",
+              "name": "Irlanda",
+              "flagCode": "IE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-05-31T17:00:00.000Z"
+        },
+        {
+          "id": "gE3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "de",
+              "name": "Alemania",
+              "flagCode": "DE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "ie",
+              "name": "Irlanda",
+              "flagCode": "IE"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T14:00:00.000Z"
+        },
+        {
+          "id": "gE4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "sa",
+              "name": "Arabia Saudita",
+              "flagCode": "SA"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-04T17:00:00.000Z"
+        },
+        {
+          "id": "gE5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "cm",
+              "name": "Camerún",
+              "flagCode": "CM"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "de",
+              "name": "Alemania",
+              "flagCode": "DE"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-06-08T14:00:00.000Z"
+        },
+        {
+          "id": "gE6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "sa",
+              "name": "Arabia Saudita",
+              "flagCode": "SA"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "ie",
+              "name": "Irlanda",
+              "flagCode": "IE"
+            },
+            "score": 3
+          },
+          "kickoff": "2002-06-08T17:00:00.000Z"
+        }
       ]
     },
     {
       "id": "F",
       "name": "GRUPO F",
       "standings": [
-        { "position": 1, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 5 },
-        { "position": 2, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 5 },
-        { "position": 3, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 4 },
-        { "position": 4, "team": { "id": "ng", "name": "Nigeria", "flagCode": "NG" }, "points": 1 }
+        {
+          "position": 1,
+          "team": {
+            "id": "se",
+            "name": "Suecia",
+            "flagCode": "SE"
+          },
+          "points": 5
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "eng",
+            "name": "Inglaterra",
+            "flagCode": "GB"
+          },
+          "points": 5
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "ar",
+            "name": "Argentina",
+            "flagCode": "AR"
+          },
+          "points": 4
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "ng",
+            "name": "Nigeria",
+            "flagCode": "NG"
+          },
+          "points": 1
+        }
       ],
       "matches": [
-        { "id": "gF1", "played": true, "home": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 1 }, "away": { "team": { "id": "ng", "name": "Nigeria", "flagCode": "NG" }, "score": 0 } },
-        { "id": "gF2", "played": true, "home": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 1 }, "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 1 } },
-        { "id": "gF3", "played": true, "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 2 }, "away": { "team": { "id": "ng", "name": "Nigeria", "flagCode": "NG" }, "score": 1 } },
-        { "id": "gF4", "played": true, "home": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 0 }, "away": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 1 } },
-        { "id": "gF5", "played": true, "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 1 }, "away": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 1 } },
-        { "id": "gF6", "played": true, "home": { "team": { "id": "ng", "name": "Nigeria", "flagCode": "NG" }, "score": 0 }, "away": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 0 } }
+        {
+          "id": "gF1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "ng",
+              "name": "Nigeria",
+              "flagCode": "NG"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-05-31T15:00:00.000Z"
+        },
+        {
+          "id": "gF2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-05-31T18:00:00.000Z"
+        },
+        {
+          "id": "gF3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ng",
+              "name": "Nigeria",
+              "flagCode": "NG"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T15:00:00.000Z"
+        },
+        {
+          "id": "gF4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T18:00:00.000Z"
+        },
+        {
+          "id": "gF5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "se",
+              "name": "Suecia",
+              "flagCode": "SE"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "ar",
+              "name": "Argentina",
+              "flagCode": "AR"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-08T15:00:00.000Z"
+        },
+        {
+          "id": "gF6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ng",
+              "name": "Nigeria",
+              "flagCode": "NG"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "eng",
+              "name": "Inglaterra",
+              "flagCode": "GB"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-08T18:00:00.000Z"
+        }
       ]
     },
     {
       "id": "G",
       "name": "GRUPO G",
       "standings": [
-        { "position": 1, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 7 },
-        { "position": 2, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 4 },
-        { "position": 3, "team": { "id": "hr", "name": "Croacia", "flagCode": "HR" }, "points": 3 },
-        { "position": 4, "team": { "id": "ec", "name": "Ecuador", "flagCode": "EC" }, "points": 3 }
+        {
+          "position": 1,
+          "team": {
+            "id": "mx",
+            "name": "México",
+            "flagCode": "MX"
+          },
+          "points": 7
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "it",
+            "name": "Italia",
+            "flagCode": "IT"
+          },
+          "points": 4
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "hr",
+            "name": "Croacia",
+            "flagCode": "HR"
+          },
+          "points": 3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "ec",
+            "name": "Ecuador",
+            "flagCode": "EC"
+          },
+          "points": 3
+        }
       ],
       "matches": [
-        { "id": "gG1", "played": true, "home": { "team": { "id": "hr", "name": "Croacia", "flagCode": "HR" }, "score": 0 }, "away": { "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "score": 1 } },
-        { "id": "gG2", "played": true, "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 }, "away": { "team": { "id": "ec", "name": "Ecuador", "flagCode": "EC" }, "score": 0 } },
-        { "id": "gG3", "played": true, "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 }, "away": { "team": { "id": "hr", "name": "Croacia", "flagCode": "HR" }, "score": 2 } },
-        { "id": "gG4", "played": true, "home": { "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "score": 2 }, "away": { "team": { "id": "ec", "name": "Ecuador", "flagCode": "EC" }, "score": 1 } },
-        { "id": "gG5", "played": true, "home": { "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "score": 1 }, "away": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 } },
-        { "id": "gG6", "played": true, "home": { "team": { "id": "ec", "name": "Ecuador", "flagCode": "EC" }, "score": 1 }, "away": { "team": { "id": "hr", "name": "Croacia", "flagCode": "HR" }, "score": 0 } }
+        {
+          "id": "gG1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "hr",
+              "name": "Croacia",
+              "flagCode": "HR"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-05-31T13:00:00.000Z"
+        },
+        {
+          "id": "gG2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ec",
+              "name": "Ecuador",
+              "flagCode": "EC"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-05-31T16:00:00.000Z"
+        },
+        {
+          "id": "gG3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "hr",
+              "name": "Croacia",
+              "flagCode": "HR"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-06-04T13:00:00.000Z"
+        },
+        {
+          "id": "gG4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "ec",
+              "name": "Ecuador",
+              "flagCode": "EC"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T16:00:00.000Z"
+        },
+        {
+          "id": "gG5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "mx",
+              "name": "México",
+              "flagCode": "MX"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "it",
+              "name": "Italia",
+              "flagCode": "IT"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-08T13:00:00.000Z"
+        },
+        {
+          "id": "gG6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ec",
+              "name": "Ecuador",
+              "flagCode": "EC"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "hr",
+              "name": "Croacia",
+              "flagCode": "HR"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-08T16:00:00.000Z"
+        }
       ]
     },
     {
       "id": "H",
       "name": "GRUPO H",
       "standings": [
-        { "position": 1, "team": { "id": "jp", "name": "Japón", "flagCode": "JP" }, "points": 7 },
-        { "position": 2, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 5 },
-        { "position": 3, "team": { "id": "ru", "name": "Rusia", "flagCode": "RU" }, "points": 3 },
-        { "position": 4, "team": { "id": "tn", "name": "Túnez", "flagCode": "TN" }, "points": 1 }
+        {
+          "position": 1,
+          "team": {
+            "id": "jp",
+            "name": "Japón",
+            "flagCode": "JP"
+          },
+          "points": 7
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": "be",
+            "name": "Bélgica",
+            "flagCode": "BE"
+          },
+          "points": 5
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": "ru",
+            "name": "Rusia",
+            "flagCode": "RU"
+          },
+          "points": 3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": "tn",
+            "name": "Túnez",
+            "flagCode": "TN"
+          },
+          "points": 1
+        }
       ],
       "matches": [
-        { "id": "gH1", "played": true, "home": { "team": { "id": "jp", "name": "Japón", "flagCode": "JP" }, "score": 2 }, "away": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 2 } },
-        { "id": "gH2", "played": true, "home": { "team": { "id": "ru", "name": "Rusia", "flagCode": "RU" }, "score": 2 }, "away": { "team": { "id": "tn", "name": "Túnez", "flagCode": "TN" }, "score": 0 } },
-        { "id": "gH3", "played": true, "home": { "team": { "id": "jp", "name": "Japón", "flagCode": "JP" }, "score": 1 }, "away": { "team": { "id": "ru", "name": "Rusia", "flagCode": "RU" }, "score": 0 } },
-        { "id": "gH4", "played": true, "home": { "team": { "id": "tn", "name": "Túnez", "flagCode": "TN" }, "score": 1 }, "away": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 1 } },
-        { "id": "gH5", "played": true, "home": { "team": { "id": "tn", "name": "Túnez", "flagCode": "TN" }, "score": 0 }, "away": { "team": { "id": "jp", "name": "Japón", "flagCode": "JP" }, "score": 2 } },
-        { "id": "gH6", "played": true, "home": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 3 }, "away": { "team": { "id": "ru", "name": "Rusia", "flagCode": "RU" }, "score": 2 } }
+        {
+          "id": "gH1",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "jp",
+              "name": "Japón",
+              "flagCode": "JP"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-05-31T14:00:00.000Z"
+        },
+        {
+          "id": "gH2",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "ru",
+              "name": "Rusia",
+              "flagCode": "RU"
+            },
+            "score": 2
+          },
+          "away": {
+            "team": {
+              "id": "tn",
+              "name": "Túnez",
+              "flagCode": "TN"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-05-31T17:00:00.000Z"
+        },
+        {
+          "id": "gH3",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "jp",
+              "name": "Japón",
+              "flagCode": "JP"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "ru",
+              "name": "Rusia",
+              "flagCode": "RU"
+            },
+            "score": 0
+          },
+          "kickoff": "2002-06-04T14:00:00.000Z"
+        },
+        {
+          "id": "gH4",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "tn",
+              "name": "Túnez",
+              "flagCode": "TN"
+            },
+            "score": 1
+          },
+          "away": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 1
+          },
+          "kickoff": "2002-06-04T17:00:00.000Z"
+        },
+        {
+          "id": "gH5",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "tn",
+              "name": "Túnez",
+              "flagCode": "TN"
+            },
+            "score": 0
+          },
+          "away": {
+            "team": {
+              "id": "jp",
+              "name": "Japón",
+              "flagCode": "JP"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-06-08T14:00:00.000Z"
+        },
+        {
+          "id": "gH6",
+          "played": true,
+          "home": {
+            "team": {
+              "id": "be",
+              "name": "Bélgica",
+              "flagCode": "BE"
+            },
+            "score": 3
+          },
+          "away": {
+            "team": {
+              "id": "ru",
+              "name": "Rusia",
+              "flagCode": "RU"
+            },
+            "score": 2
+          },
+          "kickoff": "2002-06-08T17:00:00.000Z"
+        }
       ]
     }
   ],
@@ -159,26 +1375,84 @@
           {
             "id": "r16-l1",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 },
-            "away": { "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "py",
+                "name": "Paraguay",
+                "flagCode": "PY"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-l2",
             "played": true,
-            "home": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 2 },
-            "away": { "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "us",
+                "name": "EE.UU.",
+                "flagCode": "US"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "mx",
+                "name": "México",
+                "flagCode": "MX"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-l3",
             "played": true,
-            "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 1, "penalties": 3 },
-            "away": { "team": { "id": "ie", "name": "Irlanda", "flagCode": "IE" }, "score": 1, "penalties": 2 }
+            "home": {
+              "team": {
+                "id": "es",
+                "name": "España",
+                "flagCode": "ES"
+              },
+              "score": 1,
+              "penalties": 3
+            },
+            "away": {
+              "team": {
+                "id": "ie",
+                "name": "Irlanda",
+                "flagCode": "IE"
+              },
+              "score": 1,
+              "penalties": 2
+            }
           },
           {
             "id": "r16-l4",
             "played": true,
-            "home": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 2 },
-            "away": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "kr",
+                "name": "Corea del Sur",
+                "flagCode": "KR"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 1
+            }
           }
         ]
       },
@@ -190,26 +1464,82 @@
           {
             "id": "r16-r1",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 },
-            "away": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "be",
+                "name": "Bélgica",
+                "flagCode": "BE"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-r2",
             "played": true,
-            "home": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 3 },
-            "away": { "team": { "id": "dk", "name": "Dinamarca", "flagCode": "DK" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "eng",
+                "name": "Inglaterra",
+                "flagCode": "GB"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "dk",
+                "name": "Dinamarca",
+                "flagCode": "DK"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-r3",
             "played": true,
-            "home": { "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "score": 2 },
-            "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "sn",
+                "name": "Senegal",
+                "flagCode": "SN"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 1
+            }
           },
           {
             "id": "r16-r4",
             "played": true,
-            "home": { "team": { "id": "jp", "name": "Japón", "flagCode": "JP" }, "score": 0 },
-            "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "jp",
+                "name": "Japón",
+                "flagCode": "JP"
+              },
+              "score": 0
+            },
+            "away": {
+              "team": {
+                "id": "tr",
+                "name": "Turquía",
+                "flagCode": "TR"
+              },
+              "score": 1
+            }
           }
         ]
       },
@@ -221,14 +1551,44 @@
           {
             "id": "qf-l1",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 },
-            "away": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "us",
+                "name": "EE.UU.",
+                "flagCode": "US"
+              },
+              "score": 0
+            }
           },
           {
             "id": "qf-l2",
             "played": true,
-            "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 0, "penalties": 3 },
-            "away": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 0, "penalties": 5 }
+            "home": {
+              "team": {
+                "id": "es",
+                "name": "España",
+                "flagCode": "ES"
+              },
+              "score": 0,
+              "penalties": 3
+            },
+            "away": {
+              "team": {
+                "id": "kr",
+                "name": "Corea del Sur",
+                "flagCode": "KR"
+              },
+              "score": 0,
+              "penalties": 5
+            }
           }
         ]
       },
@@ -240,14 +1600,42 @@
           {
             "id": "qf-r1",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 },
-            "away": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "eng",
+                "name": "Inglaterra",
+                "flagCode": "GB"
+              },
+              "score": 1
+            }
           },
           {
             "id": "qf-r2",
             "played": true,
-            "home": { "team": { "id": "sn", "name": "Senegal", "flagCode": "SN" }, "score": 0 },
-            "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "sn",
+                "name": "Senegal",
+                "flagCode": "SN"
+              },
+              "score": 0
+            },
+            "away": {
+              "team": {
+                "id": "tr",
+                "name": "Turquía",
+                "flagCode": "TR"
+              },
+              "score": 1
+            }
           }
         ]
       },
@@ -259,8 +1647,22 @@
           {
             "id": "sf-l1",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 },
-            "away": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "kr",
+                "name": "Corea del Sur",
+                "flagCode": "KR"
+              },
+              "score": 0
+            }
           }
         ]
       },
@@ -272,8 +1674,22 @@
           {
             "id": "sf-r1",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 1 },
-            "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "tr",
+                "name": "Turquía",
+                "flagCode": "TR"
+              },
+              "score": 0
+            }
           }
         ]
       },
@@ -284,8 +1700,22 @@
           {
             "id": "final-1",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 0 },
-            "away": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 0
+            },
+            "away": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 2
+            }
           }
         ]
       }
@@ -294,7 +1724,21 @@
   "thirdPlace": {
     "id": "third-place",
     "played": true,
-    "home": { "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "score": 2 },
-    "away": { "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "score": 3 }
+    "home": {
+      "team": {
+        "id": "kr",
+        "name": "Corea del Sur",
+        "flagCode": "KR"
+      },
+      "score": 2
+    },
+    "away": {
+      "team": {
+        "id": "tr",
+        "name": "Turquía",
+        "flagCode": "TR"
+      },
+      "score": 3
+    }
   }
 }

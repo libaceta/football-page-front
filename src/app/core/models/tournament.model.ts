@@ -45,6 +45,8 @@ export interface Match {
   readonly home: MatchSlot;
   readonly away: MatchSlot;
   readonly played: boolean;
+  /** Fecha y hora de inicio en ISO 8601 UTC (ej. "2026-06-11T19:00:00Z"). */
+  readonly kickoff?: string;
 }
 
 /** Una fila de la tabla de un grupo. */
