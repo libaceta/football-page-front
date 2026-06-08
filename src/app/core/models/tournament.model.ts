@@ -61,6 +61,17 @@ export interface Group {
   readonly standings: readonly GroupStanding[];
 }
 
+/**
+ * Fase de liguilla posterior a la fase de grupos inicial. Usada por formatos
+ * históricos sin cuadro estándar: ronda final de 1950 (un grupo), segunda fase
+ * de grupos de 1974/1978 (dos grupos) y de 1982 (cuatro grupos).
+ */
+export interface FinalRound {
+  /** Etiqueta de la fase, ej. "RONDA FINAL" o "SEGUNDA FASE". */
+  readonly name: string;
+  readonly groups: readonly Group[];
+}
+
 export interface KnockoutRound {
   readonly id: string;
   readonly name: KnockoutRoundName;
@@ -81,6 +92,8 @@ export interface Edition {
   /** Id del equipo campeón (resuelto contra `teams` por la UI). */
   readonly championTeamId: string;
   readonly groups?: readonly Group[];
+  /** Fase de liguilla posterior (1950 ronda final, 2da fase 1974/78/82). */
+  readonly finalRound?: FinalRound;
   readonly knockout?: KnockoutBracket;
   /** Partido por el tercer puesto. */
   readonly thirdPlace?: Match;

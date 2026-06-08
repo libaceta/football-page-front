@@ -10,7 +10,9 @@ import { flagClass } from '../../../../core/utils/flag.util';
     <div class="flex flex-col items-center gap-2 text-center">
       <div class="text-4xl drop-shadow-[0_0_12px_rgba(251,191,36,0.5)]">🏆</div>
 
-      <div class="text-[9px] font-bold tracking-[0.2em] text-zinc-500">FINAL</div>
+      @if (final(); as f) {
+        <div class="text-[9px] font-bold tracking-[0.2em] text-zinc-500">FINAL</div>
+      }
 
       @if (final(); as f) {
         <div

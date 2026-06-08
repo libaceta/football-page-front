@@ -37,6 +37,10 @@
       No se pudo cargar el torneo. Reintentá más tarde.
     </div>
   } @else if (data(); as ed) {
+    @if (mode() === 'groups') {
+      <!-- Formato de liguilla (1950 / 1974 / 1978 / 1982) -->
+      <app-group-stage-view [edition]="ed" [champion]="champion()" />
+    } @else {
     <!-- Cuadro completo: scroll horizontal en pantallas chicas -->
     <div class="overflow-x-auto pb-4">
       <div class="mx-auto flex w-max items-stretch gap-3">
@@ -81,6 +85,7 @@
       <footer class="mx-auto mt-4 max-w-4xl">
         <app-stage-timeline />
       </footer>
+    }
     }
   }
 </div>

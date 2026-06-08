@@ -25,6 +25,7 @@ import { BracketTree } from '../components/bracket-tree/bracket-tree';
 import { ChampionTrophy } from '../components/champion-trophy/champion-trophy';
 import { ThirdPlace } from '../components/third-place/third-place';
 import { StageTimeline } from '../components/stage-timeline/stage-timeline';
+import { GroupStageView } from '../components/group-stage-view/group-stage-view';
 
 // Orden de octavos -> semifinal usado para ordenar las columnas del cuadro.
 const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
@@ -39,6 +40,7 @@ const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
     ChampionTrophy,
     ThirdPlace,
     StageTimeline,
+    GroupStageView,
   ],
   templateUrl: './tournament-page.html',
 })
@@ -114,13 +116,25 @@ export class TournamentPage {
   protected readonly showTimeline = computed(() => this.params().year === 2026);
 
   /**
+   * Formato de presentación: 'bracket' (cuadro estándar) o 'groups' (liguilla,
+   * para ediciones con `finalRound` como 1950/1974/1978/1982).
+   */
+  protected readonly mode = computed<'bracket' | 'groups'>(() =>
+    this.data()?.finalRound ? 'groups' : 'bracket',
+  );
+
+  /**
    * Busca un equipo por id en cualquier parte de la edición (grupos, cuadro,
    * tercer puesto). Necesario para ediciones sin fase de grupos (1934/1938).
    */
   private findTeam(teamId: string): Team | undefined {
     const ed = this.data();
     if (!ed) return undefined;
-    for (const group of ed.groups ?? []) {
+    const allGroups = [
+      ...(ed.groups ?? []),
+      ...(ed.finalRound?.groups ?? []),
+    ];
+    for (const group of allGroups) {
       for (const row of group.standings) {
         if (row.team.id === teamId) return row.team;
       }

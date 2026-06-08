@@ -1,0 +1,157 @@
+{
+  "id": "world-cup-1982",
+  "year": 1982,
+  "format": "cup",
+  "championTeamId": "it",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 4 },
+        { "position": 2, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 3 },
+        { "position": 3, "team": { "id": "cm", "name": "Camerún", "flagCode": "CM" }, "points": 3 },
+        { "position": 4, "team": { "id": "pe", "name": "Perú", "flagCode": "PE" }, "points": 2 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 4 },
+        { "position": 2, "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "points": 4 },
+        { "position": 3, "team": { "id": "dz", "name": "Argelia", "flagCode": "DZ" }, "points": 4 },
+        { "position": 4, "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 5 },
+        { "position": 2, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 4 },
+        { "position": 3, "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "points": 3 },
+        { "position": 4, "team": { "id": "sv", "name": "El Salvador", "flagCode": "SV" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 6 },
+        { "position": 2, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 3 },
+        { "position": 3, "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "points": 2 },
+        { "position": 4, "team": { "id": "kw", "name": "Kuwait", "flagCode": "KW" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "GRUPO 5",
+      "standings": [
+        { "position": 1, "team": { "id": "ni", "name": "Irlanda del Norte", "flagCode": "GB" }, "points": 4 },
+        { "position": 2, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 3 },
+        { "position": 3, "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "points": 3 },
+        { "position": 4, "team": { "id": "hn", "name": "Honduras", "flagCode": "HN" }, "points": 2 }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "GRUPO 6",
+      "standings": [
+        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 6 },
+        { "position": 2, "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "points": 3 },
+        { "position": 3, "team": { "id": "sct", "name": "Escocia", "flagCode": "GB" }, "points": 3 },
+        { "position": 4, "team": { "id": "nz", "name": "Nueva Zelanda", "flagCode": "NZ" }, "points": 0 }
+      ]
+    }
+  ],
+  "finalRound": {
+    "name": "SEGUNDA FASE",
+    "groups": [
+      {
+        "id": "A",
+        "name": "GRUPO A",
+        "standings": [
+          { "position": 1, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 3 },
+          { "position": 2, "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "points": 1 },
+          { "position": 3, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 1 }
+        ]
+      },
+      {
+        "id": "B",
+        "name": "GRUPO B",
+        "standings": [
+          { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 3 },
+          { "position": 2, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 2 },
+          { "position": 3, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 1 }
+        ]
+      },
+      {
+        "id": "C",
+        "name": "GRUPO C",
+        "standings": [
+          { "position": 1, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 4 },
+          { "position": 2, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 2 },
+          { "position": 3, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 0 }
+        ]
+      },
+      {
+        "id": "D",
+        "name": "GRUPO D",
+        "standings": [
+          { "position": 1, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 3 },
+          { "position": 2, "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "points": 1 },
+          { "position": 3, "team": { "id": "ni", "name": "Irlanda del Norte", "flagCode": "GB" }, "points": 1 }
+        ]
+      }
+    ]
+  },
+  "knockout": {
+    "rounds": [
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 },
+            "away": { "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "score": 0 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 3, "penalties": 5 },
+            "away": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 3, "penalties": 4 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 3 },
+            "away": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "score": 3 },
+    "away": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 2 }
+  }
+}

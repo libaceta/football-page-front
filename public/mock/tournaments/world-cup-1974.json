@@ -1,0 +1,95 @@
+{
+  "id": "world-cup-1974",
+  "year": 1974,
+  "format": "cup",
+  "championTeamId": "de",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 6 },
+        { "position": 2, "team": { "id": "dd", "name": "Alemania Dem.", "flagCode": "DE" }, "points": 5 },
+        { "position": 3, "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "points": 2 },
+        { "position": 4, "team": { "id": "au", "name": "Australia", "flagCode": "AU" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "points": 5 },
+        { "position": 2, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 4 },
+        { "position": 3, "team": { "id": "sct", "name": "Escocia", "flagCode": "GB" }, "points": 4 },
+        { "position": 4, "team": { "id": "zr", "name": "Zaire", "flagCode": "CD" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "points": 6 },
+        { "position": 2, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 4 },
+        { "position": 3, "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "points": 1 },
+        { "position": 4, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 6 },
+        { "position": 2, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 3 },
+        { "position": 3, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 3 },
+        { "position": 4, "team": { "id": "ht", "name": "Haití", "flagCode": "HT" }, "points": 0 }
+      ]
+    }
+  ],
+  "finalRound": {
+    "name": "SEGUNDA FASE",
+    "groups": [
+      {
+        "id": "A",
+        "name": "GRUPO A",
+        "standings": [
+          { "position": 1, "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "points": 6 },
+          { "position": 2, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 4 },
+          { "position": 3, "team": { "id": "dd", "name": "Alemania Dem.", "flagCode": "DE" }, "points": 2 },
+          { "position": 4, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 0 }
+        ]
+      },
+      {
+        "id": "B",
+        "name": "GRUPO B",
+        "standings": [
+          { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 6 },
+          { "position": 2, "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "points": 4 },
+          { "position": 3, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 2 },
+          { "position": 4, "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "points": 0 }
+        ]
+      }
+    ]
+  },
+  "knockout": {
+    "rounds": [
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 2 },
+            "away": { "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "score": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "score": 1 },
+    "away": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 0 }
+  }
+}
