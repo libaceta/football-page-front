@@ -1,0 +1,109 @@
+$line: rgba(255, 255, 255, 0.18);
+$card-w: 9rem;
+$stub-w: 1.4rem;
+$col-w: $card-w + $stub-w;
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+.tree {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+
+  &.right {
+    flex-direction: row-reverse;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: $col-w;
+}
+
+.lbl {
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #71717a;
+  text-transform: uppercase;
+}
+
+.items {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* Cada partido ocupa una franja vertical de igual altura. Así el centro de la
+   card siguiente coincide con el punto medio entre las dos cards anteriores. */
+.item {
+  position: relative;
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+
+  app-match-card {
+    display: block;
+    width: $card-w;
+  }
+}
+
+/* Conectores --------------------------------------------------------------- */
+
+/* Tramo horizontal: del borde de la card hacia el espacio entre columnas. */
+.stub {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: $stub-w;
+  background: $line;
+  transform: translateY(-1px);
+}
+
+/* Tramo vertical: une el par de cards (su largo = una franja de .item, que es
+   justo la distancia entre los centros de dos partidos contiguos). */
+.vbar {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  width: 2px;
+  background: $line;
+}
+
+/* Lado izquierdo: cards a la izquierda, conectores hacia la derecha (centro). */
+.tree.left {
+  .item app-match-card {
+    margin-right: auto;
+  }
+
+  .col:not(.is-last) {
+    .stub {
+      right: 0;
+    }
+    .vbar {
+      right: 0;
+    }
+  }
+}
+
+/* Lado derecho: espejado. Cards a la derecha, conectores hacia la izquierda. */
+.tree.right {
+  .item app-match-card {
+    margin-left: auto;
+  }
+
+  .col:not(.is-last) {
+    .stub {
+      left: 0;
+    }
+    .vbar {
+      left: 0;
+    }
+  }
+}

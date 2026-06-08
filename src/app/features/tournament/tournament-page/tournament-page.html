@@ -1,0 +1,61 @@
+<div class="min-h-full bg-[#0a0a0f] px-3 py-4 text-zinc-200">
+  <!-- Encabezado -->
+  <header class="mb-4 text-center">
+    <h1 class="text-2xl font-extrabold uppercase tracking-wide text-zinc-50">
+      Mundial {{ params().year }}
+    </h1>
+    <p class="text-xs tracking-[0.3em] text-amber-300/80">CAMINO AL CAMPEÓN</p>
+  </header>
+
+  @if (isLoading()) {
+    <div class="py-20 text-center text-sm text-zinc-500">Cargando torneo…</div>
+  } @else if (error()) {
+    <div class="py-20 text-center text-sm text-red-400">
+      No se pudo cargar el torneo. Reintentá más tarde.
+    </div>
+  } @else if (data(); as ed) {
+    <!-- Cuadro completo: scroll horizontal en pantallas chicas -->
+    <div class="overflow-x-auto pb-4">
+      <div class="mx-auto flex w-max items-stretch gap-3">
+        <!-- Grupos izquierda -->
+        <aside class="flex w-40 shrink-0 flex-col gap-2">
+          @for (g of groupsLeft(); track g.id) {
+            <app-group-panel [group]="g" />
+          }
+        </aside>
+
+        <!-- Bracket izquierdo -->
+        <section class="flex-1">
+          <app-bracket-tree [rounds]="leftRounds()" side="left" />
+        </section>
+
+        <!-- Centro: trofeo + tercer puesto -->
+        <section
+          class="flex w-56 shrink-0 flex-col items-center justify-center gap-6 px-2"
+        >
+          <app-champion-trophy [final]="finalMatch()" [champion]="champion()" />
+          @if (thirdPlace(); as tp) {
+            <app-third-place [match]="tp" />
+          }
+        </section>
+
+        <!-- Bracket derecho -->
+        <section class="flex-1">
+          <app-bracket-tree [rounds]="rightRounds()" side="right" />
+        </section>
+
+        <!-- Grupos derecha -->
+        <aside class="flex w-40 shrink-0 flex-col gap-2">
+          @for (g of groupsRight(); track g.id) {
+            <app-group-panel [group]="g" />
+          }
+        </aside>
+      </div>
+    </div>
+
+    <!-- Línea de tiempo del torneo -->
+    <footer class="mx-auto mt-4 max-w-4xl">
+      <app-stage-timeline />
+    </footer>
+  }
+</div>

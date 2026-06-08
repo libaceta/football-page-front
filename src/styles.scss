@@ -1,0 +1,20 @@
+@use 'tailwindcss';
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #0a0a0f;
+  color: #e7e7ea;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Banderas emoji con buen render en distintos SO */
+.flag {
+  font-family: 'Twemoji Country Flags', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+  line-height: 1;
+}

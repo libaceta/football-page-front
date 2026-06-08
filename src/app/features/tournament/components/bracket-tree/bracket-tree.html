@@ -1,0 +1,20 @@
+<div class="tree" [class.left]="side() === 'left'" [class.right]="side() === 'right'">
+  @for (round of rounds(); track round.id; let lastCol = $last) {
+    <div class="col" [class.is-last]="lastCol">
+      <div class="lbl">{{ label(round.name) }}</div>
+      <div class="items">
+        @for (match of round.matches; track match.id; let i = $index) {
+          <div class="item">
+            <app-match-card [match]="match" />
+            @if (!lastCol) {
+              <span class="stub"></span>
+              @if (i % 2 === 0) {
+                <span class="vbar"></span>
+              }
+            }
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>
