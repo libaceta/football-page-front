@@ -13,8 +13,16 @@ body {
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-/* Banderas emoji con buen render en distintos SO */
-.flag {
-  font-family: 'Twemoji Country Flags', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
-  line-height: 1;
+/* flag-icons: dar tamaño explícito a la bandera y eliminar el pseudo-elemento
+   ::before (un \00a0 que en algunos SO se dibuja como un glifo visible). */
+.fi {
+  display: inline-block;
+  width: 1.33333em;
+  height: 1em;
+  line-height: 1em;
+}
+
+.fi::before {
+  content: '' !important;
+  display: none !important;
 }
