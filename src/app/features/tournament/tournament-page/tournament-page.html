@@ -76,9 +76,11 @@
       </div>
     </div>
 
-    <!-- Línea de tiempo del torneo -->
-    <footer class="mx-auto mt-4 max-w-4xl">
-      <app-stage-timeline />
-    </footer>
+    <!-- Línea de tiempo del torneo (sólo edición 2026) -->
+    @if (showTimeline()) {
+      <footer class="mx-auto mt-4 max-w-4xl">
+        <app-stage-timeline />
+      </footer>
+    }
   }
 </div>

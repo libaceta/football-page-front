@@ -13,6 +13,14 @@
     { "id": "world-cup-1998", "year": 1998, "championName": "Francia" },
     { "id": "world-cup-1994", "year": 1994, "championName": "Brasil" },
     { "id": "world-cup-1990", "year": 1990, "championName": "Alemania Fed." },
-    { "id": "world-cup-1986", "year": 1986, "championName": "Argentina" }
+    { "id": "world-cup-1986", "year": 1986, "championName": "Argentina" },
+    { "id": "world-cup-1970", "year": 1970, "championName": "Brasil" },
+    { "id": "world-cup-1966", "year": 1966, "championName": "Inglaterra" },
+    { "id": "world-cup-1962", "year": 1962, "championName": "Brasil" },
+    { "id": "world-cup-1958", "year": 1958, "championName": "Brasil" },
+    { "id": "world-cup-1954", "year": 1954, "championName": "Alemania Fed." },
+    { "id": "world-cup-1938", "year": 1938, "championName": "Italia" },
+    { "id": "world-cup-1934", "year": 1934, "championName": "Italia" },
+    { "id": "world-cup-1930", "year": 1930, "championName": "Uruguay" }
   ]
 }

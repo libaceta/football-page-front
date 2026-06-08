@@ -1,0 +1,134 @@
+{
+  "id": "world-cup-1958",
+  "year": 1958,
+  "format": "cup",
+  "championTeamId": "br",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 4 },
+        { "position": 2, "team": { "id": "ni", "name": "Irlanda del Norte", "flagCode": "GB" }, "points": 3 },
+        { "position": 3, "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "points": 3 },
+        { "position": 4, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 2 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 4 },
+        { "position": 2, "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "points": 4 },
+        { "position": 3, "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "points": 3 },
+        { "position": 4, "team": { "id": "sct", "name": "Escocia", "flagCode": "GB" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 5 },
+        { "position": 2, "team": { "id": "wal", "name": "Gales", "flagCode": "GB" }, "points": 3 },
+        { "position": 3, "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "points": 3 },
+        { "position": 4, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 5 },
+        { "position": 2, "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "points": 3 },
+        { "position": 3, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 3 },
+        { "position": 4, "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "points": 1 }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "id": "qf-l",
+        "name": "quarter",
+        "side": "left",
+        "matches": [
+          {
+            "id": "qf-l1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 1 },
+            "away": { "team": { "id": "wal", "name": "Gales", "flagCode": "GB" }, "score": 0 }
+          },
+          {
+            "id": "qf-l2",
+            "played": true,
+            "home": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 4 },
+            "away": { "team": { "id": "ni", "name": "Irlanda del Norte", "flagCode": "GB" }, "score": 0 }
+          }
+        ]
+      },
+      {
+        "id": "qf-r",
+        "name": "quarter",
+        "side": "right",
+        "matches": [
+          {
+            "id": "qf-r1",
+            "played": true,
+            "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 2 },
+            "away": { "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "score": 0 }
+          },
+          {
+            "id": "qf-r2",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 1 },
+            "away": { "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "score": 0 }
+          }
+        ]
+      },
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 5 },
+            "away": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 2 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 3 },
+            "away": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 5 },
+            "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 2 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 6 },
+    "away": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 3 }
+  }
+}

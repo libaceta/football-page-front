@@ -1,0 +1,134 @@
+{
+  "id": "world-cup-1970",
+  "year": 1970,
+  "format": "cup",
+  "championTeamId": "br",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "points": 5 },
+        { "position": 2, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 5 },
+        { "position": 3, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 2 },
+        { "position": 4, "team": { "id": "sv", "name": "El Salvador", "flagCode": "SV" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 4 },
+        { "position": 2, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 3 },
+        { "position": 3, "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "points": 3 },
+        { "position": 4, "team": { "id": "il", "name": "Israel", "flagCode": "IL" }, "points": 2 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 6 },
+        { "position": 2, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 4 },
+        { "position": 3, "team": { "id": "ro", "name": "Rumania", "flagCode": "RO" }, "points": 2 },
+        { "position": 4, "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 6 },
+        { "position": 2, "team": { "id": "pe", "name": "Perú", "flagCode": "PE" }, "points": 4 },
+        { "position": 3, "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "points": 1 },
+        { "position": 4, "team": { "id": "ma", "name": "Marruecos", "flagCode": "MA" }, "points": 1 }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "id": "qf-l",
+        "name": "quarter",
+        "side": "left",
+        "matches": [
+          {
+            "id": "qf-l1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 4 },
+            "away": { "team": { "id": "pe", "name": "Perú", "flagCode": "PE" }, "score": 2 }
+          },
+          {
+            "id": "qf-l2",
+            "played": true,
+            "home": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 1 },
+            "away": { "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "score": 0 }
+          }
+        ]
+      },
+      {
+        "id": "qf-r",
+        "name": "quarter",
+        "side": "right",
+        "matches": [
+          {
+            "id": "qf-r1",
+            "played": true,
+            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 4 },
+            "away": { "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "score": 1 }
+          },
+          {
+            "id": "qf-r2",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 3 },
+            "away": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 2 }
+          }
+        ]
+      },
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 3 },
+            "away": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 4 },
+            "away": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 3 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 4 },
+            "away": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 1 },
+    "away": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 0 }
+  }
+}

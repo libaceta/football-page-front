@@ -107,13 +107,34 @@ export class TournamentPage {
   protected readonly champion = computed<Team | undefined>(() => {
     const ed = this.data();
     if (!ed) return undefined;
+    return this.findTeam(ed.championTeamId);
+  });
+
+  /** Sólo se muestra el timeline detallado del Mundial 2026. */
+  protected readonly showTimeline = computed(() => this.params().year === 2026);
+
+  /**
+   * Busca un equipo por id en cualquier parte de la edición (grupos, cuadro,
+   * tercer puesto). Necesario para ediciones sin fase de grupos (1934/1938).
+   */
+  private findTeam(teamId: string): Team | undefined {
+    const ed = this.data();
+    if (!ed) return undefined;
     for (const group of ed.groups ?? []) {
       for (const row of group.standings) {
-        if (row.team.id === ed.championTeamId) return row.team;
+        if (row.team.id === teamId) return row.team;
       }
     }
+    const matches = [
+      ...(ed.knockout?.rounds.flatMap((r) => r.matches) ?? []),
+      ...(ed.thirdPlace ? [ed.thirdPlace] : []),
+    ];
+    for (const m of matches) {
+      if (m.home.team.id === teamId) return m.home.team;
+      if (m.away.team.id === teamId) return m.away.team;
+    }
     return undefined;
-  });
+  }
 
   private sideRounds(side: 'left' | 'right'): KnockoutRound[] {
     const rounds = this.data()?.knockout?.rounds ?? [];

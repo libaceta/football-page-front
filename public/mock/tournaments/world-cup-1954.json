@@ -1,0 +1,134 @@
+{
+  "id": "world-cup-1954",
+  "year": 1954,
+  "format": "cup",
+  "championTeamId": "de",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 3 },
+        { "position": 2, "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "points": 3 },
+        { "position": 3, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 2 },
+        { "position": 4, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "points": 4 },
+        { "position": 2, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 2 },
+        { "position": 3, "team": { "id": "tr", "name": "Turquía", "flagCode": "TR" }, "points": 2 },
+        { "position": 4, "team": { "id": "kr", "name": "Corea del Sur", "flagCode": "KR" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 4 },
+        { "position": 2, "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "points": 4 },
+        { "position": 3, "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "points": 0 },
+        { "position": 4, "team": { "id": "sct", "name": "Escocia", "flagCode": "GB" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 3 },
+        { "position": 2, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 2 },
+        { "position": 3, "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "points": 2 },
+        { "position": 4, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 1 }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "id": "qf-l",
+        "name": "quarter",
+        "side": "left",
+        "matches": [
+          {
+            "id": "qf-l1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 2 },
+            "away": { "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "score": 0 }
+          },
+          {
+            "id": "qf-l2",
+            "played": true,
+            "home": { "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "score": 7 },
+            "away": { "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "score": 5 }
+          }
+        ]
+      },
+      {
+        "id": "qf-r",
+        "name": "quarter",
+        "side": "right",
+        "matches": [
+          {
+            "id": "qf-r1",
+            "played": true,
+            "home": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 4 },
+            "away": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 }
+          },
+          {
+            "id": "qf-r2",
+            "played": true,
+            "home": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 4 },
+            "away": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 2 }
+          }
+        ]
+      },
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 6 },
+            "away": { "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 4 },
+            "away": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 2 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 3 },
+            "away": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 2 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "score": 3 },
+    "away": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 1 }
+  }
+}

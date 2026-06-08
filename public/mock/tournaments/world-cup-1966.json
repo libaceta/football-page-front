@@ -1,0 +1,134 @@
+{
+  "id": "world-cup-1966",
+  "year": 1966,
+  "format": "cup",
+  "championTeamId": "eng",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 5 },
+        { "position": 2, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 4 },
+        { "position": 3, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 2 },
+        { "position": 4, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 5 },
+        { "position": 2, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 5 },
+        { "position": 3, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 2 },
+        { "position": 4, "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "points": 6 },
+        { "position": 2, "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "points": 4 },
+        { "position": 3, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 2 },
+        { "position": 4, "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "points": 6 },
+        { "position": 2, "team": { "id": "kp", "name": "Corea del Norte", "flagCode": "KP" }, "points": 3 },
+        { "position": 3, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 2 },
+        { "position": 4, "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "points": 1 }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "id": "qf-l",
+        "name": "quarter",
+        "side": "left",
+        "matches": [
+          {
+            "id": "qf-l1",
+            "played": true,
+            "home": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 1 },
+            "away": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 0 }
+          },
+          {
+            "id": "qf-l2",
+            "played": true,
+            "home": { "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "score": 5 },
+            "away": { "team": { "id": "kp", "name": "Corea del Norte", "flagCode": "KP" }, "score": 3 }
+          }
+        ]
+      },
+      {
+        "id": "qf-r",
+        "name": "quarter",
+        "side": "right",
+        "matches": [
+          {
+            "id": "qf-r1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 4 },
+            "away": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 0 }
+          },
+          {
+            "id": "qf-r2",
+            "played": true,
+            "home": { "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "score": 2 },
+            "away": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 2 },
+            "away": { "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 2 },
+            "away": { "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 4 },
+            "away": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 2 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "pt", "name": "Portugal", "flagCode": "PT" }, "score": 2 },
+    "away": { "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "score": 1 }
+  }
+}

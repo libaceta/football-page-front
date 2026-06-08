@@ -1,0 +1,87 @@
+{
+  "id": "world-cup-1930",
+  "year": 1930,
+  "format": "cup",
+  "championTeamId": "uy",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 6 },
+        { "position": 2, "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "points": 4 },
+        { "position": 3, "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "points": 2 },
+        { "position": 4, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "points": 4 },
+        { "position": 2, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 2 },
+        { "position": 3, "team": { "id": "bo", "name": "Bolivia", "flagCode": "BO" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 4 },
+        { "position": 2, "team": { "id": "ro", "name": "Rumania", "flagCode": "RO" }, "points": 2 },
+        { "position": 3, "team": { "id": "pe", "name": "Perú", "flagCode": "PE" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "points": 4 },
+        { "position": 2, "team": { "id": "py", "name": "Paraguay", "flagCode": "PY" }, "points": 2 },
+        { "position": 3, "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "points": 0 }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 6 },
+            "away": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 6 },
+            "away": { "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "score": 4 },
+            "away": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 2 }
+          }
+        ]
+      }
+    ]
+  }
+}

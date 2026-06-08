@@ -1,0 +1,134 @@
+{
+  "id": "world-cup-1962",
+  "year": 1962,
+  "format": "cup",
+  "championTeamId": "br",
+  "groups": [
+    {
+      "id": "1",
+      "name": "GRUPO 1",
+      "standings": [
+        { "position": 1, "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "points": 5 },
+        { "position": 2, "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "points": 4 },
+        { "position": 3, "team": { "id": "uy", "name": "Uruguay", "flagCode": "UY" }, "points": 2 },
+        { "position": 4, "team": { "id": "co", "name": "Colombia", "flagCode": "CO" }, "points": 1 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GRUPO 2",
+      "standings": [
+        { "position": 1, "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "points": 5 },
+        { "position": 2, "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "points": 4 },
+        { "position": 3, "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "points": 3 },
+        { "position": 4, "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "points": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "GRUPO 3",
+      "standings": [
+        { "position": 1, "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "points": 5 },
+        { "position": 2, "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "points": 3 },
+        { "position": 3, "team": { "id": "mx", "name": "México", "flagCode": "MX" }, "points": 2 },
+        { "position": 4, "team": { "id": "es", "name": "España", "flagCode": "ES" }, "points": 2 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "GRUPO 4",
+      "standings": [
+        { "position": 1, "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "points": 5 },
+        { "position": 2, "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "points": 3 },
+        { "position": 3, "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "points": 3 },
+        { "position": 4, "team": { "id": "bg", "name": "Bulgaria", "flagCode": "BG" }, "points": 1 }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "id": "qf-l",
+        "name": "quarter",
+        "side": "left",
+        "matches": [
+          {
+            "id": "qf-l1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 3 },
+            "away": { "team": { "id": "eng", "name": "Inglaterra", "flagCode": "GB" }, "score": 1 }
+          },
+          {
+            "id": "qf-l2",
+            "played": true,
+            "home": { "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "score": 2 },
+            "away": { "team": { "id": "su", "name": "URSS", "flagCode": "RU" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "qf-r",
+        "name": "quarter",
+        "side": "right",
+        "matches": [
+          {
+            "id": "qf-r1",
+            "played": true,
+            "home": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 1 },
+            "away": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 0 }
+          },
+          {
+            "id": "qf-r2",
+            "played": true,
+            "home": { "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "score": 1 },
+            "away": { "team": { "id": "de", "name": "Alemania Fed.", "flagCode": "DE" }, "score": 0 }
+          }
+        ]
+      },
+      {
+        "id": "sf-l",
+        "name": "semi",
+        "side": "left",
+        "matches": [
+          {
+            "id": "sf-l1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 4 },
+            "away": { "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "score": 2 }
+          }
+        ]
+      },
+      {
+        "id": "sf-r",
+        "name": "semi",
+        "side": "right",
+        "matches": [
+          {
+            "id": "sf-r1",
+            "played": true,
+            "home": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 3 },
+            "away": { "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "score": 1 }
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "final",
+        "matches": [
+          {
+            "id": "final-1",
+            "played": true,
+            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 3 },
+            "away": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  "thirdPlace": {
+    "id": "third-place",
+    "played": true,
+    "home": { "team": { "id": "cl", "name": "Chile", "flagCode": "CL" }, "score": 1 },
+    "away": { "team": { "id": "yu", "name": "Yugoslavia", "flagCode": "RS" }, "score": 0 }
+  }
+}
