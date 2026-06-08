@@ -32,7 +32,7 @@ const DATE_FMT = new Intl.DateTimeFormat(undefined, {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [GroupPanel],
   template: `
-    <div class="flex flex-col gap-1.5">
+    <div class="mx-auto flex w-full max-w-sm flex-col gap-1.5">
       <app-group-panel [group]="group()" [detailed]="true" />
 
       @if (rows().length) {
