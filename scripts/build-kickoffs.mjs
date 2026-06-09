@@ -65,6 +65,18 @@ function parseUtcOffset(timeField) {
   return sign * (+m[2] + (m[3] ? +m[3] / 60 : 0));
 }
 
+// Parsea la hora del campo time a [hh, mm] en 24h. Soporta "17:00" y "5:00 p.m.".
+function parseClock(timeField) {
+  const m = timeField.match(/(\d{1,2}):(\d{2})\s*(a\.m\.|p\.m\.)?/i);
+  if (!m) return null;
+  let hh = +m[1];
+  const mm = +m[2];
+  const ap = (m[3] || '').toLowerCase();
+  if (ap === 'p.m.' && hh !== 12) hh += 12;
+  if (ap === 'a.m.' && hh === 12) hh = 0;
+  return [hh, mm];
+}
+
 // Resuelve el id de equipo de una línea team1/team2: primero por nombre completo
 // (algunas plantillas usan el nombre y no el código), luego por código FIFA.
 function parseTeamId(line) {
@@ -95,7 +107,7 @@ function parseFixtures(wiki, bucket) {
     fixtures.push({
       bucket,
       date,
-      time: (fields.time || '').match(/(\d{1,2}):(\d{2})/)?.[0] || null,
+      clock: parseClock(fields.time || ''), // [hh,mm] en 24h, o null
       utc: parseUtcOffset(fields.time || ''), // offset embebido en el campo time, si lo hay
       id1, id2,
       location: (fields.stadium || fields.location || '').replace(/[[\]]/g, ''),
@@ -114,7 +126,7 @@ function offsetFor(loc) {
 function toUtcIso(fx) {
   if (!fx.date) return null;
   const [y, mo, d] = fx.date;
-  const [hh, mm] = fx.time ? fx.time.split(':').map(Number) : [0, 0]; // sin hora -> 00:00 local
+  const [hh, mm] = fx.clock || [0, 0]; // sin hora -> 00:00 local
   // Prioridad: offset embebido en el box; si no, override por sede; si no, default.
   const off = fx.utc != null ? fx.utc : offsetFor(fx.location);
   const ms = Date.UTC(y, mo - 1, d, hh, mm) - off * 3600000;

@@ -7,6 +7,7 @@ export const CODE_TO_ID = {
   SUI: 'ch', CIV: 'ci', CHI: 'cl', CMR: 'cm', CHN: 'cn',
   COL: 'co', CRC: 'cr', TCH: 'cs', CUB: 'cu', CPV: 'cv',
   CZE: 'cz', CSK: 'cs', // Checoslovaquia: TCH (arriba) o CSK según edición
+  CUW: 'cw', COD: 'cd', UZB: 'uz', // Curazao, RD Congo, Uzbekistán (clasificados 2026)
   GDR: 'dd',
   GER: 'de', FRG: 'de', // Alemania / Alemania Occidental
   DEI: 'dei', NEI: 'dei', // Indias Orientales Holandesas
