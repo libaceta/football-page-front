@@ -1,0 +1,18 @@
+{
+  "offset": 3,
+  "manual": {
+    "qf-l1": "2022-12-09T19:00:00Z",
+    "final-1": "2022-12-18T15:00:00Z"
+  },
+  "pages": [
+    { "title": "2022 FIFA World Cup Group A", "bucket": "group" },
+    { "title": "2022 FIFA World Cup Group B", "bucket": "group" },
+    { "title": "2022 FIFA World Cup Group C", "bucket": "group" },
+    { "title": "2022 FIFA World Cup Group D", "bucket": "group" },
+    { "title": "2022 FIFA World Cup Group E", "bucket": "group" },
+    { "title": "2022 FIFA World Cup Group F", "bucket": "group" },
+    { "title": "2022 FIFA World Cup Group G", "bucket": "group" },
+    { "title": "2022 FIFA World Cup Group H", "bucket": "group" },
+    { "title": "2022 FIFA World Cup knockout stage", "bucket": "knockout" }
+  ]
+}

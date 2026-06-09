@@ -5,6 +5,14 @@ import { flagClass } from '../../../../core/utils/flag.util';
 
 type Outcome = 'home' | 'away' | 'none';
 
+// Fecha y hora en la zona horaria y el idioma del navegador.
+const DATE_FMT = new Intl.DateTimeFormat(undefined, {
+  day: '2-digit',
+  month: 'short',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+
 interface SlotView {
   readonly kind: 'home' | 'away';
   readonly slot: MatchSlot;
@@ -18,6 +26,11 @@ interface SlotView {
     <div
       class="w-full min-w-[8.5rem] overflow-hidden rounded-md border border-white/10 bg-[#15151d] text-[11px] shadow-sm"
     >
+      @if (when()) {
+        <div class="bg-black/20 px-2 py-0.5 text-center text-[8px] uppercase tracking-wide text-zinc-500">
+          {{ when() }}
+        </div>
+      }
       @for (s of slots(); track s.kind) {
         <div
           class="flex items-center gap-1.5 px-2 py-1 leading-none"
@@ -42,6 +55,11 @@ export class MatchCard {
   readonly match = input.required<Match>();
 
   protected readonly flag = flagClass;
+
+  protected readonly when = computed<string>(() => {
+    const k = this.match().kickoff;
+    return k ? DATE_FMT.format(new Date(k)) : '';
+  });
 
   private readonly outcome = computed<Outcome>(() => {
     const m = this.match();

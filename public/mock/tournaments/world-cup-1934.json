@@ -13,26 +13,86 @@
           {
             "id": "r16-l1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 7 },
-            "away": { "team": { "id": "us", "name": "EE.UU.", "flagCode": "US" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 7
+            },
+            "away": {
+              "team": {
+                "id": "us",
+                "name": "EE.UU.",
+                "flagCode": "US"
+              },
+              "score": 1
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           },
           {
             "id": "r16-l2",
             "played": true,
-            "home": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 3 },
-            "away": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "es",
+                "name": "España",
+                "flagCode": "ES"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 1
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           },
           {
             "id": "r16-l3",
             "played": true,
-            "home": { "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "score": 3 },
-            "away": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "at",
+                "name": "Austria",
+                "flagCode": "AT"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "fr",
+                "name": "Francia",
+                "flagCode": "FR"
+              },
+              "score": 2
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           },
           {
             "id": "r16-l4",
             "played": true,
-            "home": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 4 },
-            "away": { "team": { "id": "eg", "name": "Egipto", "flagCode": "EG" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "hu",
+                "name": "Hungría",
+                "flagCode": "HU"
+              },
+              "score": 4
+            },
+            "away": {
+              "team": {
+                "id": "eg",
+                "name": "Egipto",
+                "flagCode": "EG"
+              },
+              "score": 2
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           }
         ]
       },
@@ -44,26 +104,86 @@
           {
             "id": "r16-r1",
             "played": true,
-            "home": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 2 },
-            "away": { "team": { "id": "ro", "name": "Rumania", "flagCode": "RO" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "cs",
+                "name": "Checoslovaquia",
+                "flagCode": "CZ"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "ro",
+                "name": "Rumania",
+                "flagCode": "RO"
+              },
+              "score": 1
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           },
           {
             "id": "r16-r2",
             "played": true,
-            "home": { "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "score": 3 },
-            "away": { "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "ch",
+                "name": "Suiza",
+                "flagCode": "CH"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "nl",
+                "name": "Países Bajos",
+                "flagCode": "NL"
+              },
+              "score": 2
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           },
           {
             "id": "r16-r3",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 5 },
-            "away": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 5
+            },
+            "away": {
+              "team": {
+                "id": "be",
+                "name": "Bélgica",
+                "flagCode": "BE"
+              },
+              "score": 2
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           },
           {
             "id": "r16-r4",
             "played": true,
-            "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 3 },
-            "away": { "team": { "id": "ar", "name": "Argentina", "flagCode": "AR" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "ar",
+                "name": "Argentina",
+                "flagCode": "AR"
+              },
+              "score": 2
+            },
+            "kickoff": "1934-05-27T15:00:00Z"
           }
         ]
       },
@@ -75,14 +195,44 @@
           {
             "id": "qf-l1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 },
-            "away": { "team": { "id": "es", "name": "España", "flagCode": "ES" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "es",
+                "name": "España",
+                "flagCode": "ES"
+              },
+              "score": 0
+            },
+            "kickoff": "1934-05-31T15:30:00Z"
           },
           {
             "id": "qf-l2",
             "played": true,
-            "home": { "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "score": 2 },
-            "away": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "at",
+                "name": "Austria",
+                "flagCode": "AT"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "hu",
+                "name": "Hungría",
+                "flagCode": "HU"
+              },
+              "score": 1
+            },
+            "kickoff": "1934-05-31T15:30:00Z"
           }
         ]
       },
@@ -94,14 +244,44 @@
           {
             "id": "qf-r1",
             "played": true,
-            "home": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 3 },
-            "away": { "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "cs",
+                "name": "Checoslovaquia",
+                "flagCode": "CZ"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "ch",
+                "name": "Suiza",
+                "flagCode": "CH"
+              },
+              "score": 2
+            },
+            "kickoff": "1934-05-31T15:30:00Z"
           },
           {
             "id": "qf-r2",
             "played": true,
-            "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 2 },
-            "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 1
+            },
+            "kickoff": "1934-05-31T15:30:00Z"
           }
         ]
       },
@@ -113,8 +293,23 @@
           {
             "id": "sf-l1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 1 },
-            "away": { "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "at",
+                "name": "Austria",
+                "flagCode": "AT"
+              },
+              "score": 0
+            },
+            "kickoff": "1934-06-03T15:30:00Z"
           }
         ]
       },
@@ -126,8 +321,23 @@
           {
             "id": "sf-r1",
             "played": true,
-            "home": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 3 },
-            "away": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "cs",
+                "name": "Checoslovaquia",
+                "flagCode": "CZ"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 1
+            },
+            "kickoff": "1934-06-03T15:30:00Z"
           }
         ]
       },
@@ -138,8 +348,23 @@
           {
             "id": "final-1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 },
-            "away": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "cs",
+                "name": "Checoslovaquia",
+                "flagCode": "CZ"
+              },
+              "score": 1
+            },
+            "kickoff": "1934-06-10T14:30:00Z"
           }
         ]
       }
@@ -148,7 +373,22 @@
   "thirdPlace": {
     "id": "third-place",
     "played": true,
-    "home": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 3 },
-    "away": { "team": { "id": "at", "name": "Austria", "flagCode": "AT" }, "score": 2 }
+    "home": {
+      "team": {
+        "id": "de",
+        "name": "Alemania",
+        "flagCode": "DE"
+      },
+      "score": 3
+    },
+    "away": {
+      "team": {
+        "id": "at",
+        "name": "Austria",
+        "flagCode": "AT"
+      },
+      "score": 2
+    },
+    "kickoff": "1934-06-07T17:00:00Z"
   }
 }

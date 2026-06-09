@@ -1,0 +1,20 @@
+{
+  "offset": 1,
+  "pages": [
+    {
+      "title": "1954 FIFA World Cup knockout stage",
+      "bucket": "knockout"
+    },
+    {
+      "title": "1954 FIFA World Cup final",
+      "bucket": "knockout"
+    },
+    {
+      "title": "Austria v Switzerland (1954 FIFA World Cup)",
+      "bucket": "knockout"
+    }
+  ],
+  "manual": {
+    "qf-r1": "1954-06-27T16:00:00Z"
+  }
+}

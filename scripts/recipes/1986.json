@@ -1,0 +1,41 @@
+{
+  "offset": -6,
+  "pages": [
+    {
+      "title": "1986 FIFA World Cup Group A",
+      "bucket": "group"
+    },
+    {
+      "title": "1986 FIFA World Cup Group B",
+      "bucket": "group"
+    },
+    {
+      "title": "1986 FIFA World Cup Group C",
+      "bucket": "group"
+    },
+    {
+      "title": "1986 FIFA World Cup Group D",
+      "bucket": "group"
+    },
+    {
+      "title": "1986 FIFA World Cup Group E",
+      "bucket": "group"
+    },
+    {
+      "title": "1986 FIFA World Cup Group F",
+      "bucket": "group"
+    },
+    {
+      "title": "1986 FIFA World Cup knockout stage",
+      "bucket": "knockout"
+    },
+    {
+      "title": "1986 FIFA World Cup final",
+      "bucket": "knockout"
+    },
+    {
+      "title": "Argentina v England (1986 FIFA World Cup)",
+      "bucket": "knockout"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "offset": 9,
+  "pages": [
+    {
+      "title": "2002 FIFA World Cup Group A",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup Group B",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup Group C",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup Group D",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup Group E",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup Group F",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup Group G",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup Group H",
+      "bucket": "group"
+    },
+    {
+      "title": "2002 FIFA World Cup knockout stage",
+      "bucket": "knockout"
+    },
+    {
+      "title": "2002 FIFA World Cup final",
+      "bucket": "knockout"
+    }
+  ]
+}

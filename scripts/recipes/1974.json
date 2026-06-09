@@ -1,0 +1,9 @@
+{
+  "offset": 1,
+  "pages": [
+    { "title": "1974 FIFA World Cup Group A", "bucket": "final" },
+    { "title": "1974 FIFA World Cup Group B", "bucket": "final" },
+    { "title": "1974 FIFA World Cup knockout stage", "bucket": "knockout" },
+    { "title": "1974 FIFA World Cup final", "bucket": "knockout" }
+  ]
+}

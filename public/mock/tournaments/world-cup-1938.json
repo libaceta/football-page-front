@@ -13,26 +13,86 @@
           {
             "id": "r16-l1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 },
-            "away": { "team": { "id": "no", "name": "Noruega", "flagCode": "NO" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "no",
+                "name": "Noruega",
+                "flagCode": "NO"
+              },
+              "score": 1
+            },
+            "kickoff": "1938-06-05T16:00:00Z"
           },
           {
             "id": "r16-l2",
             "played": true,
-            "home": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 3 },
-            "away": { "team": { "id": "be", "name": "Bélgica", "flagCode": "BE" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "fr",
+                "name": "Francia",
+                "flagCode": "FR"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "be",
+                "name": "Bélgica",
+                "flagCode": "BE"
+              },
+              "score": 1
+            },
+            "kickoff": "1938-06-05T16:00:00Z"
           },
           {
             "id": "r16-l3",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 6 },
-            "away": { "team": { "id": "pl", "name": "Polonia", "flagCode": "PL" }, "score": 5 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 6
+            },
+            "away": {
+              "team": {
+                "id": "pl",
+                "name": "Polonia",
+                "flagCode": "PL"
+              },
+              "score": 5
+            },
+            "kickoff": "1938-06-05T16:00:00Z"
           },
           {
             "id": "r16-l4",
             "played": true,
-            "home": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 3 },
-            "away": { "team": { "id": "nl", "name": "Países Bajos", "flagCode": "NL" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "cs",
+                "name": "Checoslovaquia",
+                "flagCode": "CZ"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "nl",
+                "name": "Países Bajos",
+                "flagCode": "NL"
+              },
+              "score": 0
+            },
+            "kickoff": "1938-06-05T16:00:00Z"
           }
         ]
       },
@@ -44,26 +104,85 @@
           {
             "id": "r16-r1",
             "played": true,
-            "home": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 6 },
-            "away": { "team": { "id": "dei", "name": "Indias Or. Hol.", "flagCode": "ID" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "hu",
+                "name": "Hungría",
+                "flagCode": "HU"
+              },
+              "score": 6
+            },
+            "away": {
+              "team": {
+                "id": "dei",
+                "name": "Indias Or. Hol.",
+                "flagCode": "ID"
+              },
+              "score": 0
+            },
+            "kickoff": "1938-06-05T16:00:00Z"
           },
           {
             "id": "r16-r2",
             "played": true,
-            "home": { "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "score": 4 },
-            "away": { "team": { "id": "de", "name": "Alemania", "flagCode": "DE" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "ch",
+                "name": "Suiza",
+                "flagCode": "CH"
+              },
+              "score": 4
+            },
+            "away": {
+              "team": {
+                "id": "de",
+                "name": "Alemania",
+                "flagCode": "DE"
+              },
+              "score": 2
+            },
+            "kickoff": "1938-06-04T16:00:00Z"
           },
           {
             "id": "r16-r3",
             "played": true,
-            "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 1 },
-            "away": { "team": { "id": "aut-w", "name": "Austria (ret.)", "flagCode": "AT" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 1
+            },
+            "away": {
+              "team": {
+                "id": "aut-w",
+                "name": "Austria (ret.)",
+                "flagCode": "AT"
+              },
+              "score": 0
+            }
           },
           {
             "id": "r16-r4",
             "played": true,
-            "home": { "team": { "id": "cu", "name": "Cuba", "flagCode": "CU" }, "score": 2 },
-            "away": { "team": { "id": "ro", "name": "Rumania", "flagCode": "RO" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "cu",
+                "name": "Cuba",
+                "flagCode": "CU"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "ro",
+                "name": "Rumania",
+                "flagCode": "RO"
+              },
+              "score": 1
+            },
+            "kickoff": "1938-06-05T16:00:00Z"
           }
         ]
       },
@@ -75,14 +194,44 @@
           {
             "id": "qf-l1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 3 },
-            "away": { "team": { "id": "fr", "name": "Francia", "flagCode": "FR" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 3
+            },
+            "away": {
+              "team": {
+                "id": "fr",
+                "name": "Francia",
+                "flagCode": "FR"
+              },
+              "score": 1
+            },
+            "kickoff": "1938-06-12T16:00:00Z"
           },
           {
             "id": "qf-l2",
             "played": true,
-            "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 2 },
-            "away": { "team": { "id": "cs", "name": "Checoslovaquia", "flagCode": "CZ" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "cs",
+                "name": "Checoslovaquia",
+                "flagCode": "CZ"
+              },
+              "score": 1
+            },
+            "kickoff": "1938-06-14T17:00:00Z"
           }
         ]
       },
@@ -94,14 +243,44 @@
           {
             "id": "qf-r1",
             "played": true,
-            "home": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 2 },
-            "away": { "team": { "id": "ch", "name": "Suiza", "flagCode": "CH" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "hu",
+                "name": "Hungría",
+                "flagCode": "HU"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "ch",
+                "name": "Suiza",
+                "flagCode": "CH"
+              },
+              "score": 0
+            },
+            "kickoff": "1938-06-12T16:00:00Z"
           },
           {
             "id": "qf-r2",
             "played": true,
-            "home": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 8 },
-            "away": { "team": { "id": "cu", "name": "Cuba", "flagCode": "CU" }, "score": 0 }
+            "home": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 8
+            },
+            "away": {
+              "team": {
+                "id": "cu",
+                "name": "Cuba",
+                "flagCode": "CU"
+              },
+              "score": 0
+            },
+            "kickoff": "1938-06-12T16:00:00Z"
           }
         ]
       },
@@ -113,8 +292,23 @@
           {
             "id": "sf-l1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 2 },
-            "away": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 2
+            },
+            "away": {
+              "team": {
+                "id": "br",
+                "name": "Brasil",
+                "flagCode": "BR"
+              },
+              "score": 1
+            },
+            "kickoff": "1938-06-16T17:00:00Z"
           }
         ]
       },
@@ -126,8 +320,23 @@
           {
             "id": "sf-r1",
             "played": true,
-            "home": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 5 },
-            "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 1 }
+            "home": {
+              "team": {
+                "id": "hu",
+                "name": "Hungría",
+                "flagCode": "HU"
+              },
+              "score": 5
+            },
+            "away": {
+              "team": {
+                "id": "se",
+                "name": "Suecia",
+                "flagCode": "SE"
+              },
+              "score": 1
+            },
+            "kickoff": "1938-06-16T17:00:00Z"
           }
         ]
       },
@@ -138,8 +347,23 @@
           {
             "id": "final-1",
             "played": true,
-            "home": { "team": { "id": "it", "name": "Italia", "flagCode": "IT" }, "score": 4 },
-            "away": { "team": { "id": "hu", "name": "Hungría", "flagCode": "HU" }, "score": 2 }
+            "home": {
+              "team": {
+                "id": "it",
+                "name": "Italia",
+                "flagCode": "IT"
+              },
+              "score": 4
+            },
+            "away": {
+              "team": {
+                "id": "hu",
+                "name": "Hungría",
+                "flagCode": "HU"
+              },
+              "score": 2
+            },
+            "kickoff": "1938-06-19T16:00:00Z"
           }
         ]
       }
@@ -148,7 +372,22 @@
   "thirdPlace": {
     "id": "third-place",
     "played": true,
-    "home": { "team": { "id": "br", "name": "Brasil", "flagCode": "BR" }, "score": 4 },
-    "away": { "team": { "id": "se", "name": "Suecia", "flagCode": "SE" }, "score": 2 }
+    "home": {
+      "team": {
+        "id": "br",
+        "name": "Brasil",
+        "flagCode": "BR"
+      },
+      "score": 4
+    },
+    "away": {
+      "team": {
+        "id": "se",
+        "name": "Suecia",
+        "flagCode": "SE"
+      },
+      "score": 2
+    },
+    "kickoff": "1938-06-19T16:00:00Z"
   }
 }

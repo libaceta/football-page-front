@@ -1,0 +1,29 @@
+{
+  "offset": -3,
+  "pages": [
+    {
+      "title": "1978 FIFA World Cup Group A",
+      "bucket": "final"
+    },
+    {
+      "title": "1978 FIFA World Cup Group B",
+      "bucket": "final"
+    },
+    {
+      "title": "1978 FIFA World Cup knockout stage",
+      "bucket": "knockout"
+    },
+    {
+      "title": "1978 FIFA World Cup final",
+      "bucket": "knockout"
+    },
+    {
+      "title": "Austria v West Germany (1978 FIFA World Cup)",
+      "bucket": "final"
+    },
+    {
+      "title": "Argentina v Peru (1978 FIFA World Cup)",
+      "bucket": "final"
+    }
+  ]
+}

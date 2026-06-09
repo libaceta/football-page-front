@@ -1,0 +1,36 @@
+{
+  "offset": 2,
+  "pages": [
+    {
+      "title": "1982 FIFA World Cup Group A",
+      "bucket": "final"
+    },
+    {
+      "title": "1982 FIFA World Cup Group B",
+      "bucket": "final"
+    },
+    {
+      "title": "1982 FIFA World Cup Group C",
+      "bucket": "final"
+    },
+    {
+      "title": "1982 FIFA World Cup Group D",
+      "bucket": "final"
+    },
+    {
+      "title": "1982 FIFA World Cup knockout stage",
+      "bucket": "knockout"
+    },
+    {
+      "title": "1982 FIFA World Cup final",
+      "bucket": "knockout"
+    },
+    {
+      "title": "Italy v Brazil (1982 FIFA World Cup)",
+      "bucket": "final"
+    }
+  ],
+  "manual": {
+    "sf-r1": "1982-07-08T19:00:00Z"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "offset": 2,
+  "pages": [
+    {
+      "title": "2006 FIFA World Cup Group A",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup Group B",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup Group C",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup Group D",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup Group E",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup Group F",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup Group G",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup Group H",
+      "bucket": "group"
+    },
+    {
+      "title": "2006 FIFA World Cup knockout stage",
+      "bucket": "knockout"
+    },
+    {
+      "title": "2006 FIFA World Cup final",
+      "bucket": "knockout"
+    }
+  ],
+  "manual": {
+    "r16-r2": "2006-06-25T19:00:00Z"
+  }
+}
