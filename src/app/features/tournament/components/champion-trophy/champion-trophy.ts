@@ -1,7 +1,15 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
 import { Match, Team } from '../../../../core/models/tournament.model';
 import { flagClass } from '../../../../core/utils/flag.util';
+
+// Fecha y hora en la zona horaria y el idioma del navegador.
+const DATE_FMT = new Intl.DateTimeFormat(undefined, {
+  day: '2-digit',
+  month: 'short',
+  hour: '2-digit',
+  minute: '2-digit',
+});
 
 @Component({
   selector: 'app-champion-trophy',
@@ -12,6 +20,9 @@ import { flagClass } from '../../../../core/utils/flag.util';
 
       @if (final(); as f) {
         <div class="text-[9px] font-bold tracking-[0.2em] text-zinc-500">FINAL</div>
+        @if (when()) {
+          <div class="text-[8px] uppercase tracking-wide text-zinc-500">{{ when() }}</div>
+        }
       }
 
       @if (final(); as f) {
@@ -59,4 +70,9 @@ export class ChampionTrophy {
   readonly final = input<Match | undefined>();
   readonly champion = input<Team | undefined>();
   protected readonly flag = flagClass;
+
+  protected readonly when = computed<string>(() => {
+    const k = this.final()?.kickoff;
+    return k ? DATE_FMT.format(new Date(k)) : '';
+  });
 }
