@@ -11,6 +11,9 @@
 npm-debug.log
 yarn-error.log
 
+# Secrets (API keys del backend)
+.env
+
 # IDEs and editors
 .idea/
 .project

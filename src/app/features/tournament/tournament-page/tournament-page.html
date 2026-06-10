@@ -30,9 +30,9 @@
     }
   </header>
 
-  @if (isLoading()) {
+  @if (isLoading() && !data()) {
     <div class="py-20 text-center text-sm text-zinc-500">Cargando torneo…</div>
-  } @else if (error()) {
+  } @else if (error() && !data()) {
     <div class="py-20 text-center text-sm text-red-400">
       No se pudo cargar el torneo. Reintentá más tarde.
     </div>

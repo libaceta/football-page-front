@@ -24,11 +24,22 @@ interface SlotView {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div
-      class="w-full min-w-[8.5rem] overflow-hidden rounded-md border border-white/10 bg-[#15151d] text-[11px] shadow-sm"
+      class="w-full min-w-[8.5rem] overflow-hidden rounded-md border text-[11px] shadow-sm"
+      [class]="
+        isLive()
+          ? 'border-red-500/60 bg-red-500/10 ring-1 ring-red-500/40'
+          : 'border-white/10 bg-[#15151d]'
+      "
     >
-      @if (when()) {
-        <div class="bg-black/20 px-2 py-0.5 text-center text-[8px] uppercase tracking-wide text-zinc-500">
-          {{ when() }}
+      @if (badge(); as b) {
+        <div
+          class="bg-black/20 px-2 py-0.5 text-center text-[8px] uppercase tracking-wide"
+          [class]="b.live ? 'font-bold text-red-400' : 'text-zinc-500'"
+        >
+          @if (b.live) {
+            <span class="mr-1 inline-block size-1 animate-pulse rounded-full bg-red-500 align-middle"></span>
+          }
+          {{ b.text }}
         </div>
       }
       @for (s of slots(); track s.kind) {
@@ -56,9 +67,29 @@ export class MatchCard {
 
   protected readonly flag = flagClass;
 
-  protected readonly when = computed<string>(() => {
-    const k = this.match().kickoff;
-    return k ? DATE_FMT.format(new Date(k)) : '';
+  /** Partido en curso (en juego o entretiempo): se resalta con fondo rojo. */
+  protected readonly isLive = computed<boolean>(() => {
+    const s = this.match().status;
+    return s === 'live' || s === 'paused';
+  });
+
+  /**
+   * Texto de estado del partido: minuto en vivo (`34'`), `ENTRETIEMPO`, `FINAL`
+   * o, si aún no empezó, la fecha/hora de inicio. `live` marca los estados en
+   * curso para resaltarlos en rojo.
+   */
+  protected readonly badge = computed<{ text: string; live: boolean } | null>(() => {
+    const m = this.match();
+    if (m.status === 'live') {
+      return { text: m.minute != null ? `${m.minute}'` : 'EN VIVO', live: true };
+    }
+    if (m.status === 'paused') return { text: 'ENTRETIEMPO', live: true };
+    // FINAL solo para datos en vivo (status del backend). Los históricos no
+    // traen status => muestran fecha/hora aunque estén jugados.
+    if (m.status === 'finished') return { text: 'FINAL', live: false };
+    return m.kickoff
+      ? { text: DATE_FMT.format(new Date(m.kickoff)), live: false }
+      : null;
   });
 
   private readonly outcome = computed<Outcome>(() => {

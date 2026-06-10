@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { catchError, Observable } from 'rxjs';
 
 import { API_CONFIG } from '../config/api.config';
 import { Edition, Tournament, TournamentType } from '../models/tournament.model';
@@ -29,5 +29,21 @@ export class TournamentService implements TournamentDataSource {
   getEdition(type: TournamentType, year: number): Observable<Edition> {
     const url = `${this.config.baseUrl}/tournaments/${type}-${year}.json`;
     return this.http.get<Edition>(url);
+  }
+
+  /** ¿Esta edición se sirve en vivo (con polling) desde el backend? */
+  isLive(type: TournamentType, year: number): boolean {
+    return this.config.liveEditions.includes(`${type}-${year}`);
+  }
+
+  /**
+   * Edición con datos en vivo desde el backend. Si la llamada falla (backend
+   * caído, sin key, etc.) cae al fixture estático para no romper la página.
+   */
+  getLiveEdition(type: TournamentType, year: number): Observable<Edition> {
+    const url = `${this.config.liveBaseUrl}/editions/${type}/${year}`;
+    return this.http
+      .get<Edition>(url)
+      .pipe(catchError(() => this.getEdition(type, year)));
   }
 }

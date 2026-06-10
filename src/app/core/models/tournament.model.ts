@@ -40,6 +40,9 @@ export interface MatchSlot {
   readonly penalties?: number;
 }
 
+/** Estado de un partido en vivo. Ausente => programado / sin dato. */
+export type MatchStatus = 'scheduled' | 'live' | 'paused' | 'finished';
+
 export interface Match {
   readonly id: string;
   readonly home: MatchSlot;
@@ -47,6 +50,10 @@ export interface Match {
   readonly played: boolean;
   /** Fecha y hora de inicio en ISO 8601 UTC (ej. "2026-06-11T19:00:00Z"). */
   readonly kickoff?: string;
+  /** Estado en vivo (de la fuente de datos en tiempo real). */
+  readonly status?: MatchStatus;
+  /** Minuto transcurrido cuando está en vivo (ej. 34). */
+  readonly minute?: number;
 }
 
 /** Una fila de la tabla de un grupo. */

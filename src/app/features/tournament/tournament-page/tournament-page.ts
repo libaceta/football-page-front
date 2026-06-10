@@ -2,14 +2,18 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
+  effect,
   inject,
+  linkedSignal,
 } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 
+import { API_CONFIG } from '../../../core/config/api.config';
 import { TournamentService } from '../../../core/services/tournament.service';
+import { reconcile } from '../../../core/utils/reconcile.util';
 import {
   Edition,
   EditionRef,
@@ -50,6 +54,22 @@ const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
 export class TournamentPage {
   private readonly route = inject(ActivatedRoute);
   private readonly service = inject(TournamentService);
+  private readonly config = inject(API_CONFIG);
+
+  constructor() {
+    // Polling solo para ediciones en vivo; se reinicia al cambiar de edición.
+    // Usa reload() (no cambia params) para que el recurso conserve el valor
+    // previo durante el fetch: no se vacía ni muestra el loader en cada poll.
+    effect((onCleanup) => {
+      const { type, year } = this.params();
+      if (!this.service.isLive(type, year)) return;
+      const id = setInterval(
+        () => this.edition.reload(),
+        this.config.pollIntervalMs,
+      );
+      onCleanup(() => clearInterval(id));
+    });
+  }
 
   protected readonly params = toSignal(
     this.route.paramMap.pipe(
@@ -61,14 +81,37 @@ export class TournamentPage {
     { initialValue: { type: 'world-cup' as TournamentType, year: 2026 } },
   );
 
-  protected readonly edition = rxResource<Edition, { type: TournamentType; year: number }>({
-    params: () => this.params(),
-    stream: ({ params }) => this.service.getEdition(params.type, params.year),
+  protected readonly edition = rxResource<
+    Edition,
+    { type: TournamentType; year: number; live: boolean }
+  >({
+    params: () => {
+      const { type, year } = this.params();
+      return { type, year, live: this.service.isLive(type, year) };
+    },
+    stream: ({ params }) =>
+      params.live
+        ? this.service.getLiveEdition(params.type, params.year)
+        : this.service.getEdition(params.type, params.year),
   });
 
   protected readonly isLoading = computed(() => this.edition.isLoading());
   protected readonly error = computed(() => this.edition.error());
-  protected readonly data = computed(() => this.edition.value());
+
+  /**
+   * Vista reconciliada de la edición. Cada poll trae un objeto nuevo; aquí
+   * reutilizamos las referencias de lo que no cambió para que, con OnPush, solo
+   * re-rendericen las partes que efectivamente cambiaron (sin parpadeo global).
+   * Conserva el valor previo mientras el recurso recarga (value === undefined).
+   */
+  protected readonly data = linkedSignal<
+    Edition | undefined,
+    Edition | undefined
+  >({
+    source: () => this.edition.value(),
+    computation: (next, prev) =>
+      next ? reconcile(prev?.value, next) : prev?.value,
+  });
 
   /** Lista de ediciones del torneo, para el selector de año. */
   private readonly tournament = rxResource<Tournament, TournamentType>({

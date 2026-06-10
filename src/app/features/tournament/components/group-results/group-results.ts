@@ -9,8 +9,8 @@ type Win = 'home' | 'away' | 'draw';
 interface MatchRow {
   readonly match: Match;
   readonly outcome: Win;
-  /** Fecha y hora formateada en la zona horaria del navegador. */
-  readonly when: string;
+  /** Etiqueta de estado: minuto en vivo / FINAL / fecha-hora. `null` si no hay. */
+  readonly badge: { text: string; live: boolean } | null;
   readonly ts: number;
 }
 
@@ -44,10 +44,19 @@ const DATE_FMT = new Intl.DateTimeFormat(undefined, {
           </div>
           <ul class="flex flex-col gap-1">
             @for (r of rows(); track r.match.id) {
-              <li class="flex flex-col gap-0.5 rounded px-1 py-0.5">
-                @if (r.when) {
-                  <span class="text-center text-[8px] uppercase tracking-wide text-zinc-500">
-                    {{ r.when }}
+              <li
+                class="flex flex-col gap-0.5 rounded px-1 py-0.5"
+                [class]="r.badge?.live ? 'bg-red-500/15 ring-1 ring-red-500/40' : ''"
+              >
+                @if (r.badge; as b) {
+                  <span
+                    class="text-center text-[8px] uppercase tracking-wide"
+                    [class]="b.live ? 'font-bold text-red-400' : 'text-zinc-500'"
+                  >
+                    @if (b.live) {
+                      <span class="mr-1 inline-block size-1 animate-pulse rounded-full bg-red-500 align-middle"></span>
+                    }
+                    {{ b.text }}
                   </span>
                 }
                 <div class="flex items-center gap-1 text-[10px] leading-none">
@@ -89,7 +98,7 @@ export class GroupResults {
         return {
           match: m,
           outcome: this.outcome(m),
-          when: m.kickoff ? DATE_FMT.format(new Date(m.kickoff)) : '',
+          badge: this.badge(m),
           ts,
         };
       })
@@ -100,5 +109,18 @@ export class GroupResults {
     const h = m.home.score ?? 0;
     const a = m.away.score ?? 0;
     return h > a ? 'home' : a > h ? 'away' : 'draw';
+  }
+
+  private badge(m: Match): { text: string; live: boolean } | null {
+    if (m.status === 'live') {
+      return { text: m.minute != null ? `${m.minute}'` : 'EN VIVO', live: true };
+    }
+    if (m.status === 'paused') return { text: 'ENTRETIEMPO', live: true };
+    // FINAL solo para datos en vivo (status del backend). Los históricos no
+    // traen status => muestran fecha/hora aunque estén jugados.
+    if (m.status === 'finished') return { text: 'FINAL', live: false };
+    return m.kickoff
+      ? { text: DATE_FMT.format(new Date(m.kickoff)), live: false }
+      : null;
   }
 }
