@@ -50,13 +50,13 @@ const DATE_FMT = new Intl.DateTimeFormat(undefined, {
               >
                 @if (r.badge; as b) {
                   <span
-                    class="text-center text-[8px] uppercase tracking-wide"
+                    class="flex items-center justify-center gap-1 text-[8px] uppercase tracking-wide"
                     [class]="b.live ? 'font-bold text-red-400' : 'text-zinc-500'"
                   >
                     @if (b.live) {
-                      <span class="mr-1 inline-block size-1 animate-pulse rounded-full bg-red-500 align-middle"></span>
+                      <span class="size-1 shrink-0 animate-pulse rounded-full bg-red-500"></span>
                     }
-                    {{ b.text }}
+                    <span>{{ b.text }}</span>
                   </span>
                 }
                 <div class="flex items-center gap-1 text-[10px] leading-none">
