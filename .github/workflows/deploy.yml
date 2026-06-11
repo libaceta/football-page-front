@@ -1,4 +1,18 @@
-name: CI / Deploy to EC2
+name: CI / Deploy to S3 + CloudFront
+
+# Despliegue del front estático (Angular) a S3, servido por CloudFront en el
+# subdominio mundial.pampa-net.com (base-href /). El deploy NO provisiona infra:
+# el bucket, la distribución, el cert ACM y el record DNS se crean una vez aparte.
+#
+# Config requerida en el repo (Settings -> Secrets and variables -> Actions):
+#   Variables:
+#     AWS_REGION                 ej. us-east-1
+#     AWS_ROLE_ARN               role IAM que asume GitHub vía OIDC
+#     S3_BUCKET                  bucket del sitio (sin s3://)
+#     CLOUDFRONT_DISTRIBUTION_ID id de la distribución
+#
+# La distribución debe mapear errores 403/404 -> /index.html (200) para que el
+# routing SPA de Angular funcione con deep-links.
 
 on:
   push:
@@ -24,9 +38,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Build de producción servido bajo /mundial/ (subpath de pampa-net.com).
+      # Servido en la raíz del subdominio -> base-href /.
       - name: Build
-        run: npx ng build --configuration production --base-href /mundial/
+        run: npx ng build --configuration production --base-href /
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
@@ -43,6 +57,16 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
 
+    # Evita despliegues solapados pisándose entre sí.
+    concurrency:
+      group: deploy-front
+      cancel-in-progress: true
+
+    # OIDC: id-token para asumir el role IAM sin claves largas.
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v4
@@ -50,125 +74,37 @@ jobs:
           name: dist
           path: browser
 
-      - name: Create deploy package
-        run: tar -czf deploy.tar.gz -C browser .
-
-      - name: Upload package to EC2
-        uses: appleboy/scp-action@v0.1.7
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          port: ${{ secrets.EC2_PORT || 22 }}
-          source: "deploy.tar.gz"
-          target: "/tmp/football-page-front"
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          port: ${{ secrets.EC2_PORT || 22 }}
-          script: |
-            set -e
+      # 1) Assets con hash en el nombre (immutable) -> cache larga. Se excluye
+      #    index.html y los source maps. --delete limpia archivos viejos.
+      - name: Sync hashed assets to S3
+        run: |
+          aws s3 sync browser/ "s3://${{ vars.S3_BUCKET }}/" \
+            --delete \
+            --cache-control "public,max-age=31536000,immutable" \
+            --exclude "index.html" \
+            --exclude "*.map"
 
-            STATIC_DIR="/home/ec2-user/football-front"
+      # 2) index.html sin cache (es el único path estable; debe revalidar siempre).
+      - name: Upload index.html (no-cache)
+        run: |
+          aws s3 cp browser/index.html "s3://${{ vars.S3_BUCKET }}/index.html" \
+            --cache-control "no-cache,no-store,must-revalidate" \
+            --content-type "text/html"
 
-            echo "→ Replacing static files..."
-            rm -rf "$STATIC_DIR"
-            mkdir -p "$STATIC_DIR"
-            tar -xzf /tmp/football-page-front/deploy.tar.gz -C "$STATIC_DIR"
+      # 3) Invalidar solo index.html y la raíz: los assets nuevos tienen nombre
+      #    nuevo (no necesitan invalidación). Mantiene el costo de invalidaciones
+      #    dentro de la capa gratis.
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --paths "/" "/index.html"
 
-            docker network create ct-network 2>/dev/null || true
-
-            mkdir -p /home/ec2-user/conquest-tactics-server/nginx
-
-            # Reescribe la nginx.conf compartida: conquest + market + football +
-            # el static del front (/mundial). El último deploy gana.
-            cat > /home/ec2-user/conquest-tactics-server/nginx/nginx.conf << 'NGINX'
-            upstream conquest_app {
-                server app:7777;
-            }
-
-            upstream market_api {
-                server market-api:3000;
-            }
-
-            upstream football_server {
-                server football-server:3000;
-            }
-
-            server {
-                listen 80;
-                server_name pampa-net.com;
-
-                return 301 https://$host$request_uri;
-            }
-
-            server {
-                listen 443 ssl;
-                server_name pampa-net.com;
-
-                ssl_certificate /etc/letsencrypt/live/pampa-net.com/fullchain.pem;
-                ssl_certificate_key /etc/letsencrypt/live/pampa-net.com/privkey.pem;
-
-                # Sin barra final -> redirige a /mundial/ (si no, cae en location /).
-                location = /mundial {
-                    return 301 https://$host/mundial/;
-                }
-
-                location /mundial/ {
-                    alias /usr/share/nginx/html/mundial/;
-                    try_files $uri $uri/ /mundial/index.html;
-                }
-
-                location / {
-                    proxy_pass http://conquest_app;
-                    proxy_http_version 1.1;
-                    proxy_set_header Upgrade $http_upgrade;
-                    proxy_set_header Connection "upgrade";
-                    proxy_set_header Host $host;
-                }
-
-                location /market/ {
-                    proxy_pass http://market_api/;
-                    proxy_http_version 1.1;
-                    proxy_set_header Host $host;
-                    proxy_set_header X-Real-IP $remote_addr;
-                    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                }
-
-                location /football/ {
-                    proxy_pass http://football_server/api/;
-                    proxy_http_version 1.1;
-                    proxy_set_header Host $host;
-                    proxy_set_header X-Real-IP $remote_addr;
-                    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                }
-            }
-            NGINX
-
-            echo "→ Restarting nginx..."
-            docker stop nginx 2>/dev/null || true
-            docker rm nginx 2>/dev/null || true
-
-            docker run -d \
-              --name nginx \
-              --network ct-network \
-              --restart unless-stopped \
-              -p 80:80 \
-              -p 443:443 \
-              -v /home/ec2-user/conquest-tactics-server/nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro \
-              -v /etc/letsencrypt:/etc/letsencrypt:ro \
-              -v "$STATIC_DIR":/usr/share/nginx/html/mundial:ro \
-              nginx:alpine
-
-            echo "→ Waiting..."
-            sleep 5
-
-            echo "→ Healthcheck"
-            curl -skf https://localhost/mundial/ | head -c 200
-
-            echo ""
-            echo "✓ Deploy complete"
+      - name: Done
+        run: echo "✓ Deploy a s3://${{ vars.S3_BUCKET }} + invalidación CloudFront"
