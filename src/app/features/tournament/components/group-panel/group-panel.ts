@@ -5,6 +5,10 @@ import { flagClass } from '../../../../core/utils/flag.util';
 
 interface StatRow {
   readonly standing: GroupStanding;
+  /** Posición en la tabla (recalculada en vivo desde los partidos jugados). */
+  readonly position: number;
+  /** Puntos (provisionales en vivo: 3·G + E de los partidos ya contados). */
+  readonly points: number;
   /** Partidos jugados. */
   readonly j: number;
   readonly gf: number;
@@ -49,9 +53,9 @@ interface StatRow {
           @for (row of rows(); track row.standing.team.id) {
             <tr
               class="border-t border-white/5"
-              [class]="row.standing.position <= 2 ? 'text-zinc-100' : 'text-zinc-400'"
+              [class]="row.position <= 2 ? 'text-zinc-100' : 'text-zinc-400'"
             >
-              <td class="px-1 py-0.5 text-zinc-500">{{ row.standing.position }}</td>
+              <td class="px-1 py-0.5 text-zinc-500">{{ row.position }}</td>
               <td class="w-28 max-w-28 truncate px-1 py-0.5">
                 <span class="mr-1 inline-block align-middle text-[11px]" [class]="flag(row.standing.team.flagCode)"></span>
                 <span class="align-middle">{{ row.standing.team.name }}</span>
@@ -60,7 +64,7 @@ interface StatRow {
                 <td class="w-full"></td>
               }
               <td class="px-1 py-0.5 text-right font-semibold tabular-nums">
-                {{ row.standing.points }}
+                {{ row.points }}
               </td>
               @if (detailed()) {
                 <td class="px-0.5 py-0.5 text-right tabular-nums text-zinc-400">{{ row.j }}</td>
@@ -107,9 +111,26 @@ export class GroupPanel {
       else if (as > hs) { a.w++; h.l++; }
       else { h.d++; a.d++; }
     }
-    return g.standings.map((s) => {
+    // ¿Hay algún partido contado? Si no (grupo sin empezar, o edición histórica
+    // sin marcadores en los partidos), respetamos puntos y orden del backend.
+    const anyPlayed = [...acc.values()].some((t) => t.j > 0);
+
+    const base = g.standings.map((s) => {
       const t = acc.get(s.team.id)!;
-      return { standing: s, j: t.j, gf: t.gf, ga: t.ga, gd: t.gf - t.ga, w: t.w, d: t.d, l: t.l };
+      const points = anyPlayed ? 3 * t.w + t.d : s.points;
+      return {
+        standing: s,
+        position: s.position,
+        points,
+        j: t.j, gf: t.gf, ga: t.ga, gd: t.gf - t.ga, w: t.w, d: t.d, l: t.l,
+      };
     });
+
+    if (!anyPlayed) return base;
+
+    // Tabla en vivo: reordenar por pts, dif. de goles, goles a favor.
+    return [...base]
+      .sort((a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf)
+      .map((row, i) => ({ ...row, position: i + 1 }));
   });
 }
