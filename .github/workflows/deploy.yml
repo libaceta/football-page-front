@@ -113,6 +113,11 @@ jobs:
                 ssl_certificate /etc/letsencrypt/live/pampa-net.com/fullchain.pem;
                 ssl_certificate_key /etc/letsencrypt/live/pampa-net.com/privkey.pem;
 
+                # Sin barra final -> redirige a /mundial/ (si no, cae en location /).
+                location = /mundial {
+                    return 301 https://$host/mundial/;
+                }
+
                 location /mundial/ {
                     alias /usr/share/nginx/html/mundial/;
                     try_files $uri $uri/ /mundial/index.html;
