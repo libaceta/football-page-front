@@ -1,5 +1,7 @@
 import { InjectionToken } from '@angular/core';
 
+import { environment } from '../../../environments/environment';
+
 /**
  * Configuración de acceso al backend.
  *
@@ -22,7 +24,8 @@ export const API_CONFIG = new InjectionToken<ApiConfig>('API_CONFIG');
 
 export const defaultApiConfig: ApiConfig = {
   baseUrl: '/mock',
-  liveBaseUrl: '/api',
+  // Dev: '/api' (proxy a localhost:3000). Prod: backend en EC2 (pampa-net.com/football).
+  liveBaseUrl: environment.liveBaseUrl,
   liveEditions: ['world-cup-2026'],
   pollIntervalMs: 45_000,
 };
