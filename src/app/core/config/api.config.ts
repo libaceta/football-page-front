@@ -23,7 +23,9 @@ export interface ApiConfig {
 export const API_CONFIG = new InjectionToken<ApiConfig>('API_CONFIG');
 
 export const defaultApiConfig: ApiConfig = {
-  baseUrl: '/mock',
+  // Relativo (sin slash inicial): se resuelve contra el <base href> del index.
+  // Dev (base '/') → /mock ; prod (base '/mundial/') → /mundial/mock.
+  baseUrl: 'mock',
   // Dev: '/api' (proxy a localhost:3000). Prod: backend en EC2 (pampa-net.com/football).
   liveBaseUrl: environment.liveBaseUrl,
   liveEditions: ['world-cup-2026'],

@@ -1,0 +1,169 @@
+name: CI / Deploy to EC2
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  # ── Build ───────────────────────────────────────────────────────────────────
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Build de producción servido bajo /mundial/ (subpath de pampa-net.com).
+      - name: Build
+        run: npx ng build --configuration production --base-href /mundial/
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/football-page/browser
+          if-no-files-found: error
+          retention-days: 1
+
+  # ── Deploy ──────────────────────────────────────────────────────────────────
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: browser
+
+      - name: Create deploy package
+        run: tar -czf deploy.tar.gz -C browser .
+
+      - name: Upload package to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.EC2_PORT || 22 }}
+          source: "deploy.tar.gz"
+          target: "/tmp/football-page-front"
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.EC2_PORT || 22 }}
+          script: |
+            set -e
+
+            STATIC_DIR="/home/ec2-user/football-front"
+
+            echo "→ Replacing static files..."
+            rm -rf "$STATIC_DIR"
+            mkdir -p "$STATIC_DIR"
+            tar -xzf /tmp/football-page-front/deploy.tar.gz -C "$STATIC_DIR"
+
+            docker network create ct-network 2>/dev/null || true
+
+            mkdir -p /home/ec2-user/conquest-tactics-server/nginx
+
+            # Reescribe la nginx.conf compartida: conquest + market + football +
+            # el static del front (/mundial). El último deploy gana.
+            cat > /home/ec2-user/conquest-tactics-server/nginx/nginx.conf << 'NGINX'
+            upstream conquest_app {
+                server app:7777;
+            }
+
+            upstream market_api {
+                server market-api:3000;
+            }
+
+            upstream football_server {
+                server football-server:3000;
+            }
+
+            server {
+                listen 80;
+                server_name pampa-net.com;
+
+                return 301 https://$host$request_uri;
+            }
+
+            server {
+                listen 443 ssl;
+                server_name pampa-net.com;
+
+                ssl_certificate /etc/letsencrypt/live/pampa-net.com/fullchain.pem;
+                ssl_certificate_key /etc/letsencrypt/live/pampa-net.com/privkey.pem;
+
+                location /mundial/ {
+                    alias /usr/share/nginx/html/mundial/;
+                    try_files $uri $uri/ /mundial/index.html;
+                }
+
+                location / {
+                    proxy_pass http://conquest_app;
+                    proxy_http_version 1.1;
+                    proxy_set_header Upgrade $http_upgrade;
+                    proxy_set_header Connection "upgrade";
+                    proxy_set_header Host $host;
+                }
+
+                location /market/ {
+                    proxy_pass http://market_api/;
+                    proxy_http_version 1.1;
+                    proxy_set_header Host $host;
+                    proxy_set_header X-Real-IP $remote_addr;
+                    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                }
+
+                location /football/ {
+                    proxy_pass http://football_server/api/;
+                    proxy_http_version 1.1;
+                    proxy_set_header Host $host;
+                    proxy_set_header X-Real-IP $remote_addr;
+                    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                }
+            }
+            NGINX
+
+            echo "→ Restarting nginx..."
+            docker stop nginx 2>/dev/null || true
+            docker rm nginx 2>/dev/null || true
+
+            docker run -d \
+              --name nginx \
+              --network ct-network \
+              --restart unless-stopped \
+              -p 80:80 \
+              -p 443:443 \
+              -v /home/ec2-user/conquest-tactics-server/nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro \
+              -v /etc/letsencrypt:/etc/letsencrypt:ro \
+              -v "$STATIC_DIR":/usr/share/nginx/html/mundial:ro \
+              nginx:alpine
+
+            echo "→ Waiting..."
+            sleep 5
+
+            echo "→ Healthcheck"
+            curl -skf https://localhost/mundial/ | head -c 200
+
+            echo ""
+            echo "✓ Deploy complete"
