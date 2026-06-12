@@ -31,10 +31,25 @@ import { ThirdPlace } from '../components/third-place/third-place';
 import { StageTimeline } from '../components/stage-timeline/stage-timeline';
 import { GroupStageView } from '../components/group-stage-view/group-stage-view';
 import { GroupResults } from '../components/group-results/group-results';
+import { TodayMatches } from '../components/today-matches/today-matches';
 import { groupGridClass } from '../group-grid.util';
 
 // Orden de octavos -> semifinal usado para ordenar las columnas del cuadro.
 const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
+
+// Etiqueta de día en el idioma y la zona horaria del navegador.
+const DAY_FMT = new Intl.DateTimeFormat(undefined, {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+});
+
+/** Un día con partidos: clave local, inicio del día y sus partidos ordenados. */
+interface MatchDay {
+  readonly key: string;
+  readonly ts: number;
+  readonly matches: Match[];
+}
 
 @Component({
   selector: 'app-tournament-page',
@@ -48,6 +63,7 @@ const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
     StageTimeline,
     GroupStageView,
     GroupResults,
+    TodayMatches,
   ],
   templateUrl: './tournament-page.html',
 })
@@ -168,6 +184,86 @@ export class TournamentPage {
     return this.findTeam(ed.championTeamId);
   });
 
+  /** ¿La edición actual se sirve en vivo (torneo en curso)? */
+  protected readonly live = computed(() => {
+    const { type, year } = this.params();
+    return this.service.isLive(type, year);
+  });
+
+  /**
+   * Partidos agrupados por día local del navegador, de cualquier fase. Solo
+   * para ediciones en vivo; cada día y sus partidos quedan ordenados por fecha.
+   * El polling actualiza `data()` y esto se recalcula con minutos/goles frescos.
+   */
+  protected readonly matchDays = computed<MatchDay[]>(() => {
+    const ed = this.data();
+    if (!ed || !this.live()) return [];
+    const byDay = new Map<string, MatchDay>();
+    for (const m of this.allMatches(ed)) {
+      if (!m.kickoff) continue;
+      const d = new Date(m.kickoff);
+      const key = this.dayKey(d);
+      let day = byDay.get(key);
+      if (!day) {
+        const ts = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+        day = { key, ts, matches: [] };
+        byDay.set(key, day);
+      }
+      day.matches.push(m);
+    }
+    return [...byDay.values()]
+      .map((d) => ({
+        ...d,
+        matches: d.matches.sort(
+          (a, b) => Date.parse(a.kickoff!) - Date.parse(b.kickoff!),
+        ),
+      }))
+      .sort((a, b) => a.ts - b.ts);
+  });
+
+  /**
+   * Índice del día visible. Al recargar (poll) conserva el día elegido por su
+   * clave; si no, arranca en hoy, o el próximo día con partidos, o el último.
+   */
+  protected readonly selectedDayIndex = linkedSignal<MatchDay[], number>({
+    source: () => this.matchDays(),
+    computation: (days, prev) => {
+      if (!days.length) return 0;
+      if (prev) {
+        const prevKey = prev.source[prev.value]?.key;
+        const keep = days.findIndex((d) => d.key === prevKey);
+        if (keep >= 0) return keep;
+      }
+      const todayIdx = days.findIndex((d) => d.key === this.dayKey(new Date()));
+      if (todayIdx >= 0) return todayIdx;
+      const now = Date.now();
+      const upcoming = days.findIndex((d) => d.ts >= now);
+      return upcoming >= 0 ? upcoming : days.length - 1;
+    },
+  });
+
+  protected readonly selectedDay = computed<MatchDay | undefined>(
+    () => this.matchDays()[this.selectedDayIndex()],
+  );
+
+  protected readonly selectedDayLabel = computed(() => {
+    const day = this.selectedDay();
+    return day ? DAY_FMT.format(new Date(day.ts)) : '';
+  });
+
+  protected readonly hasPrevDay = computed(() => this.selectedDayIndex() > 0);
+  protected readonly hasNextDay = computed(
+    () => this.selectedDayIndex() < this.matchDays().length - 1,
+  );
+
+  protected prevDay(): void {
+    if (this.hasPrevDay()) this.selectedDayIndex.update((i) => i - 1);
+  }
+
+  protected nextDay(): void {
+    if (this.hasNextDay()) this.selectedDayIndex.update((i) => i + 1);
+  }
+
   /** Sólo se muestra el timeline detallado del Mundial 2026. */
   protected readonly showTimeline = computed(() => this.params().year === 2026);
 
@@ -204,6 +300,21 @@ export class TournamentPage {
       if (m.away.team.id === teamId) return m.away.team;
     }
     return undefined;
+  }
+
+  /** Todos los partidos de la edición: grupos, liguilla, llaves y 3er puesto. */
+  private allMatches(ed: Edition): Match[] {
+    return [
+      ...(ed.groups ?? []).flatMap((g) => g.matches ?? []),
+      ...(ed.finalRound?.groups ?? []).flatMap((g) => g.matches ?? []),
+      ...(ed.knockout?.rounds.flatMap((r) => r.matches) ?? []),
+      ...(ed.thirdPlace ? [ed.thirdPlace] : []),
+    ];
+  }
+
+  /** Clave de día local (año-mes-día) para agrupar partidos por jornada. */
+  private dayKey(d: Date): string {
+    return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
   }
 
   private sideRounds(side: 'left' | 'right'): KnockoutRound[] {

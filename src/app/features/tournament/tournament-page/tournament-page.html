@@ -37,6 +37,21 @@
       No se pudo cargar el torneo. Reintentá más tarde.
     </div>
   } @else if (data(); as ed) {
+    <!-- Partidos por jornada (solo torneo en curso): en vivo con minutos y
+         goles, o fecha y hora si todavía no empezaron. ‹ Fecha › navega días -->
+    @if (live() && matchDays().length) {
+      <section class="mx-auto mb-5 max-w-3xl">
+        <app-today-matches
+          [matches]="selectedDay()?.matches ?? []"
+          [label]="selectedDayLabel()"
+          [hasPrev]="hasPrevDay()"
+          [hasNext]="hasNextDay()"
+          (prev)="prevDay()"
+          (next)="nextDay()"
+        />
+      </section>
+    }
+
     @if (mode() === 'groups') {
       <!-- Formato de liguilla (1950 / 1974 / 1978 / 1982) -->
       <app-group-stage-view [edition]="ed" [champion]="champion()" />
