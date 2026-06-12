@@ -81,7 +81,8 @@ export class MatchCard {
   protected readonly badge = computed<{ text: string; live: boolean } | null>(() => {
     const m = this.match();
     if (m.status === 'live') {
-      return { text: m.minute != null ? `${m.minute}'` : 'EN VIVO', live: true };
+      const t = m.clock ?? (m.minute != null ? `${m.minute}'` : null);
+      return { text: t ?? 'EN VIVO', live: true };
     }
     if (m.status === 'paused') return { text: 'ENTRETIEMPO', live: true };
     // FINAL solo para datos en vivo (status del backend). Los históricos no

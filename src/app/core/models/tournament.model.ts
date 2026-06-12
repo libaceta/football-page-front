@@ -54,6 +54,8 @@ export interface Match {
   readonly status?: MatchStatus;
   /** Minuto transcurrido cuando está en vivo (ej. 34). */
   readonly minute?: number;
+  /** Reloj en vivo como lo da la fuente (ej. "67'", "45'+3'"). Preferido sobre `minute`. */
+  readonly clock?: string;
 }
 
 /** Una fila de la tabla de un grupo. */
