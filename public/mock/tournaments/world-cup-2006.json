@@ -183,7 +183,7 @@
           "team": {
             "id": "eng",
             "name": "Inglaterra",
-            "flagCode": "GB"
+            "flagCode": "GB-ENG"
           },
           "points": 7
         },
@@ -223,7 +223,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 1
           },
@@ -265,7 +265,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 2
           },
@@ -315,7 +315,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 2
           },
@@ -1472,7 +1472,7 @@
               "team": {
                 "id": "eng",
                 "name": "Inglaterra",
-                "flagCode": "GB"
+                "flagCode": "GB-ENG"
               },
               "score": 1
             },
@@ -1614,7 +1614,7 @@
               "team": {
                 "id": "eng",
                 "name": "Inglaterra",
-                "flagCode": "GB"
+                "flagCode": "GB-ENG"
               },
               "score": 0,
               "penalties": 1

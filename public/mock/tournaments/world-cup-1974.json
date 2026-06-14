@@ -201,7 +201,7 @@
           "team": {
             "id": "sct",
             "name": "Escocia",
-            "flagCode": "GB"
+            "flagCode": "GB-SCT"
           },
           "points": 4
         },
@@ -244,7 +244,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 2
           },
@@ -294,7 +294,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 0
           },
@@ -307,7 +307,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 1
           },

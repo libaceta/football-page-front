@@ -356,7 +356,7 @@
           "team": {
             "id": "sct",
             "name": "Escocia",
-            "flagCode": "GB"
+            "flagCode": "GB-SCT"
           },
           "points": 0
         }
@@ -395,7 +395,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             }
           },
           "kickoff": "2026-06-14T01:00:00Z"
@@ -407,7 +407,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             }
           },
           "away": {
@@ -445,7 +445,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             }
           },
           "away": {
@@ -1751,7 +1751,7 @@
           "team": {
             "id": "eng",
             "name": "Inglaterra",
-            "flagCode": "GB"
+            "flagCode": "GB-ENG"
           },
           "points": 0
         },
@@ -1791,7 +1791,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             }
           },
           "away": {
@@ -1829,7 +1829,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             }
           },
           "away": {
@@ -1874,7 +1874,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             }
           },
           "kickoff": "2026-06-27T21:00:00Z"

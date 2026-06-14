@@ -22,7 +22,7 @@
           "team": {
             "id": "ni",
             "name": "Irlanda del Norte",
-            "flagCode": "GB"
+            "flagCode": "GB-NIR"
           },
           "points": 3
         },
@@ -74,7 +74,7 @@
             "team": {
               "id": "ni",
               "name": "Irlanda del Norte",
-              "flagCode": "GB"
+              "flagCode": "GB-NIR"
             },
             "score": 1
           },
@@ -124,7 +124,7 @@
             "team": {
               "id": "ni",
               "name": "Irlanda del Norte",
-              "flagCode": "GB"
+              "flagCode": "GB-NIR"
             },
             "score": 1
           },
@@ -145,7 +145,7 @@
             "team": {
               "id": "ni",
               "name": "Irlanda del Norte",
-              "flagCode": "GB"
+              "flagCode": "GB-NIR"
             },
             "score": 2
           },
@@ -210,7 +210,7 @@
           "team": {
             "id": "sct",
             "name": "Escocia",
-            "flagCode": "GB"
+            "flagCode": "GB-SCT"
           },
           "points": 1
         }
@@ -252,7 +252,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 1
           },
@@ -294,7 +294,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 2
           },
@@ -315,7 +315,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 1
           },
@@ -362,7 +362,7 @@
           "team": {
             "id": "wal",
             "name": "Gales",
-            "flagCode": "GB"
+            "flagCode": "GB-WLS"
           },
           "points": 3
         },
@@ -422,7 +422,7 @@
             "team": {
               "id": "wal",
               "name": "Gales",
-              "flagCode": "GB"
+              "flagCode": "GB-WLS"
             },
             "score": 1
           },
@@ -435,7 +435,7 @@
             "team": {
               "id": "wal",
               "name": "Gales",
-              "flagCode": "GB"
+              "flagCode": "GB-WLS"
             },
             "score": 1
           },
@@ -485,7 +485,7 @@
             "team": {
               "id": "wal",
               "name": "Gales",
-              "flagCode": "GB"
+              "flagCode": "GB-WLS"
             },
             "score": 0
           },
@@ -541,7 +541,7 @@
           "team": {
             "id": "eng",
             "name": "Inglaterra",
-            "flagCode": "GB"
+            "flagCode": "GB-ENG"
           },
           "points": 3
         },
@@ -563,7 +563,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 2
           },
@@ -613,7 +613,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 0
           },
@@ -668,7 +668,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 2
           },
@@ -707,7 +707,7 @@
               "team": {
                 "id": "wal",
                 "name": "Gales",
-                "flagCode": "GB"
+                "flagCode": "GB-WLS"
               },
               "score": 0
             },
@@ -728,7 +728,7 @@
               "team": {
                 "id": "ni",
                 "name": "Irlanda del Norte",
-                "flagCode": "GB"
+                "flagCode": "GB-NIR"
               },
               "score": 0
             },

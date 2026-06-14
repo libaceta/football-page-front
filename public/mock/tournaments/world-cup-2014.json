@@ -550,7 +550,7 @@
           "team": {
             "id": "eng",
             "name": "Inglaterra",
-            "flagCode": "GB"
+            "flagCode": "GB-ENG"
           },
           "points": 1
         }
@@ -584,7 +584,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 1
           },
@@ -613,7 +613,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 1
           },
@@ -676,7 +676,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 0
           },

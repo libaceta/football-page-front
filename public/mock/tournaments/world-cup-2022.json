@@ -183,7 +183,7 @@
           "team": {
             "id": "eng",
             "name": "Inglaterra",
-            "flagCode": "GB"
+            "flagCode": "GB-ENG"
           },
           "points": 7
         },
@@ -210,7 +210,7 @@
           "team": {
             "id": "wal",
             "name": "Gales",
-            "flagCode": "GB"
+            "flagCode": "GB-WLS"
           },
           "points": 1
         }
@@ -223,7 +223,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 6
           },
@@ -252,7 +252,7 @@
             "team": {
               "id": "wal",
               "name": "Gales",
-              "flagCode": "GB"
+              "flagCode": "GB-WLS"
             },
             "score": 1
           },
@@ -265,7 +265,7 @@
             "team": {
               "id": "wal",
               "name": "Gales",
-              "flagCode": "GB"
+              "flagCode": "GB-WLS"
             },
             "score": 0
           },
@@ -286,7 +286,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 0
           },
@@ -307,7 +307,7 @@
             "team": {
               "id": "wal",
               "name": "Gales",
-              "flagCode": "GB"
+              "flagCode": "GB-WLS"
             },
             "score": 0
           },
@@ -315,7 +315,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 3
           },
@@ -1493,7 +1493,7 @@
               "team": {
                 "id": "eng",
                 "name": "Inglaterra",
-                "flagCode": "GB"
+                "flagCode": "GB-ENG"
               },
               "score": 3
             },
@@ -1618,7 +1618,7 @@
               "team": {
                 "id": "eng",
                 "name": "Inglaterra",
-                "flagCode": "GB"
+                "flagCode": "GB-ENG"
               },
               "score": 1
             },

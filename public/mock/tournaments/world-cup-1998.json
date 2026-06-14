@@ -40,7 +40,7 @@
           "team": {
             "id": "sct",
             "name": "Escocia",
-            "flagCode": "GB"
+            "flagCode": "GB-SCT"
           },
           "points": 1
         }
@@ -61,7 +61,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 1
           },
@@ -124,7 +124,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 1
           },
@@ -158,7 +158,7 @@
             "team": {
               "id": "sct",
               "name": "Escocia",
-              "flagCode": "GB"
+              "flagCode": "GB-SCT"
             },
             "score": 0
           },
@@ -1042,7 +1042,7 @@
           "team": {
             "id": "eng",
             "name": "Inglaterra",
-            "flagCode": "GB"
+            "flagCode": "GB-ENG"
           },
           "points": 6
         },
@@ -1073,7 +1073,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 2
           },
@@ -1144,7 +1144,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 1
           },
@@ -1186,7 +1186,7 @@
             "team": {
               "id": "eng",
               "name": "Inglaterra",
-              "flagCode": "GB"
+              "flagCode": "GB-ENG"
             },
             "score": 2
           },
@@ -1451,7 +1451,7 @@
               "team": {
                 "id": "eng",
                 "name": "Inglaterra",
-                "flagCode": "GB"
+                "flagCode": "GB-ENG"
               },
               "score": 2,
               "penalties": 3
