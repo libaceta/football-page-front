@@ -1,24 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
-import { Group, GroupStanding } from '../../../../core/models/tournament.model';
+import { Group } from '../../../../core/models/tournament.model';
 import { flagClass } from '../../../../core/utils/flag.util';
-
-interface StatRow {
-  readonly standing: GroupStanding;
-  /** Posición en la tabla (recalculada en vivo desde los partidos jugados). */
-  readonly position: number;
-  /** Puntos (provisionales en vivo: 3·G + E de los partidos ya contados). */
-  readonly points: number;
-  /** Partidos jugados. */
-  readonly j: number;
-  readonly gf: number;
-  readonly ga: number;
-  /** Diferencia de goles. */
-  readonly gd: number;
-  readonly w: number;
-  readonly d: number;
-  readonly l: number;
-}
+import { computeGroupRows } from '../../standings.util';
 
 @Component({
   selector: 'app-group-panel',
@@ -50,15 +34,15 @@ interface StatRow {
           </tr>
         </thead>
         <tbody>
-          @for (row of rows(); track row.standing.team.id) {
+          @for (row of rows(); track row.team.id) {
             <tr
               class="border-t border-white/5"
               [class]="row.position <= 2 ? 'text-zinc-100' : 'text-zinc-400'"
             >
               <td class="px-1 py-0.5 text-zinc-500">{{ row.position }}</td>
               <td class="w-28 max-w-28 truncate px-1 py-0.5">
-                <span class="mr-1 inline-block align-middle text-[11px]" [class]="flag(row.standing.team.flagCode)"></span>
-                <span class="align-middle">{{ row.standing.team.name }}</span>
+                <span class="mr-1 inline-block align-middle text-[11px]" [class]="flag(row.team.flagCode)"></span>
+                <span class="align-middle">{{ row.team.name }}</span>
               </td>
               @if (detailed()) {
                 <td class="w-full"></td>
@@ -88,49 +72,7 @@ export class GroupPanel {
 
   protected readonly flag = flagClass;
 
-  protected readonly rows = computed<StatRow[]>(() => {
-    const g = this.group();
-    const acc = new Map<
-      string,
-      { j: number; gf: number; ga: number; w: number; d: number; l: number }
-    >();
-    for (const s of g.standings) {
-      acc.set(s.team.id, { j: 0, gf: 0, ga: 0, w: 0, d: 0, l: 0 });
-    }
-    for (const m of g.matches ?? []) {
-      if (!m.played || m.home.score == null || m.away.score == null) continue;
-      const h = acc.get(m.home.team.id);
-      const a = acc.get(m.away.team.id);
-      if (!h || !a) continue;
-      const hs = m.home.score;
-      const as = m.away.score;
-      h.j++; a.j++;
-      h.gf += hs; h.ga += as;
-      a.gf += as; a.ga += hs;
-      if (hs > as) { h.w++; a.l++; }
-      else if (as > hs) { a.w++; h.l++; }
-      else { h.d++; a.d++; }
-    }
-    // ¿Hay algún partido contado? Si no (grupo sin empezar, o edición histórica
-    // sin marcadores en los partidos), respetamos puntos y orden del backend.
-    const anyPlayed = [...acc.values()].some((t) => t.j > 0);
-
-    const base = g.standings.map((s) => {
-      const t = acc.get(s.team.id)!;
-      const points = anyPlayed ? 3 * t.w + t.d : s.points;
-      return {
-        standing: s,
-        position: s.position,
-        points,
-        j: t.j, gf: t.gf, ga: t.ga, gd: t.gf - t.ga, w: t.w, d: t.d, l: t.l,
-      };
-    });
-
-    if (!anyPlayed) return base;
-
-    // Tabla en vivo: reordenar por pts, dif. de goles, goles a favor.
-    return [...base]
-      .sort((a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf)
-      .map((row, i) => ({ ...row, position: i + 1 }));
-  });
+  // Tabla en vivo recalculada desde los partidos jugados (compartida con la
+  // proyección de clasificados al cuadro).
+  protected readonly rows = computed(() => computeGroupRows(this.group()));
 }
