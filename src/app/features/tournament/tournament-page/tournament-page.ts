@@ -5,6 +5,7 @@ import {
   effect,
   inject,
   linkedSignal,
+  signal,
 } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -33,6 +34,10 @@ import { GroupStageView } from '../components/group-stage-view/group-stage-view'
 import { GroupResults } from '../components/group-results/group-results';
 import { TodayMatches } from '../components/today-matches/today-matches';
 import { groupGridClass } from '../group-grid.util';
+import {
+  hasProjectableSlots,
+  projectQualifiers,
+} from '../qualifiers.util';
 
 // Orden de octavos -> semifinal usado para ordenar las columnas del cuadro.
 const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
@@ -158,6 +163,44 @@ export class TournamentPage {
   protected readonly groupsRight = computed<Group[]>(() =>
     (this.data()?.groups ?? []).filter((_, i) => i % 2 === 1),
   );
+
+  /** Toggle del usuario para previsualizar clasificados proyectados. */
+  protected readonly showQualifiers = signal(false);
+
+  protected toggleQualifiers(): void {
+    this.showQualifiers.update((v) => !v);
+  }
+
+  /** ¿Terminó toda la fase de grupos? (todos los partidos jugados). */
+  protected readonly groupStageComplete = computed<boolean>(() => {
+    const matches = (this.data()?.groups ?? []).flatMap((g) => g.matches ?? []);
+    return matches.length > 0 && matches.every((m) => m.played);
+  });
+
+  /**
+   * Se puede ofrecer la proyección de clasificados solo en formato cuadro, con
+   * grupos y llaves cargadas, mientras la fase de grupos no esté definida del
+   * todo y haya al menos un slot que la tabla pueda completar.
+   */
+  protected readonly canPreviewQualifiers = computed<boolean>(() => {
+    if (this.mode() !== 'bracket') return false;
+    const ed = this.data();
+    if (!ed?.knockout || !ed.groups?.length) return false;
+    if (this.groupStageComplete()) return false;
+    return hasProjectableSlots(ed.knockout.rounds, ed.groups);
+  });
+
+  /**
+   * Cuadro completo, con clasificados proyectados aplicados cuando el toggle
+   * está activo. Se calcula una sola vez sobre todas las rondas para que la
+   * asignación de mejores terceros sea única en ambos lados del cuadro.
+   */
+  private readonly projectedRounds = computed<readonly KnockoutRound[]>(() => {
+    const ed = this.data();
+    const rounds = ed?.knockout?.rounds ?? [];
+    if (!this.showQualifiers() || !ed?.groups?.length) return rounds;
+    return projectQualifiers(rounds, ed.groups);
+  });
 
   protected readonly leftRounds = computed<KnockoutRound[]>(() =>
     this.sideRounds('left'),
@@ -318,8 +361,7 @@ export class TournamentPage {
   }
 
   private sideRounds(side: 'left' | 'right'): KnockoutRound[] {
-    const rounds = this.data()?.knockout?.rounds ?? [];
-    return rounds
+    return this.projectedRounds()
       .filter((r) => r.side === side)
       .sort(
         (a, b) =>

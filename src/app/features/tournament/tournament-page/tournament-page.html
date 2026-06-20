@@ -59,6 +59,33 @@
       <!-- Formato de liguilla (1950 / 1974 / 1978 / 1982) -->
       <app-group-stage-view [edition]="ed" [champion]="champion()" />
     } @else {
+    <!-- Previsualizar clasificados proyectados: solo mientras la fase de grupos
+         no esté definida por completo. Rellena las plazas directas del cuadro. -->
+    @if (canPreviewQualifiers()) {
+      <div class="mb-3 flex flex-col items-center gap-1">
+        <button
+          type="button"
+          (click)="toggleQualifiers()"
+          [attr.aria-pressed]="showQualifiers()"
+          class="rounded-md border px-3 py-1 text-xs font-semibold transition-colors"
+          [class]="
+            showQualifiers()
+              ? 'border-amber-400/60 bg-amber-400/15 text-amber-200'
+              : 'border-white/10 bg-[#15151d] text-zinc-400 hover:border-white/25 hover:text-zinc-200'
+          "
+        >
+          {{ showQualifiers() ? 'Ocultar clasificados proyectados' : 'Mostrar clasificados proyectados' }}
+        </button>
+        @if (showQualifiers()) {
+          <p class="max-w-md text-center text-[10px] leading-tight text-zinc-500">
+            Proyección según las posiciones actuales de cada grupo. La plaza de
+            los mejores terceros es tentativa; las rondas siguientes quedan sin
+            definir.
+          </p>
+        }
+      </div>
+    }
+
     <!-- Cuadro completo: scroll horizontal en pantallas chicas -->
     <div class="overflow-x-auto pb-4">
       <div class="mx-auto flex w-max items-stretch gap-3">
