@@ -77,16 +77,34 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
             class="flex flex-col gap-0.5 rounded px-1.5 py-1"
             [class]="r.badge?.live ? 'bg-red-500/15 ring-1 ring-red-500/40' : 'bg-[#15151d]'"
           >
-            @if (r.badge; as b) {
-              <span
-                class="flex items-center justify-center gap-1 text-[8px] uppercase tracking-wide"
-                [class]="b.live ? 'font-bold text-red-400' : 'text-zinc-500'"
-              >
-                @if (b.live) {
-                  <span class="size-1 shrink-0 animate-pulse rounded-full bg-red-500"></span>
+            @if (r.badge || r.match.home.redCards || r.match.away.redCards) {
+              <div class="flex items-center text-[8px] uppercase tracking-wide">
+                <!-- Rojas del local, alineadas a la derecha (sobre el nombre local). -->
+                <span class="flex flex-1 items-center justify-end gap-0.5">
+                  @for (c of reds(r.match.home.redCards ?? 0); track $index) {
+                    <span class="inline-block h-2 w-[5px] rounded-[1px] bg-red-600"></span>
+                  }
+                </span>
+                @if (r.badge; as b) {
+                  <span
+                    class="flex shrink-0 items-center justify-center gap-1 px-1.5"
+                    [class]="b.live ? 'font-bold text-red-400' : 'text-zinc-500'"
+                  >
+                    @if (b.live) {
+                      <span class="size-1 shrink-0 animate-pulse rounded-full bg-red-500"></span>
+                    }
+                    <span>{{ b.text }}</span>
+                  </span>
+                } @else {
+                  <span class="shrink-0 px-1.5"></span>
                 }
-                <span>{{ b.text }}</span>
-              </span>
+                <!-- Rojas del visitante, alineadas a la izquierda (sobre el nombre visitante). -->
+                <span class="flex flex-1 items-center gap-0.5">
+                  @for (c of reds(r.match.away.redCards ?? 0); track $index) {
+                    <span class="inline-block h-2 w-[5px] rounded-[1px] bg-red-600"></span>
+                  }
+                </span>
+              </div>
             }
             <div class="flex items-center gap-1 text-[11px] leading-none">
               <span
@@ -95,11 +113,6 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
               >
                 <span class="truncate">{{ r.match.home.team.name }}</span>
                 <span class="shrink-0 text-xs" [class]="flag(r.match.home.team.flagCode)"></span>
-                @if (r.match.home.redCards) {
-                  @for (c of reds(r.match.home.redCards); track $index) {
-                    <span class="inline-block h-2.5 w-[6px] shrink-0 rounded-[1px] bg-red-600"></span>
-                  }
-                }
               </span>
               <span class="shrink-0 px-1.5 tabular-nums text-zinc-200">
                 {{ score(r.match.home.score) }}-{{ score(r.match.away.score) }}
@@ -108,11 +121,6 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
                 class="flex flex-1 items-center gap-1 truncate"
                 [class]="r.outcome === 'away' ? 'font-semibold text-zinc-100' : 'text-zinc-400'"
               >
-                @if (r.match.away.redCards) {
-                  @for (c of reds(r.match.away.redCards); track $index) {
-                    <span class="inline-block h-2.5 w-[6px] shrink-0 rounded-[1px] bg-red-600"></span>
-                  }
-                }
                 <span class="shrink-0 text-xs" [class]="flag(r.match.away.team.flagCode)"></span>
                 <span class="truncate">{{ r.match.away.team.name }}</span>
               </span>
