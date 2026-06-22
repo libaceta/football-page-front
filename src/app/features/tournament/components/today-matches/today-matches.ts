@@ -35,7 +35,7 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="rounded-lg border border-white/10 bg-[#101018] p-3">
-      <div class="mb-3 flex items-center justify-center gap-3">
+      <div class="mx-auto mb-3 flex w-full max-w-md items-center justify-between gap-3">
         <button
           type="button"
           (click)="prev.emit()"
@@ -45,7 +45,7 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
         >
           ‹
         </button>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-1 flex-col items-center">
           @if (anyLive()) {
             <span
               class="flex items-center gap-1 text-[9px] font-bold tracking-wide text-red-400"
