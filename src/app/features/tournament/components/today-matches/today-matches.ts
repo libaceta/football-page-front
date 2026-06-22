@@ -95,6 +95,11 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
               >
                 <span class="truncate">{{ r.match.home.team.name }}</span>
                 <span class="shrink-0 text-xs" [class]="flag(r.match.home.team.flagCode)"></span>
+                @if (r.match.home.redCards) {
+                  @for (c of reds(r.match.home.redCards); track $index) {
+                    <span class="inline-block h-2.5 w-[6px] shrink-0 rounded-[1px] bg-red-600"></span>
+                  }
+                }
               </span>
               <span class="shrink-0 px-1.5 tabular-nums text-zinc-200">
                 {{ score(r.match.home.score) }}-{{ score(r.match.away.score) }}
@@ -103,6 +108,11 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
                 class="flex flex-1 items-center gap-1 truncate"
                 [class]="r.outcome === 'away' ? 'font-semibold text-zinc-100' : 'text-zinc-400'"
               >
+                @if (r.match.away.redCards) {
+                  @for (c of reds(r.match.away.redCards); track $index) {
+                    <span class="inline-block h-2.5 w-[6px] shrink-0 rounded-[1px] bg-red-600"></span>
+                  }
+                }
                 <span class="shrink-0 text-xs" [class]="flag(r.match.away.team.flagCode)"></span>
                 <span class="truncate">{{ r.match.away.team.name }}</span>
               </span>
@@ -123,6 +133,11 @@ export class TodayMatches {
   readonly next = output<void>();
 
   protected readonly flag = flagClass;
+
+  /** Array de longitud `n` para iterar una tarjeta roja por evento. */
+  protected reds(n: number): readonly number[] {
+    return Array.from({ length: n }, (_, i) => i);
+  }
 
   /** Hay al menos un partido en curso (en juego o entretiempo). */
   protected readonly anyLive = computed(() =>

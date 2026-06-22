@@ -38,6 +38,8 @@ export interface MatchSlot {
   readonly score?: number;
   /** Penales convertidos, si el partido se definió desde el punto. */
   readonly penalties?: number;
+  /** Tarjetas rojas recibidas por el equipo en este partido. Ausente => 0. */
+  readonly redCards?: number;
 }
 
 /** Estado de un partido en vivo. Ausente => programado / sin dato. */

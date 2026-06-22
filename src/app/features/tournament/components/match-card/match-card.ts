@@ -53,6 +53,13 @@ interface SlotView {
         >
           <span class="shrink-0 text-sm" [class]="flag(s.slot.team.flagCode)"></span>
           <span class="flex-1 truncate">{{ s.slot.team.name }}</span>
+          @if (s.slot.redCards) {
+            <span class="flex shrink-0 items-center gap-0.5" [attr.aria-label]="s.slot.redCards + ' roja(s)'">
+              @for (c of reds(s.slot.redCards); track $index) {
+                <span class="inline-block h-3 w-[7px] rounded-[1px] bg-red-600"></span>
+              }
+            </span>
+          }
           @if (s.slot.penalties != null) {
             <span class="text-[9px] text-zinc-500">({{ s.slot.penalties }})</span>
           }
@@ -66,6 +73,11 @@ export class MatchCard {
   readonly match = input.required<Match>();
 
   protected readonly flag = flagClass;
+
+  /** Array de longitud `n` para iterar una tarjeta roja por evento. */
+  protected reds(n: number): readonly number[] {
+    return Array.from({ length: n }, (_, i) => i);
+  }
 
   /** Partido en curso (en juego o entretiempo): se resalta con fondo rojo. */
   protected readonly isLive = computed<boolean>(() => {
