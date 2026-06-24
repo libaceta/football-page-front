@@ -198,8 +198,11 @@ export class TournamentPage {
   private readonly projectedRounds = computed<readonly KnockoutRound[]>(() => {
     const ed = this.data();
     const rounds = ed?.knockout?.rounds ?? [];
-    if (!this.showQualifiers() || !ed?.groups?.length) return rounds;
-    return projectQualifiers(rounds, ed.groups);
+    if (!ed?.groups?.length) return rounds;
+    // Con el toggle, proyección completa (incl. terceros e incompletos).
+    if (this.showQualifiers()) return projectQualifiers(rounds, ed.groups);
+    // Sin toggle, rellenamos solo clasificados definitivos de grupos cerrados.
+    return projectQualifiers(rounds, ed.groups, { confirmedOnly: true });
   });
 
   protected readonly leftRounds = computed<KnockoutRound[]>(() =>

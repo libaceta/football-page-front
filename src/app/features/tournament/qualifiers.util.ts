@@ -36,6 +36,17 @@ function tablesByGroup(groups: readonly Group[]): Map<string, GroupRow[]> {
   return new Map(groups.map((g) => [g.id, computeGroupRows(g)]));
 }
 
+/** Un grupo está cerrado cuando todos sus partidos están jugados. */
+function groupComplete(group: Group): boolean {
+  const ms = group.matches ?? [];
+  return ms.length > 0 && ms.every((m) => m.played);
+}
+
+/** Ids de los grupos ya cerrados (clasificados definitivos por posición). */
+function completedGroupIds(groups: readonly Group[]): Set<string> {
+  return new Set(groups.filter(groupComplete).map((g) => g.id));
+}
+
 /** Equipo en una posición concreta de la tabla de un grupo. */
 function teamAt(rows: GroupRow[] | undefined, position: number): Team | undefined {
   return rows?.find((r) => r.position === position)?.team;
@@ -85,19 +96,36 @@ function assignThirds(
   return out;
 }
 
+/**
+ * Opciones de proyección. En modo `confirmedOnly` solo se rellenan plazas
+ * directas ("1º Grupo X"/"2º Grupo X") de grupos ya cerrados: clasificados
+ * definitivos. Los mejores terceros se omiten porque dependen de una tabla
+ * combinatoria que no se conoce hasta que termina toda la fase de grupos.
+ */
+export interface ProjectOptions {
+  readonly confirmedOnly?: boolean;
+  /** Ids de grupos cerrados; requerido en modo confirmedOnly. */
+  readonly completed?: Set<string>;
+}
+
 /** Resuelve un slot placeholder; si no aplica, lo devuelve igual. */
 function projectSlot(
   slot: MatchSlot,
   tables: Map<string, GroupRow[]>,
   thirds: Map<MatchSlot, Team>,
+  opts: ProjectOptions = {},
 ): MatchSlot {
   // Un slot con bandera ya es un equipo real (la fase ya lo definió).
   if (slot.team.flagCode) return slot;
   const direct = DIRECT_RE.exec(slot.team.name);
   if (direct) {
+    // Plaza directa: en modo confirmado, solo si el grupo ya cerró.
+    if (opts.confirmedOnly && !opts.completed?.has(direct[2])) return slot;
     const team = teamAt(tables.get(direct[2]), Number(direct[1]));
     return team ? { ...slot, team } : slot;
   }
+  // Mejor tercero: nunca es definitivo, se omite en modo confirmado.
+  if (opts.confirmedOnly) return slot;
   const third = thirds.get(slot);
   return third ? { ...slot, team: third } : slot;
 }
@@ -127,13 +155,21 @@ export function hasProjectableSlots(
 export function projectQualifiers(
   rounds: readonly KnockoutRound[],
   groups: readonly Group[],
+  options: { readonly confirmedOnly?: boolean } = {},
 ): KnockoutRound[] {
   const tables = tablesByGroup(groups);
-  const thirds = assignThirds(rounds, tables);
+  // En modo confirmado no hace falta asignar terceros (se omiten).
+  const thirds = options.confirmedOnly
+    ? new Map<MatchSlot, Team>()
+    : assignThirds(rounds, tables);
+  const opts: ProjectOptions = {
+    confirmedOnly: options.confirmedOnly,
+    completed: options.confirmedOnly ? completedGroupIds(groups) : undefined,
+  };
   return rounds.map((round) => {
     const matches = round.matches.map((mt) => {
-      const home = projectSlot(mt.home, tables, thirds);
-      const away = projectSlot(mt.away, tables, thirds);
+      const home = projectSlot(mt.home, tables, thirds, opts);
+      const away = projectSlot(mt.away, tables, thirds, opts);
       return home === mt.home && away === mt.away ? mt : { ...mt, home, away };
     });
     return matches.every((m, i) => m === round.matches[i])
