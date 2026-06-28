@@ -199,9 +199,15 @@ export class TournamentPage {
     const ed = this.data();
     const rounds = ed?.knockout?.rounds ?? [];
     if (!ed?.groups?.length) return rounds;
-    // Con el toggle, proyección completa (incl. terceros e incompletos).
-    if (this.showQualifiers()) return projectQualifiers(rounds, ed.groups);
-    // Sin toggle, rellenamos solo clasificados definitivos de grupos cerrados.
+    // Fase de grupos terminada: las tablas son definitivas, así que
+    // proyectamos todo el cuadro (incl. mejores terceros). La asignación de
+    // terceros sigue siendo una aproximación plausible y única, pero ya no
+    // cambia, así que conviene mostrarla en vez de dejar los 16avos vacíos.
+    // Con el toggle también hacemos la proyección completa.
+    if (this.groupStageComplete() || this.showQualifiers()) {
+      return projectQualifiers(rounds, ed.groups);
+    }
+    // Fase en curso sin toggle: solo clasificados definitivos de grupos cerrados.
     return projectQualifiers(rounds, ed.groups, { confirmedOnly: true });
   });
 
