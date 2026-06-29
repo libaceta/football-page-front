@@ -86,8 +86,24 @@
       </div>
     }
 
-    <!-- Cuadro completo: scroll horizontal en pantallas chicas -->
-    <div class="overflow-x-auto pb-4">
+    <!-- Mobile: cuadro completo como un solo árbol que crece a la derecha
+         (16avos → final), con conectores. Scroll horizontal. Solo <md. -->
+    <div class="overflow-x-auto pb-4 md:hidden">
+      <div class="relative w-max">
+        <app-bracket-tree [rounds]="fullBracketRounds()" side="left" />
+        <!-- Tercer puesto: pegado debajo de la final. La final queda centrada
+             verticalmente en el árbol (50%), así que lo posicionamos ahí mismo,
+             un poco más abajo y alineado a la derecha (última columna). -->
+        @if (thirdPlace(); as tp) {
+          <div class="absolute right-[1.4rem] top-[calc(50%+3.5rem)] w-36">
+            <app-third-place [match]="tp" />
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Desktop/tablet: cuadro en árbol con conectores. Oculto en mobile. -->
+    <div class="hidden overflow-x-auto pb-4 md:block">
       <div class="mx-auto flex w-max items-stretch gap-3">
         <!-- Bracket izquierdo -->
         <section class="flex-1">

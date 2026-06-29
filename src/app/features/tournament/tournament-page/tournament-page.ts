@@ -20,6 +20,7 @@ import {
   EditionRef,
   Group,
   KnockoutRound,
+  KnockoutRoundName,
   Match,
   Team,
   Tournament,
@@ -40,6 +41,15 @@ import {
 
 // Orden de octavos -> semifinal usado para ordenar las columnas del cuadro.
 const ROUND_ORDER = ['round-of-32', 'round-of-16', 'quarter', 'semi'] as const;
+
+// Fases en orden, para armar el árbol completo (una sola dirección) en mobile.
+const PHASES: readonly KnockoutRoundName[] = [
+  'round-of-32',
+  'round-of-16',
+  'quarter',
+  'semi',
+  'final',
+];
 
 // Etiqueta de día en el idioma y la zona horaria del navegador.
 const DAY_FMT = new Intl.DateTimeFormat(undefined, {
@@ -206,6 +216,26 @@ export class TournamentPage {
   protected readonly rightRounds = computed<KnockoutRound[]>(() =>
     this.sideRounds('right'),
   );
+
+  /**
+   * Cuadro completo como UN solo árbol que crece de izquierda a derecha
+   * (16avos → octavos → cuartos → semis → final), uniendo ambas mitades. Es la
+   * vista de mobile: cada fase es una columna con sus conectores, con scroll
+   * horizontal. El orden vertical de `projectedRounds` (mitad de arriba y luego
+   * la de abajo por fase) ya hace que la adyacencia del árbol sea correcta:
+   * octavo i queda entre 16avo 2i y 2i+1, y así hasta la final.
+   */
+  protected readonly fullBracketRounds = computed<KnockoutRound[]>(() => {
+    const rounds = this.projectedRounds();
+    return PHASES.map((name) => ({
+      id: `full-${name}`,
+      name,
+      side: 'left' as const,
+      matches: rounds
+        .filter((r) => r.name === name)
+        .flatMap((r) => r.matches),
+    })).filter((r) => r.matches.length > 0);
+  });
 
   protected readonly finalMatch = computed<Match | undefined>(
     () =>
