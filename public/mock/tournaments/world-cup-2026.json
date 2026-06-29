@@ -1909,18 +1909,19 @@
         "side": "left",
         "matches": [
           {
-            "id": "r32-l1",
+            "id": "ko-73",
+            "matchNumber": 73,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-1",
+                "id": "tbd-73-h",
                 "name": "2º Grupo A",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-2",
+                "id": "tbd-73-a",
                 "name": "2º Grupo B",
                 "flagCode": ""
               }
@@ -1928,56 +1929,19 @@
             "kickoff": "2026-06-28T19:00:00Z"
           },
           {
-            "id": "r32-l2",
+            "id": "ko-75",
+            "matchNumber": 75,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-3",
-                "name": "1º Grupo C",
-                "flagCode": ""
-              }
-            },
-            "away": {
-              "team": {
-                "id": "tbd-4",
-                "name": "2º Grupo F",
-                "flagCode": ""
-              }
-            },
-            "kickoff": "2026-06-29T17:00:00Z"
-          },
-          {
-            "id": "r32-l3",
-            "played": false,
-            "home": {
-              "team": {
-                "id": "tbd-5",
-                "name": "1º Grupo E",
-                "flagCode": ""
-              }
-            },
-            "away": {
-              "team": {
-                "id": "tbd-6",
-                "name": "3º A/B/C/D/F",
-                "flagCode": ""
-              }
-            },
-            "kickoff": "2026-06-29T20:30:00Z"
-          },
-          {
-            "id": "r32-l4",
-            "played": false,
-            "home": {
-              "team": {
-                "id": "tbd-7",
+                "id": "tbd-75-h",
                 "name": "1º Grupo F",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-8",
+                "id": "tbd-75-a",
                 "name": "2º Grupo C",
                 "flagCode": ""
               }
@@ -1985,37 +1949,39 @@
             "kickoff": "2026-06-30T01:00:00Z"
           },
           {
-            "id": "r32-l5",
+            "id": "ko-74",
+            "matchNumber": 74,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-9",
-                "name": "2º Grupo E",
+                "id": "tbd-74-h",
+                "name": "1º Grupo E",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-10",
-                "name": "2º Grupo I",
+                "id": "tbd-74-a",
+                "name": "3º A/B/C/D/F",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-06-30T17:00:00Z"
+            "kickoff": "2026-06-29T20:30:00Z"
           },
           {
-            "id": "r32-l6",
+            "id": "ko-77",
+            "matchNumber": 77,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-11",
+                "id": "tbd-77-h",
                 "name": "1º Grupo I",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-12",
+                "id": "tbd-77-a",
                 "name": "3º C/D/F/G/H",
                 "flagCode": ""
               }
@@ -2023,42 +1989,84 @@
             "kickoff": "2026-06-30T21:00:00Z"
           },
           {
-            "id": "r32-l7",
+            "id": "ko-82",
+            "matchNumber": 82,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-13",
-                "name": "1º Grupo A",
+                "id": "tbd-82-h",
+                "name": "1º Grupo G",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-14",
-                "name": "3º C/E/F/H/I",
+                "id": "tbd-82-a",
+                "name": "3º A/E/H/I/J",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-01T01:00:00Z"
+            "kickoff": "2026-07-01T20:00:00Z"
           },
           {
-            "id": "r32-l8",
+            "id": "ko-81",
+            "matchNumber": 81,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-15",
-                "name": "1º Grupo L",
+                "id": "tbd-81-h",
+                "name": "1º Grupo D",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-16",
-                "name": "3º E/H/I/J/K",
+                "id": "tbd-81-a",
+                "name": "3º B/E/F/I/J",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-01T16:00:00Z"
+            "kickoff": "2026-07-02T00:00:00Z"
+          },
+          {
+            "id": "ko-84",
+            "matchNumber": 84,
+            "played": false,
+            "home": {
+              "team": {
+                "id": "tbd-84-h",
+                "name": "1º Grupo H",
+                "flagCode": ""
+              }
+            },
+            "away": {
+              "team": {
+                "id": "tbd-84-a",
+                "name": "2º Grupo J",
+                "flagCode": ""
+              }
+            },
+            "kickoff": "2026-07-02T19:00:00Z"
+          },
+          {
+            "id": "ko-83",
+            "matchNumber": 83,
+            "played": false,
+            "home": {
+              "team": {
+                "id": "tbd-83-h",
+                "name": "2º Grupo K",
+                "flagCode": ""
+              }
+            },
+            "away": {
+              "team": {
+                "id": "tbd-83-a",
+                "name": "2º Grupo L",
+                "flagCode": ""
+              }
+            },
+            "kickoff": "2026-07-02T23:00:00Z"
           }
         ]
       },
@@ -2068,94 +2076,99 @@
         "side": "right",
         "matches": [
           {
-            "id": "r32-r1",
+            "id": "ko-76",
+            "matchNumber": 76,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-17",
-                "name": "1º Grupo G",
+                "id": "tbd-76-h",
+                "name": "1º Grupo C",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-18",
-                "name": "3º A/E/H/I/J",
+                "id": "tbd-76-a",
+                "name": "2º Grupo F",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-01T20:00:00Z"
+            "kickoff": "2026-06-29T17:00:00Z"
           },
           {
-            "id": "r32-r2",
+            "id": "ko-78",
+            "matchNumber": 78,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-19",
-                "name": "1º Grupo D",
+                "id": "tbd-78-h",
+                "name": "2º Grupo E",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-20",
-                "name": "3º B/E/F/I/J",
+                "id": "tbd-78-a",
+                "name": "2º Grupo I",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-02T00:00:00Z"
+            "kickoff": "2026-06-30T17:00:00Z"
           },
           {
-            "id": "r32-r3",
+            "id": "ko-79",
+            "matchNumber": 79,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-21",
-                "name": "1º Grupo H",
+                "id": "tbd-79-h",
+                "name": "1º Grupo A",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-22",
-                "name": "2º Grupo J",
+                "id": "tbd-79-a",
+                "name": "3º C/E/F/H/I",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-02T19:00:00Z"
+            "kickoff": "2026-07-01T01:00:00Z"
           },
           {
-            "id": "r32-r4",
+            "id": "ko-80",
+            "matchNumber": 80,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-23",
-                "name": "2º Grupo K",
+                "id": "tbd-80-h",
+                "name": "1º Grupo L",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-24",
-                "name": "2º Grupo L",
+                "id": "tbd-80-a",
+                "name": "3º E/H/I/J/K",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-02T23:00:00Z"
+            "kickoff": "2026-07-01T16:00:00Z"
           },
           {
-            "id": "r32-r5",
+            "id": "ko-85",
+            "matchNumber": 85,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-25",
+                "id": "tbd-85-h",
                 "name": "1º Grupo B",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-26",
+                "id": "tbd-85-a",
                 "name": "3º E/F/G/I/J",
                 "flagCode": ""
               }
@@ -2163,18 +2176,39 @@
             "kickoff": "2026-07-03T03:00:00Z"
           },
           {
-            "id": "r32-r6",
+            "id": "ko-87",
+            "matchNumber": 87,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-27",
+                "id": "tbd-87-h",
+                "name": "1º Grupo K",
+                "flagCode": ""
+              }
+            },
+            "away": {
+              "team": {
+                "id": "tbd-87-a",
+                "name": "3º D/E/I/J/L",
+                "flagCode": ""
+              }
+            },
+            "kickoff": "2026-07-04T01:30:00Z"
+          },
+          {
+            "id": "ko-88",
+            "matchNumber": 88,
+            "played": false,
+            "home": {
+              "team": {
+                "id": "tbd-88-h",
                 "name": "2º Grupo D",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-28",
+                "id": "tbd-88-a",
                 "name": "2º Grupo G",
                 "flagCode": ""
               }
@@ -2182,42 +2216,24 @@
             "kickoff": "2026-07-03T18:00:00Z"
           },
           {
-            "id": "r32-r7",
+            "id": "ko-86",
+            "matchNumber": 86,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-29",
+                "id": "tbd-86-h",
                 "name": "1º Grupo J",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-30",
+                "id": "tbd-86-a",
                 "name": "2º Grupo H",
                 "flagCode": ""
               }
             },
             "kickoff": "2026-07-03T22:00:00Z"
-          },
-          {
-            "id": "r32-r8",
-            "played": false,
-            "home": {
-              "team": {
-                "id": "tbd-31",
-                "name": "1º Grupo K",
-                "flagCode": ""
-              }
-            },
-            "away": {
-              "team": {
-                "id": "tbd-32",
-                "name": "3º D/E/I/J/L",
-                "flagCode": ""
-              }
-            },
-            "kickoff": "2026-07-04T01:30:00Z"
           }
         ]
       },
@@ -2227,18 +2243,19 @@
         "side": "left",
         "matches": [
           {
-            "id": "r16-l1",
+            "id": "ko-90",
+            "matchNumber": 90,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-33",
+                "id": "tbd-90-h",
                 "name": "Ganador P73",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-34",
+                "id": "tbd-90-a",
                 "name": "Ganador P75",
                 "flagCode": ""
               }
@@ -2246,18 +2263,19 @@
             "kickoff": "2026-07-04T17:00:00Z"
           },
           {
-            "id": "r16-l2",
+            "id": "ko-89",
+            "matchNumber": 89,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-35",
+                "id": "tbd-89-h",
                 "name": "Ganador P74",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-36",
+                "id": "tbd-89-a",
                 "name": "Ganador P77",
                 "flagCode": ""
               }
@@ -2265,42 +2283,44 @@
             "kickoff": "2026-07-04T21:00:00Z"
           },
           {
-            "id": "r16-l3",
+            "id": "ko-94",
+            "matchNumber": 94,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-37",
-                "name": "Ganador P76",
+                "id": "tbd-94-h",
+                "name": "Ganador P81",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-38",
-                "name": "Ganador P78",
+                "id": "tbd-94-a",
+                "name": "Ganador P82",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-05T20:00:00Z"
+            "kickoff": "2026-07-07T00:00:00Z"
           },
           {
-            "id": "r16-l4",
+            "id": "ko-93",
+            "matchNumber": 93,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-39",
-                "name": "Ganador P79",
+                "id": "tbd-93-h",
+                "name": "Ganador P83",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-40",
-                "name": "Ganador P80",
+                "id": "tbd-93-a",
+                "name": "Ganador P84",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-06T00:00:00Z"
+            "kickoff": "2026-07-06T19:00:00Z"
           }
         ]
       },
@@ -2310,80 +2330,84 @@
         "side": "right",
         "matches": [
           {
-            "id": "r16-r1",
+            "id": "ko-91",
+            "matchNumber": 91,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-41",
-                "name": "Ganador P83",
+                "id": "tbd-91-h",
+                "name": "Ganador P76",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-42",
-                "name": "Ganador P84",
+                "id": "tbd-91-a",
+                "name": "Ganador P78",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-06T19:00:00Z"
+            "kickoff": "2026-07-05T20:00:00Z"
           },
           {
-            "id": "r16-r2",
+            "id": "ko-92",
+            "matchNumber": 92,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-43",
-                "name": "Ganador P81",
+                "id": "tbd-92-h",
+                "name": "Ganador P79",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-44",
-                "name": "Ganador P82",
+                "id": "tbd-92-a",
+                "name": "Ganador P80",
                 "flagCode": ""
               }
             },
-            "kickoff": "2026-07-07T00:00:00Z"
+            "kickoff": "2026-07-06T00:00:00Z"
           },
           {
-            "id": "r16-r3",
+            "id": "ko-96",
+            "matchNumber": 96,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-45",
-                "name": "Ganador P86",
-                "flagCode": ""
-              }
-            },
-            "away": {
-              "team": {
-                "id": "tbd-46",
-                "name": "Ganador P88",
-                "flagCode": ""
-              }
-            },
-            "kickoff": "2026-07-07T16:00:00Z"
-          },
-          {
-            "id": "r16-r4",
-            "played": false,
-            "home": {
-              "team": {
-                "id": "tbd-47",
+                "id": "tbd-96-h",
                 "name": "Ganador P85",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-48",
+                "id": "tbd-96-a",
                 "name": "Ganador P87",
                 "flagCode": ""
               }
             },
             "kickoff": "2026-07-07T20:00:00Z"
+          },
+          {
+            "id": "ko-95",
+            "matchNumber": 95,
+            "played": false,
+            "home": {
+              "team": {
+                "id": "tbd-95-h",
+                "name": "Ganador P86",
+                "flagCode": ""
+              }
+            },
+            "away": {
+              "team": {
+                "id": "tbd-95-a",
+                "name": "Ganador P88",
+                "flagCode": ""
+              }
+            },
+            "kickoff": "2026-07-07T16:00:00Z"
           }
         ]
       },
@@ -2393,18 +2417,19 @@
         "side": "left",
         "matches": [
           {
-            "id": "qf-l1",
+            "id": "ko-97",
+            "matchNumber": 97,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-49",
+                "id": "tbd-97-h",
                 "name": "Ganador P89",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-50",
+                "id": "tbd-97-a",
                 "name": "Ganador P90",
                 "flagCode": ""
               }
@@ -2412,18 +2437,19 @@
             "kickoff": "2026-07-09T20:00:00Z"
           },
           {
-            "id": "qf-l2",
+            "id": "ko-98",
+            "matchNumber": 98,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-51",
+                "id": "tbd-98-h",
                 "name": "Ganador P93",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-52",
+                "id": "tbd-98-a",
                 "name": "Ganador P94",
                 "flagCode": ""
               }
@@ -2438,18 +2464,19 @@
         "side": "right",
         "matches": [
           {
-            "id": "qf-r1",
+            "id": "ko-99",
+            "matchNumber": 99,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-53",
+                "id": "tbd-99-h",
                 "name": "Ganador P91",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-54",
+                "id": "tbd-99-a",
                 "name": "Ganador P92",
                 "flagCode": ""
               }
@@ -2457,18 +2484,19 @@
             "kickoff": "2026-07-11T21:00:00Z"
           },
           {
-            "id": "qf-r2",
+            "id": "ko-100",
+            "matchNumber": 100,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-55",
+                "id": "tbd-100-h",
                 "name": "Ganador P95",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-56",
+                "id": "tbd-100-a",
                 "name": "Ganador P96",
                 "flagCode": ""
               }
@@ -2483,18 +2511,19 @@
         "side": "left",
         "matches": [
           {
-            "id": "sf-l1",
+            "id": "ko-101",
+            "matchNumber": 101,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-57",
+                "id": "tbd-101-h",
                 "name": "Ganador P97",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-58",
+                "id": "tbd-101-a",
                 "name": "Ganador P98",
                 "flagCode": ""
               }
@@ -2509,18 +2538,19 @@
         "side": "right",
         "matches": [
           {
-            "id": "sf-r1",
+            "id": "ko-102",
+            "matchNumber": 102,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-59",
+                "id": "tbd-102-h",
                 "name": "Ganador P99",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-60",
+                "id": "tbd-102-a",
                 "name": "Ganador P100",
                 "flagCode": ""
               }
@@ -2534,18 +2564,19 @@
         "name": "final",
         "matches": [
           {
-            "id": "final-1",
+            "id": "ko-104",
+            "matchNumber": 104,
             "played": false,
             "home": {
               "team": {
-                "id": "tbd-61",
+                "id": "tbd-104-h",
                 "name": "Ganador P101",
                 "flagCode": ""
               }
             },
             "away": {
               "team": {
-                "id": "tbd-62",
+                "id": "tbd-104-a",
                 "name": "Ganador P102",
                 "flagCode": ""
               }
@@ -2557,18 +2588,19 @@
     ]
   },
   "thirdPlace": {
-    "id": "third-place",
+    "id": "ko-103",
+    "matchNumber": 103,
     "played": false,
     "home": {
       "team": {
-        "id": "tbd-63",
+        "id": "tbd-103-h",
         "name": "Perdedor P101",
         "flagCode": ""
       }
     },
     "away": {
       "team": {
-        "id": "tbd-64",
+        "id": "tbd-103-a",
         "name": "Perdedor P102",
         "flagCode": ""
       }
