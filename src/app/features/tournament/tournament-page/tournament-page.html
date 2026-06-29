@@ -89,15 +89,6 @@
     <!-- Cuadro completo: scroll horizontal en pantallas chicas -->
     <div class="overflow-x-auto pb-4">
       <div class="mx-auto flex w-max items-stretch gap-3">
-        <!-- Grupos izquierda -->
-        @if (groupsLeft().length) {
-          <aside class="flex w-40 shrink-0 flex-col gap-2">
-            @for (g of groupsLeft(); track g.id) {
-              <app-group-panel [group]="g" />
-            }
-          </aside>
-        }
-
         <!-- Bracket izquierdo -->
         <section class="flex-1">
           <app-bracket-tree [rounds]="leftRounds()" side="left" />
@@ -117,15 +108,6 @@
         <section class="flex-1">
           <app-bracket-tree [rounds]="rightRounds()" side="right" />
         </section>
-
-        <!-- Grupos derecha -->
-        @if (groupsRight().length) {
-          <aside class="flex w-40 shrink-0 flex-col gap-2">
-            @for (g of groupsRight(); track g.id) {
-              <app-group-panel [group]="g" />
-            }
-          </aside>
-        }
       </div>
     </div>
 

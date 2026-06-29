@@ -25,7 +25,6 @@ import {
   Tournament,
   TournamentType,
 } from '../../../core/models/tournament.model';
-import { GroupPanel } from '../components/group-panel/group-panel';
 import { BracketTree } from '../components/bracket-tree/bracket-tree';
 import { ChampionTrophy } from '../components/champion-trophy/champion-trophy';
 import { ThirdPlace } from '../components/third-place/third-place';
@@ -61,7 +60,6 @@ interface MatchDay {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     RouterLink,
-    GroupPanel,
     BracketTree,
     ChampionTrophy,
     ThirdPlace,
@@ -144,11 +142,6 @@ export class TournamentPage {
     () => this.tournament.value()?.editions ?? [],
   );
 
-  /** Grupos de la columna izquierda: A, C, E, G, I, K. */
-  protected readonly groupsLeft = computed<Group[]>(() =>
-    (this.data()?.groups ?? []).filter((_, i) => i % 2 === 0),
-  );
-
   /** Grupos que tienen partidos cargados, para la sección de resultados. */
   protected readonly groupsWithMatches = computed<Group[]>(() =>
     (this.data()?.groups ?? []).filter((g) => (g.matches?.length ?? 0) > 0),
@@ -157,11 +150,6 @@ export class TournamentPage {
   /** Columnas de la grilla de resultados según la cantidad de grupos. */
   protected readonly groupGridClass = computed(() =>
     groupGridClass(this.groupsWithMatches().length),
-  );
-
-  /** Grupos de la columna derecha: B, D, F, H, J, L. */
-  protected readonly groupsRight = computed<Group[]>(() =>
-    (this.data()?.groups ?? []).filter((_, i) => i % 2 === 1),
   );
 
   /** Toggle del usuario para previsualizar clasificados proyectados. */
