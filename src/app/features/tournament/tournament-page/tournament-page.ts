@@ -354,12 +354,17 @@ export class TournamentPage {
     return undefined;
   }
 
-  /** Todos los partidos de la edición: grupos, liguilla, llaves y 3er puesto. */
+  /**
+   * Todos los partidos de la edición: grupos, liguilla, llaves y 3er puesto.
+   * Las llaves se toman ya proyectadas para que el panel de la jornada muestre
+   * los países clasificados (y no los placeholders "2º Grupo A") en cuanto la
+   * tabla permite resolverlos.
+   */
   private allMatches(ed: Edition): Match[] {
     return [
       ...(ed.groups ?? []).flatMap((g) => g.matches ?? []),
       ...(ed.finalRound?.groups ?? []).flatMap((g) => g.matches ?? []),
-      ...(ed.knockout?.rounds.flatMap((r) => r.matches) ?? []),
+      ...this.projectedRounds().flatMap((r) => r.matches),
       ...(ed.thirdPlace ? [ed.thirdPlace] : []),
     ];
   }

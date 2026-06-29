@@ -70,9 +70,19 @@ function assignThirds(
   const out = new Map<MatchSlot, Team>();
   const used = new Set<string>();
 
-  const rankOf = (letter: string): number => {
-    const r = thirdRow(tables.get(letter));
-    return r ? r.points * 1000 + r.gd : -Infinity;
+  // Compara dos terceros con los mismos criterios que la tabla del grupo:
+  // puntos, diferencia de gol, goles a favor y, como desempate estable, la
+  // letra del grupo. Devuelve <0 si `a` va antes (mejor) que `b`.
+  const betterThird = (a: string, b: string): number => {
+    const ra = thirdRow(tables.get(a));
+    const rb = thirdRow(tables.get(b));
+    if (!ra || !rb) return ra ? -1 : rb ? 1 : 0;
+    return (
+      rb.points - ra.points ||
+      rb.gd - ra.gd ||
+      rb.gf - ra.gf ||
+      a.localeCompare(b)
+    );
   };
 
   for (const round of rounds) {
@@ -84,7 +94,7 @@ function assignThirds(
         const letter = m[1]
           .split('/')
           .filter((g) => !used.has(g) && thirdRow(tables.get(g)))
-          .sort((a, b) => rankOf(b) - rankOf(a) || a.localeCompare(b))[0];
+          .sort(betterThird)[0];
         const team = teamAt(tables.get(letter), 3);
         if (letter && team) {
           used.add(letter);
