@@ -114,8 +114,17 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
                 <span class="truncate">{{ r.match.home.team.name }}</span>
                 <span class="shrink-0 text-xs" [class]="flag(r.match.home.team.flagCode)"></span>
               </span>
-              <span class="shrink-0 px-1.5 tabular-nums text-zinc-200">
-                {{ score(r.match.home.score) }}-{{ score(r.match.away.score) }}
+              <span class="flex shrink-0 flex-col items-center px-1.5 leading-tight">
+                <span class="tabular-nums text-zinc-200">
+                  {{ score(r.match.home.score) }}-{{ score(r.match.away.score) }}
+                </span>
+                @if (
+                  r.match.home.penalties != null && r.match.away.penalties != null
+                ) {
+                  <span class="text-[8px] uppercase tabular-nums text-zinc-500">
+                    pen. {{ r.match.home.penalties }}-{{ r.match.away.penalties }}
+                  </span>
+                }
               </span>
               <span
                 class="flex flex-1 items-center gap-1 truncate"
@@ -169,7 +178,16 @@ export class TodayMatches {
     if (!m.played || m.home.score == null || m.away.score == null) return 'draw';
     const h = m.home.score;
     const a = m.away.score;
-    return h > a ? 'home' : a > h ? 'away' : 'draw';
+    if (h > a) return 'home';
+    if (a > h) return 'away';
+    // Empate en los 90/120': desempata por penales si los hubo.
+    const ph = m.home.penalties;
+    const pa = m.away.penalties;
+    if (ph != null && pa != null) {
+      if (ph > pa) return 'home';
+      if (pa > ph) return 'away';
+    }
+    return 'draw';
   }
 
   private badge(m: Match): { text: string; live: boolean } | null {
