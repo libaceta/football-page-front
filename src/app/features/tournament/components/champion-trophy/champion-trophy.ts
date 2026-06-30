@@ -16,7 +16,11 @@ const DATE_FMT = new Intl.DateTimeFormat(undefined, {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="flex flex-col items-center gap-2 text-center">
-      <div class="text-4xl drop-shadow-[0_0_12px_rgba(251,191,36,0.5)]">🏆</div>
+      <img
+        src="trophy.svg"
+        alt="Trofeo"
+        class="h-10 w-auto drop-shadow-[0_0_12px_rgba(251,191,36,0.5)]"
+      />
 
       @if (final(); as f) {
         <div class="text-[9px] font-bold tracking-[0.2em] text-zinc-500">FINAL</div>
