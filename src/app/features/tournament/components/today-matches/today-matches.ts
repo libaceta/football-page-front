@@ -114,16 +114,17 @@ const TIME_FMT = new Intl.DateTimeFormat(undefined, {
                 <span class="truncate">{{ r.match.home.team.name }}</span>
                 <span class="shrink-0 text-xs" [class]="flag(r.match.home.team.flagCode)"></span>
               </span>
-              <span class="flex shrink-0 flex-col items-center px-1.5 leading-tight">
-                <span class="tabular-nums text-zinc-200">
-                  {{ score(r.match.home.score) }}-{{ score(r.match.away.score) }}
-                </span>
-                @if (
-                  r.match.home.penalties != null && r.match.away.penalties != null
-                ) {
-                  <span class="text-[8px] uppercase tabular-nums text-zinc-500">
-                    pen. {{ r.match.home.penalties }}-{{ r.match.away.penalties }}
-                  </span>
+              <span
+                class="flex shrink-0 items-center gap-1 px-3 tabular-nums text-zinc-200"
+              >
+                @if (r.match.home.penalties != null) {
+                  <span class="text-[9px] text-zinc-400">({{ r.match.home.penalties }})</span>
+                }
+                <span>{{ score(r.match.home.score) }}</span>
+                <span class="text-zinc-500">-</span>
+                <span>{{ score(r.match.away.score) }}</span>
+                @if (r.match.away.penalties != null) {
+                  <span class="text-[9px] text-zinc-400">({{ r.match.away.penalties }})</span>
                 }
               </span>
               <span
